@@ -58,6 +58,13 @@ class ActivityTier(str, enum.Enum):
     HEAVY = "heavy"
 
 
+class SessionEntryType(str, enum.Enum):
+    HOME = "home"
+    CATEGORY = "category"
+    SEARCH_LIKE = "search_like"
+    DIRECT = "direct"
+
+
 product_tags = Table(
     "product_tags",
     Base.metadata,
@@ -277,25 +284,57 @@ class ProductAttribute(Base):
 
 class Session(Base):
     __tablename__ = "sessions"
+    __table_args__ = (
+        CheckConstraint("ended_at IS NULL OR ended_at >= started_at", name="ck_sessions_time_order"),
+    )
 
     id: Mapped[int] = mapped_column(primary_key=True)
     session_key: Mapped[str] = mapped_column(String(64), unique=True, index=True)
     user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id"), nullable=True, index=True)
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
+    ended_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True), nullable=True)
+    entry_type: Mapped[SessionEntryType | None] = mapped_column(
+        Enum(
+            SessionEntryType,
+            values_callable=lambda entry_types: [entry_type.value for entry_type in entry_types],
+            native_enum=False,
+            create_constraint=True,
+            length=32,
+        ),
+        nullable=True,
+    )
+    generation_version: Mapped[str | None] = mapped_column(String(64), nullable=True, index=True)
+    generation_seed: Mapped[int | None] = mapped_column(nullable=True)
 
     user: Mapped[User | None] = relationship(back_populates="sessions")
-    events: Mapped[list["Event"]] = relationship(back_populates="session")
+    events: Mapped[list["Event"]] = relationship(
+        back_populates="session",
+        cascade="all, delete-orphan",
+    )
 
 
 class Event(Base):
     __tablename__ = "events"
 
     id: Mapped[int] = mapped_column(primary_key=True)
-    event_type: Mapped[EventType] = mapped_column(Enum(EventType), index=True)
+    event_key: Mapped[str | None] = mapped_column(String(64), unique=True, nullable=True, index=True)
+    event_type: Mapped[EventType] = mapped_column(
+        Enum(
+            EventType,
+            values_callable=lambda event_types: [event_type.value for event_type in event_types],
+            native_enum=False,
+            create_constraint=True,
+            length=32,
+        ),
+        index=True,
+    )
     user_id: Mapped[int | None] = mapped_column(ForeignKey("users.id"), nullable=True, index=True)
     product_id: Mapped[int] = mapped_column(ForeignKey("products.id"), index=True)
     session_id: Mapped[int] = mapped_column(ForeignKey("sessions.id"), index=True)
     occurred_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now(), index=True)
+    exposure_source: Mapped[str | None] = mapped_column(String(32), nullable=True)
+    generation_version: Mapped[str | None] = mapped_column(String(64), nullable=True, index=True)
+    generation_seed: Mapped[int | None] = mapped_column(nullable=True)
 
     user: Mapped[User | None] = relationship(back_populates="events")
     product: Mapped[Product] = relationship(back_populates="events")

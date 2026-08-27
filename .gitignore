@@ -33,3 +33,7 @@ ml/data/*
 !ml/data/.gitkeep
 ml/models/*
 !ml/models/.gitkeep
+
+# Reproducible but large interaction snapshots (regenerate from the CLI)
+data/synthetic_session_v1_seed*.csv
+data/synthetic_event_v1_seed*.csv
