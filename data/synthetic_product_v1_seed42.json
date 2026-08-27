@@ -1,0 +1,6655 @@
+{
+  "metadata": {
+    "catalog_version": "synthetic_product_v1",
+    "generation_seed": 42,
+    "count": 200,
+    "attribute_names": [
+      "danger",
+      "luxury",
+      "novelty",
+      "historical_value",
+      "technology_level",
+      "natural_significance",
+      "fantasy_level",
+      "space_affinity",
+      "power"
+    ]
+  },
+  "products": [
+    {
+      "name": "Mars",
+      "description": "A rust-colored planet with excellent views and a demanding commute.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "powerful",
+        "luxury"
+      ],
+      "price": "317500000000000000000",
+      "rarity": 0.7145,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8957,
+        "luxury": 0.8668,
+        "novelty": 0.8533,
+        "historical_value": 0.4506,
+        "technology_level": 0.1349,
+        "natural_significance": 0.9162,
+        "fantasy_level": 0.1203,
+        "space_affinity": 0.9446,
+        "power": 0.9575
+      }
+    },
+    {
+      "name": "Venus",
+      "description": "A singular planet known for being space, natural, and unusually massive.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "unexplored",
+        "luxury"
+      ],
+      "price": "695000000000000000000",
+      "rarity": 0.6769,
+      "reality_type": "real",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7156,
+        "luxury": 1.0,
+        "novelty": 0.7779,
+        "historical_value": 0.5933,
+        "technology_level": 0.1706,
+        "natural_significance": 0.958,
+        "fantasy_level": 0.1106,
+        "space_affinity": 1.0,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Jupiter",
+      "description": "This real planet combines space character with natural value and massive appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare"
+      ],
+      "price": "5373000000000000000000",
+      "rarity": 0.8556,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6399,
+        "luxury": 0.9688,
+        "novelty": 0.9392,
+        "historical_value": 0.5816,
+        "technology_level": 0.136,
+        "natural_significance": 0.9617,
+        "fantasy_level": 0.1341,
+        "space_affinity": 0.8844,
+        "power": 0.9328
+      }
+    },
+    {
+      "name": "Neptune",
+      "description": "Neptune is a real planet selected for its space, natural, and massive qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "destructive"
+      ],
+      "price": "772500000000000000000",
+      "rarity": 0.8013,
+      "reality_type": "real",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8045,
+        "luxury": 0.8892,
+        "novelty": 0.8472,
+        "historical_value": 0.6406,
+        "technology_level": 0.2102,
+        "natural_significance": 0.9857,
+        "fantasy_level": 0.2161,
+        "space_affinity": 0.8709,
+        "power": 0.9152
+      }
+    },
+    {
+      "name": "Crimson Exoplanet",
+      "description": "This real planet combines space character with natural value and massive appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "unexplored",
+        "exclusive"
+      ],
+      "price": "2155000000000000000000",
+      "rarity": 0.7526,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6786,
+        "luxury": 0.8612,
+        "novelty": 0.8497,
+        "historical_value": 0.5277,
+        "technology_level": 0.0837,
+        "natural_significance": 0.9412,
+        "fantasy_level": 0.1729,
+        "space_affinity": 0.9696,
+        "power": 0.9258
+      }
+    },
+    {
+      "name": "Silent Exoplanet",
+      "description": "A singular planet known for being space, natural, and unusually massive.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "valuable",
+        "mysterious"
+      ],
+      "price": "601800000000000000000",
+      "rarity": 0.5804,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7969,
+        "luxury": 0.848,
+        "novelty": 0.8274,
+        "historical_value": 0.5435,
+        "technology_level": 0.2465,
+        "natural_significance": 0.96,
+        "fantasy_level": 0.197,
+        "space_affinity": 1.0,
+        "power": 0.9686
+      }
+    },
+    {
+      "name": "Golden Exoplanet",
+      "description": "Golden Exoplanet is a real planet selected for its space, natural, and massive qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare"
+      ],
+      "price": "310000000000000000000",
+      "rarity": 0.6976,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7348,
+        "luxury": 0.9681,
+        "novelty": 0.7968,
+        "historical_value": 0.5352,
+        "technology_level": 0.2673,
+        "natural_significance": 0.9681,
+        "fantasy_level": 0.0551,
+        "space_affinity": 0.9825,
+        "power": 0.7582
+      }
+    },
+    {
+      "name": "Obsidian Exoplanet",
+      "description": "This real planet combines space character with natural value and massive appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Planet",
+        "slug": "planet"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "massive",
+        "rare",
+        "exclusive",
+        "valuable"
+      ],
+      "price": "606800000000000000000",
+      "rarity": 0.692,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8377,
+        "luxury": 0.8911,
+        "novelty": 0.807,
+        "historical_value": 0.5162,
+        "technology_level": 0.112,
+        "natural_significance": 0.8392,
+        "fantasy_level": 0.1602,
+        "space_affinity": 1.0,
+        "power": 0.8765
+      }
+    },
+    {
+      "name": "Moon",
+      "description": "Earth's only natural satellite, offered with tides and phases included.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "mysterious",
+        "valuable"
+      ],
+      "price": "5814000000000000000",
+      "rarity": 0.8307,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5757,
+        "luxury": 0.8516,
+        "novelty": 0.9044,
+        "historical_value": 0.5057,
+        "technology_level": 0.1317,
+        "natural_significance": 0.8652,
+        "fantasy_level": 0.068,
+        "space_affinity": 0.9818,
+        "power": 0.7388
+      }
+    },
+    {
+      "name": "Europa",
+      "description": "This real satellite combines space character with natural value and scientific appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "mysterious"
+      ],
+      "price": "3626000000000000000",
+      "rarity": 0.8641,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4175,
+        "luxury": 0.7747,
+        "novelty": 0.8502,
+        "historical_value": 0.6846,
+        "technology_level": 0.3737,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.0,
+        "space_affinity": 1.0,
+        "power": 0.5754
+      }
+    },
+    {
+      "name": "Titan",
+      "description": "A singular satellite known for being space, natural, and unusually scientific.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "unexplored"
+      ],
+      "price": "1869000000000000000",
+      "rarity": 0.7808,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6526,
+        "luxury": 0.9328,
+        "novelty": 0.8291,
+        "historical_value": 0.5642,
+        "technology_level": 0.2793,
+        "natural_significance": 0.834,
+        "fantasy_level": 0.0606,
+        "space_affinity": 1.0,
+        "power": 0.702
+      }
+    },
+    {
+      "name": "Crimson Moon",
+      "description": "Crimson Moon is a speculative satellite selected for its space, natural, and scientific qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "valuable"
+      ],
+      "price": "9181000000000000000",
+      "rarity": 0.6644,
+      "reality_type": "speculative",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4369,
+        "luxury": 0.8425,
+        "novelty": 0.8134,
+        "historical_value": 0.6362,
+        "technology_level": 0.2147,
+        "natural_significance": 0.7371,
+        "fantasy_level": 0.0096,
+        "space_affinity": 1.0,
+        "power": 0.7209
+      }
+    },
+    {
+      "name": "Silent Moon",
+      "description": "This speculative satellite combines space character with natural value and scientific appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "valuable",
+        "luxury"
+      ],
+      "price": "4262000000000000000",
+      "rarity": 0.8471,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.547,
+        "luxury": 0.9521,
+        "novelty": 0.9482,
+        "historical_value": 0.6016,
+        "technology_level": 0.1494,
+        "natural_significance": 0.8752,
+        "fantasy_level": 0.0951,
+        "space_affinity": 0.9033,
+        "power": 0.6837
+      }
+    },
+    {
+      "name": "Golden Moon",
+      "description": "This real satellite combines space character with natural value and scientific appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "unexplored"
+      ],
+      "price": "6042000000000000000",
+      "rarity": 0.7104,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.612,
+        "luxury": 0.8055,
+        "novelty": 0.8313,
+        "historical_value": 0.6473,
+        "technology_level": 0.2987,
+        "natural_significance": 0.991,
+        "fantasy_level": 0.0642,
+        "space_affinity": 1.0,
+        "power": 0.6485
+      }
+    },
+    {
+      "name": "Obsidian Moon",
+      "description": "A singular satellite known for being space, natural, and unusually scientific.",
+      "category": {
+        "parent": "Space",
+        "name": "Satellite",
+        "slug": "satellite"
+      },
+      "tags": [
+        "space",
+        "natural",
+        "scientific",
+        "exclusive",
+        "mysterious",
+        "luxury"
+      ],
+      "price": "1502000000000000000",
+      "rarity": 0.9128,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5666,
+        "luxury": 0.9217,
+        "novelty": 0.8943,
+        "historical_value": 0.5326,
+        "technology_level": 0.2632,
+        "natural_significance": 0.924,
+        "fantasy_level": 0.0084,
+        "space_affinity": 0.9911,
+        "power": 0.6388
+      }
+    },
+    {
+      "name": "The Sun",
+      "description": "A singular star & cosmic object known for being space, massive, and unusually powerful.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "exclusive",
+        "dangerous"
+      ],
+      "price": "27260000000000000000000000",
+      "rarity": 0.9342,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8784,
+        "luxury": 0.8198,
+        "novelty": 0.9875,
+        "historical_value": 0.258,
+        "technology_level": 0.0026,
+        "natural_significance": 0.951,
+        "fantasy_level": 0.2937,
+        "space_affinity": 1.0,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Andromeda Galaxy",
+      "description": "This real star & cosmic object combines space character with massive value and powerful appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "natural",
+        "dangerous"
+      ],
+      "price": "10420000000000000000000000",
+      "rarity": 0.6467,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8544,
+        "luxury": 0.7822,
+        "novelty": 0.8186,
+        "historical_value": 0.2602,
+        "technology_level": 0.1195,
+        "natural_significance": 0.9436,
+        "fantasy_level": 0.2352,
+        "space_affinity": 0.9244,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Halley's Comet",
+      "description": "Halley's Comet is a real star & cosmic object selected for its space, massive, and powerful qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "luxury",
+        "unexplored"
+      ],
+      "price": "153500000000000000000000000",
+      "rarity": 0.8549,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9546,
+        "luxury": 0.8545,
+        "novelty": 0.9879,
+        "historical_value": 0.3557,
+        "technology_level": 0.1085,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.2334,
+        "space_affinity": 1.0,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Crimson Cosmic Object",
+      "description": "A singular star & cosmic object known for being space, massive, and unusually powerful.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "mysterious",
+        "unexplored"
+      ],
+      "price": "22560000000000000000000000",
+      "rarity": 0.7195,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 1.0,
+        "luxury": 0.9307,
+        "novelty": 0.8444,
+        "historical_value": 0.4374,
+        "technology_level": 0.0914,
+        "natural_significance": 0.9306,
+        "fantasy_level": 0.2388,
+        "space_affinity": 0.8839,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Silent Cosmic Object",
+      "description": "This real star & cosmic object combines space character with massive value and powerful appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "luxury",
+        "valuable"
+      ],
+      "price": "109200000000000000000000000",
+      "rarity": 0.8967,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8977,
+        "luxury": 1.0,
+        "novelty": 0.9846,
+        "historical_value": 0.3776,
+        "technology_level": 0.0194,
+        "natural_significance": 0.9963,
+        "fantasy_level": 0.3078,
+        "space_affinity": 0.9434,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Golden Cosmic Object",
+      "description": "A singular star & cosmic object known for being space, massive, and unusually powerful.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "valuable"
+      ],
+      "price": "37760000000000000000000000",
+      "rarity": 0.8008,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9658,
+        "luxury": 0.9541,
+        "novelty": 0.9521,
+        "historical_value": 0.4743,
+        "technology_level": 0.0153,
+        "natural_significance": 0.9669,
+        "fantasy_level": 0.2184,
+        "space_affinity": 1.0,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Obsidian Cosmic Object",
+      "description": "A singular star & cosmic object known for being space, massive, and unusually powerful.",
+      "category": {
+        "parent": "Space",
+        "name": "Star & Cosmic Object",
+        "slug": "star-cosmic-object"
+      },
+      "tags": [
+        "space",
+        "massive",
+        "powerful",
+        "destructive",
+        "valuable",
+        "luxury"
+      ],
+      "price": "198700000000000000000000000",
+      "rarity": 0.9883,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 1.0,
+        "luxury": 1.0,
+        "novelty": 0.9958,
+        "historical_value": 0.329,
+        "technology_level": 0.0284,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.1246,
+        "space_affinity": 0.9733,
+        "power": 0.9805
+      }
+    },
+    {
+      "name": "International Space Station",
+      "description": "A legendary orbital laboratory with panoramic windows and zero gravity.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "unexplored",
+        "artificial"
+      ],
+      "price": "30040000000000",
+      "rarity": 0.6863,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6196,
+        "luxury": 0.7581,
+        "novelty": 0.7816,
+        "historical_value": 0.583,
+        "technology_level": 0.9329,
+        "natural_significance": 0.0,
+        "fantasy_level": 0.0851,
+        "space_affinity": 1.0,
+        "power": 0.6774
+      }
+    },
+    {
+      "name": "Apollo 11",
+      "description": "A singular spacecraft known for being space, technology, and unusually scientific.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "artificial",
+        "unexplored"
+      ],
+      "price": "811300000000000",
+      "rarity": 0.6781,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7329,
+        "luxury": 0.7626,
+        "novelty": 0.759,
+        "historical_value": 0.6108,
+        "technology_level": 1.0,
+        "natural_significance": 0.0659,
+        "fantasy_level": 0.167,
+        "space_affinity": 0.9692,
+        "power": 0.7897
+      }
+    },
+    {
+      "name": "Voyager 1",
+      "description": "A singular spacecraft known for being space, technology, and unusually scientific.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "159800000000000",
+      "rarity": 0.6593,
+      "reality_type": "speculative",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5908,
+        "luxury": 0.8579,
+        "novelty": 0.7659,
+        "historical_value": 0.5628,
+        "technology_level": 0.8348,
+        "natural_significance": 0.1066,
+        "fantasy_level": 0.1384,
+        "space_affinity": 1.0,
+        "power": 0.7301
+      }
+    },
+    {
+      "name": "Crimson Starship",
+      "description": "Crimson Starship is a real spacecraft selected for its space, technology, and scientific qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "valuable"
+      ],
+      "price": "63990000000000",
+      "rarity": 0.598,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7441,
+        "luxury": 0.8398,
+        "novelty": 0.7443,
+        "historical_value": 0.6429,
+        "technology_level": 0.7906,
+        "natural_significance": 0.0844,
+        "fantasy_level": 0.0606,
+        "space_affinity": 0.9963,
+        "power": 0.6978
+      }
+    },
+    {
+      "name": "Silent Starship",
+      "description": "Silent Starship is a real spacecraft selected for its space, technology, and scientific qualities.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "unexplored"
+      ],
+      "price": "497700000000000",
+      "rarity": 0.7251,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6671,
+        "luxury": 0.9465,
+        "novelty": 0.8139,
+        "historical_value": 0.6642,
+        "technology_level": 1.0,
+        "natural_significance": 0.1182,
+        "fantasy_level": 0.187,
+        "space_affinity": 0.9681,
+        "power": 0.7505
+      }
+    },
+    {
+      "name": "Golden Starship",
+      "description": "A singular spacecraft known for being space, technology, and unusually scientific.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "dangerous"
+      ],
+      "price": "347800000000000",
+      "rarity": 0.7939,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8293,
+        "luxury": 0.868,
+        "novelty": 0.8157,
+        "historical_value": 0.5648,
+        "technology_level": 0.9544,
+        "natural_significance": 0.0855,
+        "fantasy_level": 0.0656,
+        "space_affinity": 1.0,
+        "power": 0.6029
+      }
+    },
+    {
+      "name": "Obsidian Starship",
+      "description": "This real spacecraft combines space character with technology value and scientific appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive",
+        "artificial"
+      ],
+      "price": "303300000000000",
+      "rarity": 0.7957,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8259,
+        "luxury": 0.6981,
+        "novelty": 0.7691,
+        "historical_value": 0.7351,
+        "technology_level": 0.8676,
+        "natural_significance": 0.0322,
+        "fantasy_level": 0.142,
+        "space_affinity": 0.9857,
+        "power": 0.7732
+      }
+    },
+    {
+      "name": "Luminous Starship",
+      "description": "This speculative spacecraft combines space character with technology value and scientific appeal.",
+      "category": {
+        "parent": "Space",
+        "name": "Spacecraft",
+        "slug": "spacecraft"
+      },
+      "tags": [
+        "space",
+        "technology",
+        "scientific",
+        "exclusive"
+      ],
+      "price": "172500000000000",
+      "rarity": 0.7727,
+      "reality_type": "speculative",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7031,
+        "luxury": 0.8374,
+        "novelty": 0.8515,
+        "historical_value": 0.6659,
+        "technology_level": 0.9307,
+        "natural_significance": 0.1053,
+        "fantasy_level": 0.1507,
+        "space_affinity": 1.0,
+        "power": 0.6661
+      }
+    },
+    {
+      "name": "Roman Empire",
+      "description": "A vast historical civilization supplied with roads and administrative overhead.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "exclusive",
+        "valuable"
+      ],
+      "price": "74130000000000000000000",
+      "rarity": 0.7005,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7494,
+        "luxury": 0.8156,
+        "novelty": 0.742,
+        "historical_value": 1.0,
+        "technology_level": 0.2621,
+        "natural_significance": 0.3066,
+        "fantasy_level": 0.2717,
+        "space_affinity": 0.023,
+        "power": 0.9234
+      }
+    },
+    {
+      "name": "Byzantine Empire",
+      "description": "Byzantine Empire is a historical empire & nation selected for its historic, cultural, and powerful qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "exclusive"
+      ],
+      "price": "768700000000000000000",
+      "rarity": 0.5599,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7207,
+        "luxury": 0.758,
+        "novelty": 0.6774,
+        "historical_value": 1.0,
+        "technology_level": 0.2997,
+        "natural_significance": 0.3977,
+        "fantasy_level": 0.2185,
+        "space_affinity": 0.0529,
+        "power": 0.8768
+      }
+    },
+    {
+      "name": "Kingdom of Kush",
+      "description": "A singular empire & nation known for being historic, cultural, and unusually powerful.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "valuable"
+      ],
+      "price": "67810000000000000000000",
+      "rarity": 0.7904,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6846,
+        "luxury": 0.9125,
+        "novelty": 0.7368,
+        "historical_value": 1.0,
+        "technology_level": 0.3356,
+        "natural_significance": 0.4567,
+        "fantasy_level": 0.1042,
+        "space_affinity": 0.0527,
+        "power": 0.8609
+      }
+    },
+    {
+      "name": "Crimson Lost Realm",
+      "description": "This historical empire & nation combines historic character with cultural value and powerful appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "luxury",
+        "exclusive"
+      ],
+      "price": "49380000000000000000000",
+      "rarity": 0.7965,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6589,
+        "luxury": 1.0,
+        "novelty": 0.7509,
+        "historical_value": 0.9789,
+        "technology_level": 0.3051,
+        "natural_significance": 0.3099,
+        "fantasy_level": 0.1895,
+        "space_affinity": 0.0,
+        "power": 0.9507
+      }
+    },
+    {
+      "name": "Silent Lost Realm",
+      "description": "A singular empire & nation known for being historic, cultural, and unusually powerful.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "luxury"
+      ],
+      "price": "18860000000000000000000",
+      "rarity": 0.7444,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7127,
+        "luxury": 0.8696,
+        "novelty": 0.7948,
+        "historical_value": 1.0,
+        "technology_level": 0.2728,
+        "natural_significance": 0.3907,
+        "fantasy_level": 0.3435,
+        "space_affinity": 0.043,
+        "power": 0.9185
+      }
+    },
+    {
+      "name": "Golden Lost Realm",
+      "description": "A singular empire & nation known for being historic, cultural, and unusually powerful.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "destructive",
+        "exclusive"
+      ],
+      "price": "8130000000000000000000",
+      "rarity": 0.827,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8322,
+        "luxury": 0.7908,
+        "novelty": 0.848,
+        "historical_value": 0.8665,
+        "technology_level": 0.2931,
+        "natural_significance": 0.4343,
+        "fantasy_level": 0.1606,
+        "space_affinity": 0.0667,
+        "power": 0.8848
+      }
+    },
+    {
+      "name": "Obsidian Lost Realm",
+      "description": "Obsidian Lost Realm is a real empire & nation selected for its historic, cultural, and powerful qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "luxury"
+      ],
+      "price": "4007000000000000000000",
+      "rarity": 0.6663,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6729,
+        "luxury": 0.8739,
+        "novelty": 0.695,
+        "historical_value": 1.0,
+        "technology_level": 0.3378,
+        "natural_significance": 0.4931,
+        "fantasy_level": 0.1573,
+        "space_affinity": 0.0293,
+        "power": 0.9531
+      }
+    },
+    {
+      "name": "Luminous Lost Realm",
+      "description": "This historical empire & nation combines historic character with cultural value and powerful appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "valuable"
+      ],
+      "price": "75990000000000000000000",
+      "rarity": 0.7395,
+      "reality_type": "historical",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7488,
+        "luxury": 0.9904,
+        "novelty": 0.6534,
+        "historical_value": 0.9261,
+        "technology_level": 0.3291,
+        "natural_significance": 0.2997,
+        "fantasy_level": 0.2278,
+        "space_affinity": 0.0,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Forgotten Lost Realm",
+      "description": "A singular empire & nation known for being historic, cultural, and unusually powerful.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "valuable"
+      ],
+      "price": "15650000000000000000000",
+      "rarity": 0.594,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7086,
+        "luxury": 0.9388,
+        "novelty": 0.7286,
+        "historical_value": 0.8924,
+        "technology_level": 0.3122,
+        "natural_significance": 0.3874,
+        "fantasy_level": 0.2835,
+        "space_affinity": 0.0883,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Celestial Lost Realm",
+      "description": "A singular empire & nation known for being historic, cultural, and unusually powerful.",
+      "category": {
+        "parent": "History",
+        "name": "Empire & Nation",
+        "slug": "empire-nation"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "powerful",
+        "massive",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "73300000000000000000000",
+      "rarity": 0.8316,
+      "reality_type": "historical",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7386,
+        "luxury": 0.9155,
+        "novelty": 0.6981,
+        "historical_value": 0.9742,
+        "technology_level": 0.3258,
+        "natural_significance": 0.3176,
+        "fantasy_level": 0.1837,
+        "space_affinity": 0.0605,
+        "power": 0.9117
+      }
+    },
+    {
+      "name": "Rosetta Stone",
+      "description": "Rosetta Stone is a historical historical artifact selected for its historic, collectible, and rare qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "858700000000",
+      "rarity": 0.762,
+      "reality_type": "historical",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2567,
+        "luxury": 0.8742,
+        "novelty": 0.8585,
+        "historical_value": 0.9568,
+        "technology_level": 0.2308,
+        "natural_significance": 0.3295,
+        "fantasy_level": 0.3901,
+        "space_affinity": 0.1201,
+        "power": 0.7046
+      }
+    },
+    {
+      "name": "Antikythera Mechanism",
+      "description": "Antikythera Mechanism is a historical historical artifact selected for its historic, collectible, and rare qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "cultural"
+      ],
+      "price": "115100000000",
+      "rarity": 0.6525,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4344,
+        "luxury": 0.6682,
+        "novelty": 0.7077,
+        "historical_value": 0.9497,
+        "technology_level": 0.4223,
+        "natural_significance": 0.2216,
+        "fantasy_level": 0.2063,
+        "space_affinity": 0.0,
+        "power": 0.6102
+      }
+    },
+    {
+      "name": "Crown of Charlemagne",
+      "description": "This historical historical artifact combines historic character with collectible value and rare appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "cultural",
+        "luxury"
+      ],
+      "price": "597300000000",
+      "rarity": 0.5811,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3026,
+        "luxury": 0.8123,
+        "novelty": 0.7408,
+        "historical_value": 0.9315,
+        "technology_level": 0.2045,
+        "natural_significance": 0.1567,
+        "fantasy_level": 0.183,
+        "space_affinity": 0.0,
+        "power": 0.5527
+      }
+    },
+    {
+      "name": "Crimson Ancient Relic",
+      "description": "Crimson Ancient Relic is a historical historical artifact selected for its historic, collectible, and rare qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "cultural",
+        "luxury"
+      ],
+      "price": "5182000000000",
+      "rarity": 0.8414,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4548,
+        "luxury": 0.8188,
+        "novelty": 0.8597,
+        "historical_value": 1.0,
+        "technology_level": 0.3588,
+        "natural_significance": 0.2943,
+        "fantasy_level": 0.2065,
+        "space_affinity": 0.0,
+        "power": 0.6494
+      }
+    },
+    {
+      "name": "Silent Ancient Relic",
+      "description": "Silent Ancient Relic is a real historical artifact selected for its historic, collectible, and rare qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "mysterious",
+        "cultural"
+      ],
+      "price": "231300000000",
+      "rarity": 0.7801,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4166,
+        "luxury": 0.7697,
+        "novelty": 0.9686,
+        "historical_value": 0.9786,
+        "technology_level": 0.2709,
+        "natural_significance": 0.1916,
+        "fantasy_level": 0.2528,
+        "space_affinity": 0.0395,
+        "power": 0.5803
+      }
+    },
+    {
+      "name": "Golden Ancient Relic",
+      "description": "A singular historical artifact known for being historic, collectible, and unusually rare.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "cultural"
+      ],
+      "price": "163400000000",
+      "rarity": 0.6382,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2846,
+        "luxury": 0.7362,
+        "novelty": 0.6938,
+        "historical_value": 0.958,
+        "technology_level": 0.3287,
+        "natural_significance": 0.1946,
+        "fantasy_level": 0.1761,
+        "space_affinity": 0.0,
+        "power": 0.6725
+      }
+    },
+    {
+      "name": "Obsidian Ancient Relic",
+      "description": "A singular historical artifact known for being historic, collectible, and unusually rare.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "709000000000",
+      "rarity": 0.6472,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3854,
+        "luxury": 0.8817,
+        "novelty": 0.7373,
+        "historical_value": 0.9849,
+        "technology_level": 0.1406,
+        "natural_significance": 0.365,
+        "fantasy_level": 0.2233,
+        "space_affinity": 0.0,
+        "power": 0.5607
+      }
+    },
+    {
+      "name": "Luminous Ancient Relic",
+      "description": "This historical historical artifact combines historic character with collectible value and rare appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "cultural",
+        "mysterious"
+      ],
+      "price": "386900000000",
+      "rarity": 0.6917,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3628,
+        "luxury": 0.7006,
+        "novelty": 0.8555,
+        "historical_value": 1.0,
+        "technology_level": 0.2266,
+        "natural_significance": 0.2179,
+        "fantasy_level": 0.1751,
+        "space_affinity": 0.1107,
+        "power": 0.6415
+      }
+    },
+    {
+      "name": "Forgotten Ancient Relic",
+      "description": "Forgotten Ancient Relic is a historical historical artifact selected for its historic, collectible, and rare qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "luxury",
+        "cultural"
+      ],
+      "price": "2188000000000",
+      "rarity": 0.7882,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3389,
+        "luxury": 0.8423,
+        "novelty": 0.8111,
+        "historical_value": 0.9527,
+        "technology_level": 0.3089,
+        "natural_significance": 0.3096,
+        "fantasy_level": 0.3505,
+        "space_affinity": 0.0962,
+        "power": 0.6621
+      }
+    },
+    {
+      "name": "Celestial Ancient Relic",
+      "description": "A singular historical artifact known for being historic, collectible, and unusually rare.",
+      "category": {
+        "parent": "History",
+        "name": "Historical Artifact",
+        "slug": "historical-artifact"
+      },
+      "tags": [
+        "historic",
+        "collectible",
+        "rare",
+        "valuable",
+        "luxury",
+        "cultural"
+      ],
+      "price": "864900000000",
+      "rarity": 0.7178,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3437,
+        "luxury": 0.8594,
+        "novelty": 0.7701,
+        "historical_value": 1.0,
+        "technology_level": 0.2243,
+        "natural_significance": 0.178,
+        "fantasy_level": 0.3391,
+        "space_affinity": 0.0402,
+        "power": 0.6439
+      }
+    },
+    {
+      "name": "Great Pyramid",
+      "description": "A singular monument & architecture known for being historic, cultural, and unusually massive.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful"
+      ],
+      "price": "2792000000000000",
+      "rarity": 0.6641,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2637,
+        "luxury": 0.7732,
+        "novelty": 0.7096,
+        "historical_value": 0.9987,
+        "technology_level": 0.2682,
+        "natural_significance": 0.4435,
+        "fantasy_level": 0.1771,
+        "space_affinity": 0.0,
+        "power": 0.7287
+      }
+    },
+    {
+      "name": "Colosseum",
+      "description": "Colosseum is a historical monument & architecture selected for its historic, cultural, and massive qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful",
+        "luxury",
+        "valuable"
+      ],
+      "price": "1662000000000000",
+      "rarity": 0.6086,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2639,
+        "luxury": 0.8335,
+        "novelty": 0.5816,
+        "historical_value": 0.9962,
+        "technology_level": 0.2161,
+        "natural_significance": 0.4701,
+        "fantasy_level": 0.1771,
+        "space_affinity": 0.0,
+        "power": 0.7393
+      }
+    },
+    {
+      "name": "Hanging Gardens",
+      "description": "This historical monument & architecture combines historic character with cultural value and massive appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful"
+      ],
+      "price": "3003000000000000",
+      "rarity": 0.6752,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3068,
+        "luxury": 0.7747,
+        "novelty": 0.6623,
+        "historical_value": 0.8469,
+        "technology_level": 0.2655,
+        "natural_significance": 0.5195,
+        "fantasy_level": 0.158,
+        "space_affinity": 0.1086,
+        "power": 0.7354
+      }
+    },
+    {
+      "name": "Crimson Monument",
+      "description": "This historical monument & architecture combines historic character with cultural value and massive appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful",
+        "valuable"
+      ],
+      "price": "30990000000000000",
+      "rarity": 0.7984,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.411,
+        "luxury": 0.8215,
+        "novelty": 0.582,
+        "historical_value": 0.9731,
+        "technology_level": 0.2649,
+        "natural_significance": 0.3523,
+        "fantasy_level": 0.1946,
+        "space_affinity": 0.0261,
+        "power": 0.8246
+      }
+    },
+    {
+      "name": "Silent Monument",
+      "description": "This historical monument & architecture combines historic character with cultural value and massive appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful"
+      ],
+      "price": "11190000000000000",
+      "rarity": 0.7369,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3136,
+        "luxury": 0.8254,
+        "novelty": 0.6682,
+        "historical_value": 0.9393,
+        "technology_level": 0.2368,
+        "natural_significance": 0.5047,
+        "fantasy_level": 0.2115,
+        "space_affinity": 0.0969,
+        "power": 0.842
+      }
+    },
+    {
+      "name": "Golden Monument",
+      "description": "Golden Monument is a historical monument & architecture selected for its historic, cultural, and massive qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful"
+      ],
+      "price": "3463000000000000",
+      "rarity": 0.6804,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3181,
+        "luxury": 0.747,
+        "novelty": 0.6085,
+        "historical_value": 0.8797,
+        "technology_level": 0.1825,
+        "natural_significance": 0.3665,
+        "fantasy_level": 0.1189,
+        "space_affinity": 0.0,
+        "power": 0.7163
+      }
+    },
+    {
+      "name": "Obsidian Monument",
+      "description": "This historical monument & architecture combines historic character with cultural value and massive appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful"
+      ],
+      "price": "885000000000000",
+      "rarity": 0.6688,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3075,
+        "luxury": 0.7887,
+        "novelty": 0.6208,
+        "historical_value": 0.971,
+        "technology_level": 0.2391,
+        "natural_significance": 0.438,
+        "fantasy_level": 0.1489,
+        "space_affinity": 0.0048,
+        "power": 0.748
+      }
+    },
+    {
+      "name": "Luminous Monument",
+      "description": "This historical monument & architecture combines historic character with cultural value and massive appeal.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful",
+        "luxury"
+      ],
+      "price": "31320000000000000",
+      "rarity": 0.7368,
+      "reality_type": "historical",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1734,
+        "luxury": 0.9109,
+        "novelty": 0.7403,
+        "historical_value": 0.9755,
+        "technology_level": 0.2582,
+        "natural_significance": 0.386,
+        "fantasy_level": 0.1739,
+        "space_affinity": 0.0,
+        "power": 0.7581
+      }
+    },
+    {
+      "name": "Forgotten Monument",
+      "description": "Forgotten Monument is a historical monument & architecture selected for its historic, cultural, and massive qualities.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful",
+        "valuable"
+      ],
+      "price": "25240000000000000",
+      "rarity": 0.7374,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1539,
+        "luxury": 0.8581,
+        "novelty": 0.7126,
+        "historical_value": 0.9684,
+        "technology_level": 0.2434,
+        "natural_significance": 0.4453,
+        "fantasy_level": 0.1358,
+        "space_affinity": 0.0925,
+        "power": 0.8325
+      }
+    },
+    {
+      "name": "Celestial Monument",
+      "description": "A singular monument & architecture known for being historic, cultural, and unusually massive.",
+      "category": {
+        "parent": "History",
+        "name": "Monument & Architecture",
+        "slug": "monument-architecture"
+      },
+      "tags": [
+        "historic",
+        "cultural",
+        "massive",
+        "beautiful",
+        "luxury",
+        "valuable"
+      ],
+      "price": "16280000000000000",
+      "rarity": 0.7611,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3082,
+        "luxury": 0.8604,
+        "novelty": 0.7325,
+        "historical_value": 0.9201,
+        "technology_level": 0.1971,
+        "natural_significance": 0.3646,
+        "fantasy_level": 0.2145,
+        "space_affinity": 0.0,
+        "power": 0.8281
+      }
+    },
+    {
+      "name": "Tyrannosaurus Rex",
+      "description": "A reconstructed apex predator requiring a very sturdy enclosure.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "cultural",
+        "destructive"
+      ],
+      "price": "12750000000",
+      "rarity": 0.6519,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.91,
+        "luxury": 0.5588,
+        "novelty": 0.8471,
+        "historical_value": 0.9542,
+        "technology_level": 0.0,
+        "natural_significance": 0.867,
+        "fantasy_level": 0.1744,
+        "space_affinity": 0.0,
+        "power": 0.7272
+      }
+    },
+    {
+      "name": "Dodo",
+      "description": "This historical extinct creature combines prehistoric character with natural value and dangerous appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "mysterious",
+        "destructive"
+      ],
+      "price": "11580000000",
+      "rarity": 0.7182,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9342,
+        "luxury": 0.5181,
+        "novelty": 0.8979,
+        "historical_value": 0.709,
+        "technology_level": 0.0412,
+        "natural_significance": 0.8887,
+        "fantasy_level": 0.235,
+        "space_affinity": 0.0501,
+        "power": 0.5916
+      }
+    },
+    {
+      "name": "Woolly Mammoth",
+      "description": "A singular extinct creature known for being prehistoric, natural, and unusually dangerous.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "mysterious"
+      ],
+      "price": "5823000000",
+      "rarity": 0.6456,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7911,
+        "luxury": 0.554,
+        "novelty": 0.9044,
+        "historical_value": 0.7792,
+        "technology_level": 0.1245,
+        "natural_significance": 0.9116,
+        "fantasy_level": 0.09,
+        "space_affinity": 0.0,
+        "power": 0.7601
+      }
+    },
+    {
+      "name": "Crimson Extinct Beast",
+      "description": "This historical extinct creature combines prehistoric character with natural value and dangerous appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "destructive"
+      ],
+      "price": "11570000000",
+      "rarity": 0.6892,
+      "reality_type": "historical",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8671,
+        "luxury": 0.6146,
+        "novelty": 0.9325,
+        "historical_value": 0.9106,
+        "technology_level": 0.0646,
+        "natural_significance": 0.9284,
+        "fantasy_level": 0.241,
+        "space_affinity": 0.028,
+        "power": 0.696
+      }
+    },
+    {
+      "name": "Silent Extinct Beast",
+      "description": "A singular extinct creature known for being prehistoric, natural, and unusually dangerous.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "destructive"
+      ],
+      "price": "33760000000",
+      "rarity": 0.8543,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9136,
+        "luxury": 0.5689,
+        "novelty": 1.0,
+        "historical_value": 0.9343,
+        "technology_level": 0.0,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.11,
+        "space_affinity": 0.0,
+        "power": 0.701
+      }
+    },
+    {
+      "name": "Golden Extinct Beast",
+      "description": "Golden Extinct Beast is a historical extinct creature selected for its prehistoric, natural, and dangerous qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare"
+      ],
+      "price": "4076000000",
+      "rarity": 0.6592,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8808,
+        "luxury": 0.5101,
+        "novelty": 0.857,
+        "historical_value": 0.8101,
+        "technology_level": 0.1229,
+        "natural_significance": 0.9125,
+        "fantasy_level": 0.1824,
+        "space_affinity": 0.1,
+        "power": 0.5652
+      }
+    },
+    {
+      "name": "Obsidian Extinct Beast",
+      "description": "Obsidian Extinct Beast is a historical extinct creature selected for its prehistoric, natural, and dangerous qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "destructive"
+      ],
+      "price": "4491000000",
+      "rarity": 0.7307,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8769,
+        "luxury": 0.6088,
+        "novelty": 0.9308,
+        "historical_value": 0.735,
+        "technology_level": 0.0,
+        "natural_significance": 0.8429,
+        "fantasy_level": 0.143,
+        "space_affinity": 0.0,
+        "power": 0.6076
+      }
+    },
+    {
+      "name": "Luminous Extinct Beast",
+      "description": "This real extinct creature combines prehistoric character with natural value and dangerous appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "cultural",
+        "mysterious"
+      ],
+      "price": "14920000000",
+      "rarity": 0.6825,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9929,
+        "luxury": 0.657,
+        "novelty": 1.0,
+        "historical_value": 0.8806,
+        "technology_level": 0.095,
+        "natural_significance": 0.9684,
+        "fantasy_level": 0.0748,
+        "space_affinity": 0.0,
+        "power": 0.6737
+      }
+    },
+    {
+      "name": "Forgotten Extinct Beast",
+      "description": "A singular extinct creature known for being prehistoric, natural, and unusually dangerous.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extinct Creature",
+        "slug": "extinct-creature"
+      },
+      "tags": [
+        "prehistoric",
+        "natural",
+        "dangerous",
+        "rare",
+        "cultural",
+        "mysterious"
+      ],
+      "price": "4067000000",
+      "rarity": 0.6032,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9142,
+        "luxury": 0.5136,
+        "novelty": 0.8382,
+        "historical_value": 0.8755,
+        "technology_level": 0.0286,
+        "natural_significance": 0.9072,
+        "fantasy_level": 0.1,
+        "space_affinity": 0.0183,
+        "power": 0.6993
+      }
+    },
+    {
+      "name": "Phoenix",
+      "description": "This fictional mythical creature combines fantasy character with legendary value and powerful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "exclusive"
+      ],
+      "price": "553500000000",
+      "rarity": 0.8653,
+      "reality_type": "fictional",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8626,
+        "luxury": 0.6913,
+        "novelty": 1.0,
+        "historical_value": 0.7671,
+        "technology_level": 0.0748,
+        "natural_significance": 0.5112,
+        "fantasy_level": 0.9663,
+        "space_affinity": 0.1,
+        "power": 0.9931
+      }
+    },
+    {
+      "name": "Dragon",
+      "description": "A singular mythical creature known for being fantasy, legendary, and unusually powerful.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "exclusive",
+        "rare"
+      ],
+      "price": "571100000000",
+      "rarity": 0.8204,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8919,
+        "luxury": 0.8057,
+        "novelty": 1.0,
+        "historical_value": 0.6348,
+        "technology_level": 0.0425,
+        "natural_significance": 0.5182,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.1036,
+        "power": 0.8523
+      }
+    },
+    {
+      "name": "Kraken",
+      "description": "A singular mythical creature known for being fantasy, legendary, and unusually powerful.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "exclusive",
+        "dangerous"
+      ],
+      "price": "387100000000",
+      "rarity": 0.7375,
+      "reality_type": "fictional",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8165,
+        "luxury": 0.7304,
+        "novelty": 0.9318,
+        "historical_value": 0.6764,
+        "technology_level": 0.1009,
+        "natural_significance": 0.4954,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.0001,
+        "power": 0.8684
+      }
+    },
+    {
+      "name": "Crimson Mythical Creature",
+      "description": "Crimson Mythical Creature is a fictional mythical creature selected for its fantasy, legendary, and powerful qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "exclusive"
+      ],
+      "price": "145900000000",
+      "rarity": 0.7815,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9642,
+        "luxury": 0.7976,
+        "novelty": 0.9194,
+        "historical_value": 0.6501,
+        "technology_level": 0.0426,
+        "natural_significance": 0.4373,
+        "fantasy_level": 0.9894,
+        "space_affinity": 0.0471,
+        "power": 0.9606
+      }
+    },
+    {
+      "name": "Silent Mythical Creature",
+      "description": "This fictional mythical creature combines fantasy character with legendary value and powerful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "rare"
+      ],
+      "price": "559300000000",
+      "rarity": 0.7987,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7122,
+        "luxury": 0.7497,
+        "novelty": 1.0,
+        "historical_value": 0.6643,
+        "technology_level": 0.042,
+        "natural_significance": 0.4902,
+        "fantasy_level": 0.9091,
+        "space_affinity": 0.1143,
+        "power": 0.795
+      }
+    },
+    {
+      "name": "Golden Mythical Creature",
+      "description": "A singular mythical creature known for being fantasy, legendary, and unusually powerful.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "rare",
+        "dangerous"
+      ],
+      "price": "965000000000",
+      "rarity": 0.7682,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8091,
+        "luxury": 0.7555,
+        "novelty": 1.0,
+        "historical_value": 0.7273,
+        "technology_level": 0.1167,
+        "natural_significance": 0.4938,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.2098,
+        "power": 0.9426
+      }
+    },
+    {
+      "name": "Obsidian Mythical Creature",
+      "description": "Obsidian Mythical Creature is a fictional mythical creature selected for its fantasy, legendary, and powerful qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious"
+      ],
+      "price": "2547000000000",
+      "rarity": 0.828,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8345,
+        "luxury": 0.721,
+        "novelty": 0.9569,
+        "historical_value": 0.6713,
+        "technology_level": 0.0337,
+        "natural_significance": 0.4434,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.157,
+        "power": 0.884
+      }
+    },
+    {
+      "name": "Luminous Mythical Creature",
+      "description": "This fictional mythical creature combines fantasy character with legendary value and powerful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Mythical Creature",
+        "slug": "mythical-creature"
+      },
+      "tags": [
+        "fantasy",
+        "legendary",
+        "powerful",
+        "mysterious",
+        "destructive"
+      ],
+      "price": "257700000000",
+      "rarity": 0.8245,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7951,
+        "luxury": 0.7339,
+        "novelty": 1.0,
+        "historical_value": 0.6961,
+        "technology_level": 0.0693,
+        "natural_significance": 0.5828,
+        "fantasy_level": 0.9111,
+        "space_affinity": 0.1445,
+        "power": 0.8886
+      }
+    },
+    {
+      "name": "Immortal Jellyfish",
+      "description": "Immortal Jellyfish is a real extraordinary animal selected for its natural, rare, and beautiful qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful",
+        "mysterious"
+      ],
+      "price": "357300000",
+      "rarity": 0.6452,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5049,
+        "luxury": 0.7055,
+        "novelty": 0.8695,
+        "historical_value": 0.3534,
+        "technology_level": 0.083,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.2963,
+        "space_affinity": 0.0,
+        "power": 0.6975
+      }
+    },
+    {
+      "name": "Giant Blue Whale",
+      "description": "This speculative extraordinary animal combines natural character with rare value and beautiful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful"
+      ],
+      "price": "21060000",
+      "rarity": 0.7134,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5786,
+        "luxury": 0.6142,
+        "novelty": 0.7245,
+        "historical_value": 0.4063,
+        "technology_level": 0.1001,
+        "natural_significance": 0.9819,
+        "fantasy_level": 0.2431,
+        "space_affinity": 0.0,
+        "power": 0.5867
+      }
+    },
+    {
+      "name": "White Lion",
+      "description": "This real extraordinary animal combines natural character with rare value and beautiful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful",
+        "mysterious"
+      ],
+      "price": "1639000000",
+      "rarity": 0.852,
+      "reality_type": "real",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7222,
+        "luxury": 0.6179,
+        "novelty": 0.9412,
+        "historical_value": 0.3168,
+        "technology_level": 0.1018,
+        "natural_significance": 0.9929,
+        "fantasy_level": 0.1931,
+        "space_affinity": 0.0567,
+        "power": 0.6081
+      }
+    },
+    {
+      "name": "Crimson Extraordinary Animal",
+      "description": "This real extraordinary animal combines natural character with rare value and beautiful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful"
+      ],
+      "price": "410400000",
+      "rarity": 0.7191,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6362,
+        "luxury": 0.7031,
+        "novelty": 0.8561,
+        "historical_value": 0.4354,
+        "technology_level": 0.0876,
+        "natural_significance": 0.9117,
+        "fantasy_level": 0.2201,
+        "space_affinity": 0.0354,
+        "power": 0.7647
+      }
+    },
+    {
+      "name": "Silent Extraordinary Animal",
+      "description": "A singular extraordinary animal known for being natural, rare, and unusually beautiful.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful"
+      ],
+      "price": "266600000",
+      "rarity": 0.6764,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.736,
+        "luxury": 0.5652,
+        "novelty": 0.7715,
+        "historical_value": 0.3979,
+        "technology_level": 0.1288,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.2497,
+        "space_affinity": 0.0,
+        "power": 0.6321
+      }
+    },
+    {
+      "name": "Golden Extraordinary Animal",
+      "description": "A singular extraordinary animal known for being natural, rare, and unusually beautiful.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful",
+        "mysterious"
+      ],
+      "price": "926000000",
+      "rarity": 0.7352,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5733,
+        "luxury": 0.6667,
+        "novelty": 0.8846,
+        "historical_value": 0.4382,
+        "technology_level": 0.0179,
+        "natural_significance": 0.9226,
+        "fantasy_level": 0.2538,
+        "space_affinity": 0.0,
+        "power": 0.5192
+      }
+    },
+    {
+      "name": "Obsidian Extraordinary Animal",
+      "description": "This real extraordinary animal combines natural character with rare value and beautiful appeal.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful"
+      ],
+      "price": "645200000",
+      "rarity": 0.6716,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6315,
+        "luxury": 0.7244,
+        "novelty": 0.7745,
+        "historical_value": 0.3444,
+        "technology_level": 0.1257,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.4035,
+        "space_affinity": 0.0,
+        "power": 0.74
+      }
+    },
+    {
+      "name": "Luminous Extraordinary Animal",
+      "description": "Luminous Extraordinary Animal is a real extraordinary animal selected for its natural, rare, and beautiful qualities.",
+      "category": {
+        "parent": "Creatures",
+        "name": "Extraordinary Animal",
+        "slug": "extraordinary-animal"
+      },
+      "tags": [
+        "natural",
+        "rare",
+        "beautiful",
+        "powerful"
+      ],
+      "price": "1055000000",
+      "rarity": 0.7322,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.704,
+        "luxury": 0.7286,
+        "novelty": 0.7837,
+        "historical_value": 0.2629,
+        "technology_level": 0.146,
+        "natural_significance": 0.88,
+        "fantasy_level": 0.2571,
+        "space_affinity": 0.0,
+        "power": 0.7393
+      }
+    },
+    {
+      "name": "Time Machine",
+      "description": "A prototype temporal vehicle whose warranty begins before purchase.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "valuable",
+        "exclusive"
+      ],
+      "price": "52990000000000",
+      "rarity": 0.7935,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6329,
+        "luxury": 0.851,
+        "novelty": 0.9415,
+        "historical_value": 0.2625,
+        "technology_level": 0.9615,
+        "natural_significance": 0.1219,
+        "fantasy_level": 0.6299,
+        "space_affinity": 0.2833,
+        "power": 0.907
+      }
+    },
+    {
+      "name": "Teleportation Device",
+      "description": "Teleportation Device is a fictional impossible technology selected for its technology, impossible, and powerful qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious"
+      ],
+      "price": "199200000000000",
+      "rarity": 0.8696,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7367,
+        "luxury": 0.8564,
+        "novelty": 1.0,
+        "historical_value": 0.2955,
+        "technology_level": 0.9116,
+        "natural_significance": 0.1153,
+        "fantasy_level": 0.6193,
+        "space_affinity": 0.2471,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Matter Replicator",
+      "description": "This fictional impossible technology combines technology character with impossible value and powerful appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "artificial",
+        "valuable"
+      ],
+      "price": "141500000000000",
+      "rarity": 0.7536,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5604,
+        "luxury": 0.8924,
+        "novelty": 0.9585,
+        "historical_value": 0.4164,
+        "technology_level": 1.0,
+        "natural_significance": 0.0,
+        "fantasy_level": 0.6777,
+        "space_affinity": 0.2218,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Crimson Impossible Device",
+      "description": "This speculative impossible technology combines technology character with impossible value and powerful appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "artificial",
+        "valuable"
+      ],
+      "price": "58380000000000",
+      "rarity": 0.8374,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6751,
+        "luxury": 0.8529,
+        "novelty": 1.0,
+        "historical_value": 0.3016,
+        "technology_level": 1.0,
+        "natural_significance": 0.088,
+        "fantasy_level": 0.6061,
+        "space_affinity": 0.2993,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Silent Impossible Device",
+      "description": "A singular impossible technology known for being technology, impossible, and unusually powerful.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "valuable"
+      ],
+      "price": "103100000000000",
+      "rarity": 0.8252,
+      "reality_type": "fictional",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6704,
+        "luxury": 0.9643,
+        "novelty": 0.9899,
+        "historical_value": 0.3165,
+        "technology_level": 0.9432,
+        "natural_significance": 0.1511,
+        "fantasy_level": 0.6092,
+        "space_affinity": 0.2744,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Golden Impossible Device",
+      "description": "A singular impossible technology known for being technology, impossible, and unusually powerful.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "artificial",
+        "scientific"
+      ],
+      "price": "350800000000000",
+      "rarity": 0.9895,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8038,
+        "luxury": 1.0,
+        "novelty": 0.9963,
+        "historical_value": 0.2453,
+        "technology_level": 0.937,
+        "natural_significance": 0.1545,
+        "fantasy_level": 0.55,
+        "space_affinity": 0.2294,
+        "power": 0.9632
+      }
+    },
+    {
+      "name": "Obsidian Impossible Device",
+      "description": "This speculative impossible technology combines technology character with impossible value and powerful appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "exclusive",
+        "rare"
+      ],
+      "price": "83630000000000",
+      "rarity": 0.7642,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7804,
+        "luxury": 0.809,
+        "novelty": 0.9148,
+        "historical_value": 0.3588,
+        "technology_level": 1.0,
+        "natural_significance": 0.2051,
+        "fantasy_level": 0.6812,
+        "space_affinity": 0.2598,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Luminous Impossible Device",
+      "description": "This speculative impossible technology combines technology character with impossible value and powerful appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "artificial"
+      ],
+      "price": "31270000000000",
+      "rarity": 0.719,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6374,
+        "luxury": 0.9086,
+        "novelty": 1.0,
+        "historical_value": 0.2806,
+        "technology_level": 0.92,
+        "natural_significance": 0.0331,
+        "fantasy_level": 0.5913,
+        "space_affinity": 0.1332,
+        "power": 0.9506
+      }
+    },
+    {
+      "name": "Forgotten Impossible Device",
+      "description": "Forgotten Impossible Device is a speculative impossible technology selected for its technology, impossible, and powerful qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "valuable",
+        "artificial"
+      ],
+      "price": "9617000000000",
+      "rarity": 0.9001,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6455,
+        "luxury": 0.8119,
+        "novelty": 1.0,
+        "historical_value": 0.3146,
+        "technology_level": 0.9501,
+        "natural_significance": 0.1204,
+        "fantasy_level": 0.7177,
+        "space_affinity": 0.1176,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Celestial Impossible Device",
+      "description": "Celestial Impossible Device is a fictional impossible technology selected for its technology, impossible, and powerful qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Impossible Technology",
+        "slug": "impossible-technology"
+      },
+      "tags": [
+        "technology",
+        "impossible",
+        "powerful",
+        "mysterious",
+        "valuable",
+        "scientific"
+      ],
+      "price": "7919000000000",
+      "rarity": 0.7778,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7243,
+        "luxury": 0.8544,
+        "novelty": 0.9521,
+        "historical_value": 0.2803,
+        "technology_level": 1.0,
+        "natural_significance": 0.1177,
+        "fantasy_level": 0.6514,
+        "space_affinity": 0.2709,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Flying Car",
+      "description": "A singular vehicle known for being technology, artificial, and unusually luxury.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful"
+      ],
+      "price": "7183000000",
+      "rarity": 0.5792,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7339,
+        "luxury": 0.8535,
+        "novelty": 0.6488,
+        "historical_value": 0.5023,
+        "technology_level": 1.0,
+        "natural_significance": 0.1095,
+        "fantasy_level": 0.2845,
+        "space_affinity": 0.1736,
+        "power": 0.7346
+      }
+    },
+    {
+      "name": "Personal Submarine",
+      "description": "A singular vehicle known for being technology, artificial, and unusually luxury.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful"
+      ],
+      "price": "7746000000",
+      "rarity": 0.6381,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6599,
+        "luxury": 0.7594,
+        "novelty": 0.6992,
+        "historical_value": 0.3181,
+        "technology_level": 0.8456,
+        "natural_significance": 0.1674,
+        "fantasy_level": 0.1736,
+        "space_affinity": 0.2343,
+        "power": 0.8029
+      }
+    },
+    {
+      "name": "Supersonic Train",
+      "description": "A singular vehicle known for being technology, artificial, and unusually luxury.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful"
+      ],
+      "price": "75560000000",
+      "rarity": 0.746,
+      "reality_type": "speculative",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.767,
+        "luxury": 0.7489,
+        "novelty": 0.7921,
+        "historical_value": 0.3883,
+        "technology_level": 0.7669,
+        "natural_significance": 0.2087,
+        "fantasy_level": 0.2052,
+        "space_affinity": 0.1228,
+        "power": 0.8435
+      }
+    },
+    {
+      "name": "Crimson Concept Vehicle",
+      "description": "Crimson Concept Vehicle is a speculative vehicle selected for its technology, artificial, and luxury qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "scientific"
+      ],
+      "price": "22610000000",
+      "rarity": 0.7908,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6224,
+        "luxury": 0.7973,
+        "novelty": 0.6798,
+        "historical_value": 0.4137,
+        "technology_level": 0.8865,
+        "natural_significance": 0.1944,
+        "fantasy_level": 0.2006,
+        "space_affinity": 0.2005,
+        "power": 0.7599
+      }
+    },
+    {
+      "name": "Silent Concept Vehicle",
+      "description": "A singular vehicle known for being technology, artificial, and unusually luxury.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "valuable",
+        "scientific"
+      ],
+      "price": "3082000000",
+      "rarity": 0.6846,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7112,
+        "luxury": 0.8083,
+        "novelty": 0.7961,
+        "historical_value": 0.4126,
+        "technology_level": 0.8583,
+        "natural_significance": 0.0924,
+        "fantasy_level": 0.0645,
+        "space_affinity": 0.2349,
+        "power": 0.6778
+      }
+    },
+    {
+      "name": "Golden Concept Vehicle",
+      "description": "This real vehicle combines technology character with artificial value and luxury appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "valuable"
+      ],
+      "price": "5947000000",
+      "rarity": 0.7237,
+      "reality_type": "real",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7117,
+        "luxury": 0.8885,
+        "novelty": 0.6469,
+        "historical_value": 0.4084,
+        "technology_level": 0.7801,
+        "natural_significance": 0.1277,
+        "fantasy_level": 0.1066,
+        "space_affinity": 0.1276,
+        "power": 0.7597
+      }
+    },
+    {
+      "name": "Obsidian Concept Vehicle",
+      "description": "This real vehicle combines technology character with artificial value and luxury appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "scientific",
+        "valuable"
+      ],
+      "price": "4629000000",
+      "rarity": 0.682,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7608,
+        "luxury": 0.893,
+        "novelty": 0.7791,
+        "historical_value": 0.4858,
+        "technology_level": 0.825,
+        "natural_significance": 0.1121,
+        "fantasy_level": 0.1911,
+        "space_affinity": 0.1928,
+        "power": 0.6944
+      }
+    },
+    {
+      "name": "Luminous Concept Vehicle",
+      "description": "Luminous Concept Vehicle is a speculative vehicle selected for its technology, artificial, and luxury qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "valuable",
+        "scientific"
+      ],
+      "price": "47240000000",
+      "rarity": 0.6696,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5778,
+        "luxury": 0.8424,
+        "novelty": 0.6094,
+        "historical_value": 0.4149,
+        "technology_level": 0.8451,
+        "natural_significance": 0.1627,
+        "fantasy_level": 0.1999,
+        "space_affinity": 0.155,
+        "power": 0.7551
+      }
+    },
+    {
+      "name": "Forgotten Concept Vehicle",
+      "description": "This speculative vehicle combines technology character with artificial value and luxury appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful"
+      ],
+      "price": "25360000000",
+      "rarity": 0.5345,
+      "reality_type": "speculative",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6436,
+        "luxury": 0.7905,
+        "novelty": 0.7398,
+        "historical_value": 0.5114,
+        "technology_level": 0.92,
+        "natural_significance": 0.1283,
+        "fantasy_level": 0.034,
+        "space_affinity": 0.0535,
+        "power": 0.8472
+      }
+    },
+    {
+      "name": "Celestial Concept Vehicle",
+      "description": "A singular vehicle known for being technology, artificial, and unusually luxury.",
+      "category": {
+        "parent": "Technology",
+        "name": "Vehicle",
+        "slug": "vehicle"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "luxury",
+        "powerful",
+        "scientific"
+      ],
+      "price": "1723000000",
+      "rarity": 0.5726,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6745,
+        "luxury": 0.7754,
+        "novelty": 0.7209,
+        "historical_value": 0.4249,
+        "technology_level": 0.9149,
+        "natural_significance": 0.1471,
+        "fantasy_level": 0.3256,
+        "space_affinity": 0.2794,
+        "power": 0.8055
+      }
+    },
+    {
+      "name": "Quantum Computer",
+      "description": "This real machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "145100000",
+      "rarity": 0.7246,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4259,
+        "luxury": 0.7009,
+        "novelty": 0.8099,
+        "historical_value": 0.3754,
+        "technology_level": 1.0,
+        "natural_significance": 0.095,
+        "fantasy_level": 0.2186,
+        "space_affinity": 0.1247,
+        "power": 0.7369
+      }
+    },
+    {
+      "name": "Weather Machine",
+      "description": "This speculative machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "376800000",
+      "rarity": 0.6615,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5358,
+        "luxury": 0.7184,
+        "novelty": 0.7441,
+        "historical_value": 0.3803,
+        "technology_level": 0.8961,
+        "natural_significance": 0.0342,
+        "fantasy_level": 0.2545,
+        "space_affinity": 0.1453,
+        "power": 0.8145
+      }
+    },
+    {
+      "name": "Dream Recorder",
+      "description": "This speculative machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "457400000",
+      "rarity": 0.5322,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4107,
+        "luxury": 0.7169,
+        "novelty": 0.6311,
+        "historical_value": 0.4109,
+        "technology_level": 1.0,
+        "natural_significance": 0.1786,
+        "fantasy_level": 0.2429,
+        "space_affinity": 0.0554,
+        "power": 0.8269
+      }
+    },
+    {
+      "name": "Crimson Experimental Machine",
+      "description": "A singular machine & device known for being technology, artificial, and unusually scientific.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable",
+        "rare",
+        "mysterious"
+      ],
+      "price": "4361000000",
+      "rarity": 0.8125,
+      "reality_type": "real",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.276,
+        "luxury": 0.7048,
+        "novelty": 0.8405,
+        "historical_value": 0.3652,
+        "technology_level": 0.9127,
+        "natural_significance": 0.0445,
+        "fantasy_level": 0.218,
+        "space_affinity": 0.1185,
+        "power": 0.7223
+      }
+    },
+    {
+      "name": "Silent Experimental Machine",
+      "description": "This real machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "5149000000",
+      "rarity": 0.7889,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4073,
+        "luxury": 0.7813,
+        "novelty": 0.7333,
+        "historical_value": 0.4323,
+        "technology_level": 0.9362,
+        "natural_significance": 0.1271,
+        "fantasy_level": 0.3398,
+        "space_affinity": 0.2112,
+        "power": 0.7409
+      }
+    },
+    {
+      "name": "Golden Experimental Machine",
+      "description": "Golden Experimental Machine is a speculative machine & device selected for its technology, artificial, and scientific qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "1718000000",
+      "rarity": 0.8472,
+      "reality_type": "speculative",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3445,
+        "luxury": 0.6203,
+        "novelty": 0.7917,
+        "historical_value": 0.5019,
+        "technology_level": 0.8866,
+        "natural_significance": 0.0179,
+        "fantasy_level": 0.1199,
+        "space_affinity": 0.1169,
+        "power": 0.7188
+      }
+    },
+    {
+      "name": "Obsidian Experimental Machine",
+      "description": "A singular machine & device known for being technology, artificial, and unusually scientific.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable",
+        "exclusive",
+        "powerful"
+      ],
+      "price": "832100000",
+      "rarity": 0.6343,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3411,
+        "luxury": 0.7861,
+        "novelty": 0.6987,
+        "historical_value": 0.3813,
+        "technology_level": 0.8374,
+        "natural_significance": 0.1038,
+        "fantasy_level": 0.3071,
+        "space_affinity": 0.085,
+        "power": 0.8713
+      }
+    },
+    {
+      "name": "Luminous Experimental Machine",
+      "description": "This real machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "1135000000",
+      "rarity": 0.602,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5037,
+        "luxury": 0.6679,
+        "novelty": 0.6783,
+        "historical_value": 0.443,
+        "technology_level": 0.9066,
+        "natural_significance": 0.1359,
+        "fantasy_level": 0.2397,
+        "space_affinity": 0.2515,
+        "power": 0.7406
+      }
+    },
+    {
+      "name": "Forgotten Experimental Machine",
+      "description": "This speculative machine & device combines technology character with artificial value and scientific appeal.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable"
+      ],
+      "price": "461200000",
+      "rarity": 0.6424,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3838,
+        "luxury": 0.6443,
+        "novelty": 0.6684,
+        "historical_value": 0.3944,
+        "technology_level": 1.0,
+        "natural_significance": 0.1911,
+        "fantasy_level": 0.2305,
+        "space_affinity": 0.0606,
+        "power": 0.8023
+      }
+    },
+    {
+      "name": "Celestial Experimental Machine",
+      "description": "Celestial Experimental Machine is a speculative machine & device selected for its technology, artificial, and scientific qualities.",
+      "category": {
+        "parent": "Technology",
+        "name": "Machine & Device",
+        "slug": "machine-device"
+      },
+      "tags": [
+        "technology",
+        "artificial",
+        "scientific",
+        "valuable",
+        "powerful",
+        "exclusive"
+      ],
+      "price": "521700000",
+      "rarity": 0.6996,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6129,
+        "luxury": 0.6901,
+        "novelty": 0.6272,
+        "historical_value": 0.3814,
+        "technology_level": 1.0,
+        "natural_significance": 0.154,
+        "fantasy_level": 0.257,
+        "space_affinity": 0.1022,
+        "power": 0.8596
+      }
+    },
+    {
+      "name": "Private Island",
+      "description": "Private Island is a real island selected for its natural, exclusive, and beautiful qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored"
+      ],
+      "price": "98740000000000",
+      "rarity": 0.6788,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.185,
+        "luxury": 0.7445,
+        "novelty": 0.7001,
+        "historical_value": 0.5425,
+        "technology_level": 0.1006,
+        "natural_significance": 0.9405,
+        "fantasy_level": 0.2468,
+        "space_affinity": 0.0,
+        "power": 0.6404
+      }
+    },
+    {
+      "name": "Easter Island",
+      "description": "This real island combines natural character with exclusive value and beautiful appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "valuable",
+        "luxury"
+      ],
+      "price": "229000000000000",
+      "rarity": 0.7705,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2729,
+        "luxury": 0.8182,
+        "novelty": 0.7752,
+        "historical_value": 0.5842,
+        "technology_level": 0.0,
+        "natural_significance": 0.9302,
+        "fantasy_level": 0.2429,
+        "space_affinity": 0.065,
+        "power": 0.6037
+      }
+    },
+    {
+      "name": "Surtsey",
+      "description": "Surtsey is a speculative island selected for its natural, exclusive, and beautiful qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "luxury",
+        "valuable"
+      ],
+      "price": "827700000000000",
+      "rarity": 0.8422,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2265,
+        "luxury": 0.894,
+        "novelty": 0.7451,
+        "historical_value": 0.615,
+        "technology_level": 0.1131,
+        "natural_significance": 0.897,
+        "fantasy_level": 0.3015,
+        "space_affinity": 0.0,
+        "power": 0.5733
+      }
+    },
+    {
+      "name": "Crimson Hidden Island",
+      "description": "Crimson Hidden Island is a real island selected for its natural, exclusive, and beautiful qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored"
+      ],
+      "price": "221200000000000",
+      "rarity": 0.6348,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3651,
+        "luxury": 0.7105,
+        "novelty": 0.7677,
+        "historical_value": 0.6887,
+        "technology_level": 0.0702,
+        "natural_significance": 0.8714,
+        "fantasy_level": 0.2305,
+        "space_affinity": 0.1463,
+        "power": 0.6289
+      }
+    },
+    {
+      "name": "Silent Hidden Island",
+      "description": "Silent Hidden Island is a fictional island selected for its natural, exclusive, and beautiful qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "luxury"
+      ],
+      "price": "71410000000000",
+      "rarity": 0.5776,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3644,
+        "luxury": 0.8441,
+        "novelty": 0.7544,
+        "historical_value": 0.6243,
+        "technology_level": 0.1948,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.1151,
+        "space_affinity": 0.0,
+        "power": 0.7298
+      }
+    },
+    {
+      "name": "Golden Hidden Island",
+      "description": "A singular island known for being natural, exclusive, and unusually beautiful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "rare"
+      ],
+      "price": "91790000000000",
+      "rarity": 0.6627,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.275,
+        "luxury": 0.7038,
+        "novelty": 0.8447,
+        "historical_value": 0.6009,
+        "technology_level": 0.0833,
+        "natural_significance": 0.9743,
+        "fantasy_level": 0.2529,
+        "space_affinity": 0.0257,
+        "power": 0.5792
+      }
+    },
+    {
+      "name": "Obsidian Hidden Island",
+      "description": "A singular island known for being natural, exclusive, and unusually beautiful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "luxury",
+        "mysterious"
+      ],
+      "price": "199100000000000",
+      "rarity": 0.7421,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1804,
+        "luxury": 0.8113,
+        "novelty": 0.8317,
+        "historical_value": 0.5205,
+        "technology_level": 0.1294,
+        "natural_significance": 0.8955,
+        "fantasy_level": 0.2173,
+        "space_affinity": 0.0076,
+        "power": 0.5961
+      }
+    },
+    {
+      "name": "Luminous Hidden Island",
+      "description": "This real island combines natural character with exclusive value and beautiful appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Island",
+        "slug": "island"
+      },
+      "tags": [
+        "natural",
+        "exclusive",
+        "beautiful",
+        "unexplored",
+        "valuable"
+      ],
+      "price": "54580000000000",
+      "rarity": 0.6644,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2552,
+        "luxury": 0.8041,
+        "novelty": 0.728,
+        "historical_value": 0.6073,
+        "technology_level": 0.0957,
+        "natural_significance": 0.9844,
+        "fantasy_level": 0.2772,
+        "space_affinity": 0.0655,
+        "power": 0.5873
+      }
+    },
+    {
+      "name": "Pacific Ocean",
+      "description": "The world's largest ocean, including its depths and weather systems.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "mysterious",
+        "luxury"
+      ],
+      "price": "14810000000000000000000",
+      "rarity": 0.7786,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7667,
+        "luxury": 0.8094,
+        "novelty": 0.8357,
+        "historical_value": 0.6292,
+        "technology_level": 0.0677,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.1179,
+        "space_affinity": 0.0839,
+        "power": 0.8884
+      }
+    },
+    {
+      "name": "Mediterranean Sea",
+      "description": "This real ocean & sea combines natural character with massive value and dangerous appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "exclusive"
+      ],
+      "price": "11620000000000000000000",
+      "rarity": 0.7614,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7911,
+        "luxury": 0.9041,
+        "novelty": 0.8125,
+        "historical_value": 0.5898,
+        "technology_level": 0.1475,
+        "natural_significance": 0.9643,
+        "fantasy_level": 0.11,
+        "space_affinity": 0.0024,
+        "power": 0.8661
+      }
+    },
+    {
+      "name": "Mariana Trench",
+      "description": "Mariana Trench is a fictional ocean & sea selected for its natural, massive, and dangerous qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored"
+      ],
+      "price": "7042000000000000000000",
+      "rarity": 0.6907,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7943,
+        "luxury": 0.7823,
+        "novelty": 0.9424,
+        "historical_value": 0.6672,
+        "technology_level": 0.1038,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.1622,
+        "space_affinity": 0.0,
+        "power": 0.9968
+      }
+    },
+    {
+      "name": "Crimson Uncharted Sea",
+      "description": "Crimson Uncharted Sea is a real ocean & sea selected for its natural, massive, and dangerous qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored"
+      ],
+      "price": "4458000000000000000000",
+      "rarity": 0.82,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7317,
+        "luxury": 0.8053,
+        "novelty": 0.7658,
+        "historical_value": 0.5753,
+        "technology_level": 0.1192,
+        "natural_significance": 0.979,
+        "fantasy_level": 0.1819,
+        "space_affinity": 0.0,
+        "power": 0.8744
+      }
+    },
+    {
+      "name": "Silent Uncharted Sea",
+      "description": "Silent Uncharted Sea is a real ocean & sea selected for its natural, massive, and dangerous qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "valuable",
+        "rare"
+      ],
+      "price": "4482000000000000000000",
+      "rarity": 0.8247,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.688,
+        "luxury": 1.0,
+        "novelty": 0.8891,
+        "historical_value": 0.5848,
+        "technology_level": 0.0586,
+        "natural_significance": 0.8539,
+        "fantasy_level": 0.1939,
+        "space_affinity": 0.0,
+        "power": 0.824
+      }
+    },
+    {
+      "name": "Golden Uncharted Sea",
+      "description": "A singular ocean & sea known for being natural, massive, and unusually dangerous.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "destructive"
+      ],
+      "price": "20630000000000000000000",
+      "rarity": 0.7814,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7882,
+        "luxury": 0.8344,
+        "novelty": 0.8973,
+        "historical_value": 0.6399,
+        "technology_level": 0.0,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.2674,
+        "space_affinity": 0.0,
+        "power": 0.9502
+      }
+    },
+    {
+      "name": "Obsidian Uncharted Sea",
+      "description": "A singular ocean & sea known for being natural, massive, and unusually dangerous.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "exclusive",
+        "destructive"
+      ],
+      "price": "8688000000000000000000",
+      "rarity": 0.6569,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8412,
+        "luxury": 0.8814,
+        "novelty": 0.7923,
+        "historical_value": 0.6835,
+        "technology_level": 0.0369,
+        "natural_significance": 0.9728,
+        "fantasy_level": 0.2663,
+        "space_affinity": 0.02,
+        "power": 0.9719
+      }
+    },
+    {
+      "name": "Luminous Uncharted Sea",
+      "description": "This real ocean & sea combines natural character with massive value and dangerous appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Ocean & Sea",
+        "slug": "ocean-sea"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "dangerous",
+        "unexplored",
+        "rare"
+      ],
+      "price": "20720000000000000000000",
+      "rarity": 0.7502,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7415,
+        "luxury": 0.7717,
+        "novelty": 0.8957,
+        "historical_value": 0.8104,
+        "technology_level": 0.0515,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.2446,
+        "space_affinity": 0.0703,
+        "power": 0.9456
+      }
+    },
+    {
+      "name": "Antarctica",
+      "description": "This fictional land & territory combines natural character with massive value and powerful appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "48610000000000000000000",
+      "rarity": 0.6265,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3524,
+        "luxury": 0.8945,
+        "novelty": 0.7026,
+        "historical_value": 0.7615,
+        "technology_level": 0.1512,
+        "natural_significance": 0.9168,
+        "fantasy_level": 0.039,
+        "space_affinity": 0.0,
+        "power": 0.8956
+      }
+    },
+    {
+      "name": "Sahara Desert",
+      "description": "A singular land & territory known for being natural, massive, and unusually powerful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "luxury"
+      ],
+      "price": "88930000000000000000000",
+      "rarity": 0.5503,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4551,
+        "luxury": 0.888,
+        "novelty": 0.6503,
+        "historical_value": 0.7918,
+        "technology_level": 0.1456,
+        "natural_significance": 0.9898,
+        "fantasy_level": 0.1114,
+        "space_affinity": 0.0105,
+        "power": 0.8961
+      }
+    },
+    {
+      "name": "Amazon Rainforest",
+      "description": "A singular land & territory known for being natural, massive, and unusually powerful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable"
+      ],
+      "price": "95380000000000000000000",
+      "rarity": 0.7701,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4421,
+        "luxury": 0.9407,
+        "novelty": 0.75,
+        "historical_value": 0.6801,
+        "technology_level": 0.0516,
+        "natural_significance": 0.8835,
+        "fantasy_level": 0.1849,
+        "space_affinity": 0.0,
+        "power": 0.9161
+      }
+    },
+    {
+      "name": "Crimson Remote Territory",
+      "description": "Crimson Remote Territory is a real land & territory selected for its natural, massive, and powerful qualities.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "luxury",
+        "exclusive"
+      ],
+      "price": "60640000000000000000000",
+      "rarity": 0.7597,
+      "reality_type": "real",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3048,
+        "luxury": 0.8112,
+        "novelty": 0.7714,
+        "historical_value": 0.7277,
+        "technology_level": 0.1216,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.0624,
+        "space_affinity": 0.0,
+        "power": 0.8864
+      }
+    },
+    {
+      "name": "Silent Remote Territory",
+      "description": "A singular land & territory known for being natural, massive, and unusually powerful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "13460000000000000000000",
+      "rarity": 0.7058,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4503,
+        "luxury": 0.8616,
+        "novelty": 0.6908,
+        "historical_value": 0.6468,
+        "technology_level": 0.1284,
+        "natural_significance": 0.9582,
+        "fantasy_level": 0.0683,
+        "space_affinity": 0.0242,
+        "power": 0.9709
+      }
+    },
+    {
+      "name": "Golden Remote Territory",
+      "description": "A singular land & territory known for being natural, massive, and unusually powerful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "luxury"
+      ],
+      "price": "206200000000000000000000",
+      "rarity": 0.8005,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4979,
+        "luxury": 0.9734,
+        "novelty": 0.7005,
+        "historical_value": 0.6954,
+        "technology_level": 0.171,
+        "natural_significance": 0.9497,
+        "fantasy_level": 0.0805,
+        "space_affinity": 0.0975,
+        "power": 0.7573
+      }
+    },
+    {
+      "name": "Obsidian Remote Territory",
+      "description": "This speculative land & territory combines natural character with massive value and powerful appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "luxury",
+        "exclusive"
+      ],
+      "price": "1284000000000000000000000",
+      "rarity": 0.8009,
+      "reality_type": "speculative",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3316,
+        "luxury": 0.8191,
+        "novelty": 0.7392,
+        "historical_value": 0.7759,
+        "technology_level": 0.0,
+        "natural_significance": 0.9788,
+        "fantasy_level": 0.0706,
+        "space_affinity": 0.0,
+        "power": 0.9324
+      }
+    },
+    {
+      "name": "Luminous Remote Territory",
+      "description": "This real land & territory combines natural character with massive value and powerful appeal.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "luxury"
+      ],
+      "price": "85560000000000000000000",
+      "rarity": 0.7208,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.414,
+        "luxury": 0.8678,
+        "novelty": 0.7,
+        "historical_value": 0.6831,
+        "technology_level": 0.1488,
+        "natural_significance": 0.9691,
+        "fantasy_level": 0.0937,
+        "space_affinity": 0.0,
+        "power": 0.9746
+      }
+    },
+    {
+      "name": "Forgotten Remote Territory",
+      "description": "A singular land & territory known for being natural, massive, and unusually powerful.",
+      "category": {
+        "parent": "Geography",
+        "name": "Land & Territory",
+        "slug": "land-territory"
+      },
+      "tags": [
+        "natural",
+        "massive",
+        "powerful",
+        "valuable",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "72090000000000000000000",
+      "rarity": 0.7551,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4668,
+        "luxury": 0.812,
+        "novelty": 0.7274,
+        "historical_value": 0.771,
+        "technology_level": 0.0803,
+        "natural_significance": 0.8978,
+        "fantasy_level": 0.1449,
+        "space_affinity": 0.0575,
+        "power": 0.9257
+      }
+    },
+    {
+      "name": "Dragon Egg",
+      "description": "A singular magical item known for being fantasy, mysterious, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible"
+      ],
+      "price": "449900000000",
+      "rarity": 0.7201,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6682,
+        "luxury": 0.8063,
+        "novelty": 0.8134,
+        "historical_value": 0.7523,
+        "technology_level": 0.1344,
+        "natural_significance": 0.1323,
+        "fantasy_level": 0.9765,
+        "space_affinity": 0.1476,
+        "power": 0.8171
+      }
+    },
+    {
+      "name": "Philosopher's Stone",
+      "description": "Philosopher's Stone is a speculative magical item selected for its fantasy, mysterious, and legendary qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "valuable",
+        "rare"
+      ],
+      "price": "51430000000",
+      "rarity": 0.9559,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6153,
+        "luxury": 0.9392,
+        "novelty": 1.0,
+        "historical_value": 0.7186,
+        "technology_level": 0.0965,
+        "natural_significance": 0.3424,
+        "fantasy_level": 0.9961,
+        "space_affinity": 0.1407,
+        "power": 0.8128
+      }
+    },
+    {
+      "name": "Invisibility Cloak",
+      "description": "A singular magical item known for being fantasy, mysterious, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "valuable"
+      ],
+      "price": "600100000000",
+      "rarity": 0.8613,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6863,
+        "luxury": 0.9291,
+        "novelty": 0.9336,
+        "historical_value": 0.5422,
+        "technology_level": 0.0743,
+        "natural_significance": 0.2122,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.1254,
+        "power": 0.927
+      }
+    },
+    {
+      "name": "Crimson Enchanted Artifact",
+      "description": "A singular magical item known for being fantasy, mysterious, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "rare",
+        "luxury"
+      ],
+      "price": "228900000000",
+      "rarity": 0.9317,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6627,
+        "luxury": 0.9496,
+        "novelty": 0.9876,
+        "historical_value": 0.6306,
+        "technology_level": 0.1608,
+        "natural_significance": 0.2513,
+        "fantasy_level": 0.8779,
+        "space_affinity": 0.0384,
+        "power": 0.7741
+      }
+    },
+    {
+      "name": "Silent Enchanted Artifact",
+      "description": "This fictional magical item combines fantasy character with mysterious value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "luxury",
+        "rare"
+      ],
+      "price": "155100000000",
+      "rarity": 0.8772,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5476,
+        "luxury": 0.8532,
+        "novelty": 0.9783,
+        "historical_value": 0.7855,
+        "technology_level": 0.1212,
+        "natural_significance": 0.2257,
+        "fantasy_level": 0.9924,
+        "space_affinity": 0.04,
+        "power": 0.7461
+      }
+    },
+    {
+      "name": "Golden Enchanted Artifact",
+      "description": "This fictional magical item combines fantasy character with mysterious value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "exclusive",
+        "powerful"
+      ],
+      "price": "342900000000",
+      "rarity": 0.8028,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.569,
+        "luxury": 0.8671,
+        "novelty": 0.9238,
+        "historical_value": 0.5772,
+        "technology_level": 0.1589,
+        "natural_significance": 0.2243,
+        "fantasy_level": 0.8871,
+        "space_affinity": 0.1043,
+        "power": 0.914
+      }
+    },
+    {
+      "name": "Obsidian Enchanted Artifact",
+      "description": "This fictional magical item combines fantasy character with mysterious value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "rare",
+        "exclusive"
+      ],
+      "price": "67470000000",
+      "rarity": 0.869,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5549,
+        "luxury": 0.7994,
+        "novelty": 1.0,
+        "historical_value": 0.6185,
+        "technology_level": 0.1242,
+        "natural_significance": 0.2025,
+        "fantasy_level": 0.9986,
+        "space_affinity": 0.1185,
+        "power": 0.9565
+      }
+    },
+    {
+      "name": "Luminous Enchanted Artifact",
+      "description": "Luminous Enchanted Artifact is a speculative magical item selected for its fantasy, mysterious, and legendary qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible"
+      ],
+      "price": "48300000000",
+      "rarity": 0.8226,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5651,
+        "luxury": 0.8714,
+        "novelty": 1.0,
+        "historical_value": 0.6842,
+        "technology_level": 0.213,
+        "natural_significance": 0.137,
+        "fantasy_level": 0.9853,
+        "space_affinity": 0.0181,
+        "power": 0.7579
+      }
+    },
+    {
+      "name": "Forgotten Enchanted Artifact",
+      "description": "A singular magical item known for being fantasy, mysterious, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Magical Item",
+        "slug": "magical-item"
+      },
+      "tags": [
+        "fantasy",
+        "mysterious",
+        "legendary",
+        "collectible",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "335500000000",
+      "rarity": 0.9614,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5147,
+        "luxury": 0.9257,
+        "novelty": 0.9111,
+        "historical_value": 0.7496,
+        "technology_level": 0.0981,
+        "natural_significance": 0.1673,
+        "fantasy_level": 0.9736,
+        "space_affinity": 0.0024,
+        "power": 0.9328
+      }
+    },
+    {
+      "name": "Flight",
+      "description": "Flight is a speculative superpower selected for its fantasy, powerful, and impossible qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive",
+        "legendary",
+        "mysterious"
+      ],
+      "price": "4910000000",
+      "rarity": 0.7651,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7734,
+        "luxury": 0.73,
+        "novelty": 0.9172,
+        "historical_value": 0.3134,
+        "technology_level": 0.1834,
+        "natural_significance": 0.0512,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.0932,
+        "power": 0.9746
+      }
+    },
+    {
+      "name": "Telepathy",
+      "description": "Telepathy is a fictional superpower selected for its fantasy, powerful, and impossible qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive"
+      ],
+      "price": "7868000000",
+      "rarity": 0.7334,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7525,
+        "luxury": 0.8234,
+        "novelty": 0.9725,
+        "historical_value": 0.2749,
+        "technology_level": 0.2665,
+        "natural_significance": 0.0462,
+        "fantasy_level": 0.8639,
+        "space_affinity": 0.1031,
+        "power": 0.996
+      }
+    },
+    {
+      "name": "Invulnerability",
+      "description": "A singular superpower known for being fantasy, powerful, and unusually impossible.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive",
+        "destructive",
+        "mysterious"
+      ],
+      "price": "11530000000",
+      "rarity": 0.8832,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.856,
+        "luxury": 0.9102,
+        "novelty": 0.9812,
+        "historical_value": 0.316,
+        "technology_level": 0.1805,
+        "natural_significance": 0.0747,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.1115,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Crimson Impossible Ability",
+      "description": "Crimson Impossible Ability is a fictional superpower selected for its fantasy, powerful, and impossible qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive",
+        "legendary",
+        "rare"
+      ],
+      "price": "13580000000",
+      "rarity": 0.7168,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8303,
+        "luxury": 0.7621,
+        "novelty": 0.9343,
+        "historical_value": 0.1746,
+        "technology_level": 0.2086,
+        "natural_significance": 0.1035,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.0869,
+        "power": 0.9958
+      }
+    },
+    {
+      "name": "Silent Impossible Ability",
+      "description": "A singular superpower known for being fantasy, powerful, and unusually impossible.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive",
+        "rare"
+      ],
+      "price": "4895000000",
+      "rarity": 0.8706,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6842,
+        "luxury": 0.6498,
+        "novelty": 0.9875,
+        "historical_value": 0.1274,
+        "technology_level": 0.2765,
+        "natural_significance": 0.1251,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.2304,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Golden Impossible Ability",
+      "description": "A singular superpower known for being fantasy, powerful, and unusually impossible.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive"
+      ],
+      "price": "3049000000",
+      "rarity": 0.8167,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7177,
+        "luxury": 0.6491,
+        "novelty": 0.9785,
+        "historical_value": 0.2971,
+        "technology_level": 0.189,
+        "natural_significance": 0.1198,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.0653,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Obsidian Impossible Ability",
+      "description": "Obsidian Impossible Ability is a fictional superpower selected for its fantasy, powerful, and impossible qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive"
+      ],
+      "price": "13800000000",
+      "rarity": 0.8216,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7827,
+        "luxury": 0.8043,
+        "novelty": 1.0,
+        "historical_value": 0.2964,
+        "technology_level": 0.0609,
+        "natural_significance": 0.2196,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.1367,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Luminous Impossible Ability",
+      "description": "A singular superpower known for being fantasy, powerful, and unusually impossible.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Superpower",
+        "slug": "superpower"
+      },
+      "tags": [
+        "fantasy",
+        "powerful",
+        "impossible",
+        "exclusive"
+      ],
+      "price": "25170000000",
+      "rarity": 0.8634,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7668,
+        "luxury": 0.766,
+        "novelty": 1.0,
+        "historical_value": 0.2048,
+        "technology_level": 0.1711,
+        "natural_significance": 0.1623,
+        "fantasy_level": 0.9403,
+        "space_affinity": 0.009,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Excalibur",
+      "description": "This fictional fictional object combines fantasy character with collectible value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "mysterious"
+      ],
+      "price": "91370000000",
+      "rarity": 0.9067,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.6581,
+        "luxury": 0.9902,
+        "novelty": 0.9962,
+        "historical_value": 0.4547,
+        "technology_level": 0.4926,
+        "natural_significance": 0.0862,
+        "fantasy_level": 0.9516,
+        "space_affinity": 0.1456,
+        "power": 0.877
+      }
+    },
+    {
+      "name": "One Ring",
+      "description": "This fictional fictional object combines fantasy character with collectible value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "luxury"
+      ],
+      "price": "40930000000",
+      "rarity": 0.7786,
+      "reality_type": "fictional",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5224,
+        "luxury": 0.8537,
+        "novelty": 0.8997,
+        "historical_value": 0.5954,
+        "technology_level": 0.3775,
+        "natural_significance": 0.0593,
+        "fantasy_level": 0.9511,
+        "space_affinity": 0.4082,
+        "power": 0.8376
+      }
+    },
+    {
+      "name": "Pandora's Box",
+      "description": "A singular fictional object known for being fantasy, collectible, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable"
+      ],
+      "price": "70270000000",
+      "rarity": 0.783,
+      "reality_type": "fictional",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5965,
+        "luxury": 0.9365,
+        "novelty": 0.9643,
+        "historical_value": 0.6666,
+        "technology_level": 0.4717,
+        "natural_significance": 0.1272,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.1398,
+        "power": 0.8608
+      }
+    },
+    {
+      "name": "Crimson Legendary Object",
+      "description": "Crimson Legendary Object is a fictional fictional object selected for its fantasy, collectible, and legendary qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "powerful",
+        "luxury"
+      ],
+      "price": "125800000000",
+      "rarity": 0.8571,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.474,
+        "luxury": 0.9483,
+        "novelty": 0.9728,
+        "historical_value": 0.5166,
+        "technology_level": 0.3516,
+        "natural_significance": 0.0853,
+        "fantasy_level": 0.9035,
+        "space_affinity": 0.0637,
+        "power": 0.9494
+      }
+    },
+    {
+      "name": "Silent Legendary Object",
+      "description": "This fictional fictional object combines fantasy character with collectible value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable"
+      ],
+      "price": "35180000000",
+      "rarity": 0.8377,
+      "reality_type": "fictional",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5422,
+        "luxury": 0.7922,
+        "novelty": 0.958,
+        "historical_value": 0.4612,
+        "technology_level": 0.3726,
+        "natural_significance": 0.1281,
+        "fantasy_level": 0.9842,
+        "space_affinity": 0.2423,
+        "power": 0.7262
+      }
+    },
+    {
+      "name": "Golden Legendary Object",
+      "description": "This fictional fictional object combines fantasy character with collectible value and legendary appeal.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "mysterious"
+      ],
+      "price": "44820000000",
+      "rarity": 0.7668,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5262,
+        "luxury": 0.8683,
+        "novelty": 0.9387,
+        "historical_value": 0.5834,
+        "technology_level": 0.537,
+        "natural_significance": 0.2824,
+        "fantasy_level": 0.993,
+        "space_affinity": 0.0403,
+        "power": 0.8262
+      }
+    },
+    {
+      "name": "Obsidian Legendary Object",
+      "description": "Obsidian Legendary Object is a fictional fictional object selected for its fantasy, collectible, and legendary qualities.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "powerful"
+      ],
+      "price": "30590000000",
+      "rarity": 0.864,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5891,
+        "luxury": 0.9511,
+        "novelty": 0.9511,
+        "historical_value": 0.4363,
+        "technology_level": 0.394,
+        "natural_significance": 0.161,
+        "fantasy_level": 0.8666,
+        "space_affinity": 0.2235,
+        "power": 0.9018
+      }
+    },
+    {
+      "name": "Luminous Legendary Object",
+      "description": "A singular fictional object known for being fantasy, collectible, and unusually legendary.",
+      "category": {
+        "parent": "Fantasy",
+        "name": "Fictional Object",
+        "slug": "fictional-object"
+      },
+      "tags": [
+        "fantasy",
+        "collectible",
+        "legendary",
+        "valuable",
+        "exclusive",
+        "mysterious"
+      ],
+      "price": "44280000000",
+      "rarity": 0.6684,
+      "reality_type": "fictional",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.5921,
+        "luxury": 0.7629,
+        "novelty": 0.9424,
+        "historical_value": 0.4917,
+        "technology_level": 0.4945,
+        "natural_significance": 0.1532,
+        "fantasy_level": 0.9289,
+        "space_affinity": 0.1434,
+        "power": 0.8739
+      }
+    },
+    {
+      "name": "Mona Lisa",
+      "description": "A singular artwork known for being cultural, beautiful, and unusually collectible.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "luxury"
+      ],
+      "price": "36960000000",
+      "rarity": 0.7448,
+      "reality_type": "real",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0591,
+        "luxury": 0.8635,
+        "novelty": 0.7862,
+        "historical_value": 0.8706,
+        "technology_level": 0.0671,
+        "natural_significance": 0.2024,
+        "fantasy_level": 0.3536,
+        "space_affinity": 0.0,
+        "power": 0.5851
+      }
+    },
+    {
+      "name": "The Starry Night",
+      "description": "The Starry Night is a real artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable"
+      ],
+      "price": "14320000000",
+      "rarity": 0.8366,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1136,
+        "luxury": 0.9717,
+        "novelty": 0.8678,
+        "historical_value": 0.7858,
+        "technology_level": 0.0509,
+        "natural_significance": 0.3607,
+        "fantasy_level": 0.4795,
+        "space_affinity": 0.0,
+        "power": 0.464
+      }
+    },
+    {
+      "name": "David",
+      "description": "David is a real artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable"
+      ],
+      "price": "34530000000",
+      "rarity": 0.7047,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1446,
+        "luxury": 1.0,
+        "novelty": 0.6635,
+        "historical_value": 0.8209,
+        "technology_level": 0.1038,
+        "natural_significance": 0.2535,
+        "fantasy_level": 0.4368,
+        "space_affinity": 0.0,
+        "power": 0.5268
+      }
+    },
+    {
+      "name": "Crimson Masterpiece",
+      "description": "Crimson Masterpiece is a real artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "luxury"
+      ],
+      "price": "90740000000",
+      "rarity": 0.8188,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1258,
+        "luxury": 0.9975,
+        "novelty": 0.809,
+        "historical_value": 0.9117,
+        "technology_level": 0.1265,
+        "natural_significance": 0.2611,
+        "fantasy_level": 0.3046,
+        "space_affinity": 0.0065,
+        "power": 0.6185
+      }
+    },
+    {
+      "name": "Silent Masterpiece",
+      "description": "A singular artwork known for being cultural, beautiful, and unusually collectible.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "historic",
+        "luxury"
+      ],
+      "price": "78460000000",
+      "rarity": 0.8303,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1725,
+        "luxury": 0.9576,
+        "novelty": 0.7508,
+        "historical_value": 0.9505,
+        "technology_level": 0.191,
+        "natural_significance": 0.1864,
+        "fantasy_level": 0.3761,
+        "space_affinity": 0.0,
+        "power": 0.6175
+      }
+    },
+    {
+      "name": "Golden Masterpiece",
+      "description": "Golden Masterpiece is a historical artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "historic",
+        "luxury"
+      ],
+      "price": "64240000000",
+      "rarity": 0.5995,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0572,
+        "luxury": 0.929,
+        "novelty": 0.6803,
+        "historical_value": 0.9121,
+        "technology_level": 0.1605,
+        "natural_significance": 0.1863,
+        "fantasy_level": 0.3293,
+        "space_affinity": 0.0,
+        "power": 0.3831
+      }
+    },
+    {
+      "name": "Obsidian Masterpiece",
+      "description": "A singular artwork known for being cultural, beautiful, and unusually collectible.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "historic",
+        "luxury"
+      ],
+      "price": "27670000000",
+      "rarity": 0.8797,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0794,
+        "luxury": 0.9979,
+        "novelty": 0.7486,
+        "historical_value": 0.9193,
+        "technology_level": 0.1449,
+        "natural_significance": 0.2913,
+        "fantasy_level": 0.3984,
+        "space_affinity": 0.0253,
+        "power": 0.5066
+      }
+    },
+    {
+      "name": "Luminous Masterpiece",
+      "description": "A singular artwork known for being cultural, beautiful, and unusually collectible.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "historic"
+      ],
+      "price": "76920000000",
+      "rarity": 0.7763,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1489,
+        "luxury": 0.8883,
+        "novelty": 0.7089,
+        "historical_value": 0.8449,
+        "technology_level": 0.1235,
+        "natural_significance": 0.1177,
+        "fantasy_level": 0.4063,
+        "space_affinity": 0.0,
+        "power": 0.5996
+      }
+    },
+    {
+      "name": "Forgotten Masterpiece",
+      "description": "Forgotten Masterpiece is a historical artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "historic"
+      ],
+      "price": "31930000000",
+      "rarity": 0.5406,
+      "reality_type": "historical",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0647,
+        "luxury": 0.9023,
+        "novelty": 0.63,
+        "historical_value": 0.8106,
+        "technology_level": 0.1567,
+        "natural_significance": 0.126,
+        "fantasy_level": 0.4516,
+        "space_affinity": 0.0,
+        "power": 0.4902
+      }
+    },
+    {
+      "name": "Celestial Masterpiece",
+      "description": "Celestial Masterpiece is a real artwork selected for its cultural, beautiful, and collectible qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Artwork",
+        "slug": "artwork"
+      },
+      "tags": [
+        "cultural",
+        "beautiful",
+        "collectible",
+        "valuable",
+        "luxury",
+        "historic"
+      ],
+      "price": "9976000000",
+      "rarity": 0.8112,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0394,
+        "luxury": 1.0,
+        "novelty": 0.6533,
+        "historical_value": 0.966,
+        "technology_level": 0.2121,
+        "natural_significance": 0.1232,
+        "fantasy_level": 0.4461,
+        "space_affinity": 0.0,
+        "power": 0.5165
+      }
+    },
+    {
+      "name": "Imperial Regalia",
+      "description": "Imperial Regalia is a real cultural treasure selected for its cultural, historic, and rare qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable"
+      ],
+      "price": "8215000000000",
+      "rarity": 0.572,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2515,
+        "luxury": 0.8375,
+        "novelty": 0.6912,
+        "historical_value": 0.9374,
+        "technology_level": 0.1435,
+        "natural_significance": 0.358,
+        "fantasy_level": 0.3898,
+        "space_affinity": 0.0936,
+        "power": 0.741
+      }
+    },
+    {
+      "name": "Library of Alexandria",
+      "description": "A singular cultural treasure known for being cultural, historic, and unusually rare.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "1980000000000",
+      "rarity": 0.6089,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2205,
+        "luxury": 0.9043,
+        "novelty": 0.6223,
+        "historical_value": 1.0,
+        "technology_level": 0.1008,
+        "natural_significance": 0.3034,
+        "fantasy_level": 0.2326,
+        "space_affinity": 0.0888,
+        "power": 0.6797
+      }
+    },
+    {
+      "name": "Terracotta Army",
+      "description": "This historical cultural treasure combines cultural character with historic value and rare appeal.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "18310000000000",
+      "rarity": 0.8873,
+      "reality_type": "historical",
+      "status": "unavailable",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1687,
+        "luxury": 0.9713,
+        "novelty": 0.768,
+        "historical_value": 0.9994,
+        "technology_level": 0.0507,
+        "natural_significance": 0.236,
+        "fantasy_level": 0.4127,
+        "space_affinity": 0.0441,
+        "power": 0.7723
+      }
+    },
+    {
+      "name": "Crimson Cultural Treasure",
+      "description": "A singular cultural treasure known for being cultural, historic, and unusually rare.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "6116000000000",
+      "rarity": 0.8109,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3123,
+        "luxury": 0.9142,
+        "novelty": 0.651,
+        "historical_value": 0.9914,
+        "technology_level": 0.2297,
+        "natural_significance": 0.2005,
+        "fantasy_level": 0.3432,
+        "space_affinity": 0.0,
+        "power": 0.6982
+      }
+    },
+    {
+      "name": "Silent Cultural Treasure",
+      "description": "A singular cultural treasure known for being cultural, historic, and unusually rare.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "2009000000000",
+      "rarity": 0.6095,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2116,
+        "luxury": 0.8746,
+        "novelty": 0.7246,
+        "historical_value": 0.9386,
+        "technology_level": 0.0896,
+        "natural_significance": 0.501,
+        "fantasy_level": 0.3616,
+        "space_affinity": 0.1216,
+        "power": 0.674
+      }
+    },
+    {
+      "name": "Golden Cultural Treasure",
+      "description": "Golden Cultural Treasure is a historical cultural treasure selected for its cultural, historic, and rare qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "596400000000",
+      "rarity": 0.5686,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.118,
+        "luxury": 0.8001,
+        "novelty": 0.6428,
+        "historical_value": 1.0,
+        "technology_level": 0.1927,
+        "natural_significance": 0.2157,
+        "fantasy_level": 0.4151,
+        "space_affinity": 0.0895,
+        "power": 0.795
+      }
+    },
+    {
+      "name": "Obsidian Cultural Treasure",
+      "description": "Obsidian Cultural Treasure is a historical cultural treasure selected for its cultural, historic, and rare qualities.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable",
+        "luxury"
+      ],
+      "price": "34450000000000",
+      "rarity": 0.7197,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.0138,
+        "luxury": 0.896,
+        "novelty": 0.7176,
+        "historical_value": 0.9867,
+        "technology_level": 0.1613,
+        "natural_significance": 0.2279,
+        "fantasy_level": 0.2682,
+        "space_affinity": 0.0386,
+        "power": 0.7973
+      }
+    },
+    {
+      "name": "Luminous Cultural Treasure",
+      "description": "A singular cultural treasure known for being cultural, historic, and unusually rare.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable"
+      ],
+      "price": "9993000000000",
+      "rarity": 0.7589,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.2717,
+        "luxury": 0.788,
+        "novelty": 0.6624,
+        "historical_value": 1.0,
+        "technology_level": 0.1849,
+        "natural_significance": 0.2862,
+        "fantasy_level": 0.3895,
+        "space_affinity": 0.0,
+        "power": 0.74
+      }
+    },
+    {
+      "name": "Forgotten Cultural Treasure",
+      "description": "This historical cultural treasure combines cultural character with historic value and rare appeal.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable"
+      ],
+      "price": "1402000000000",
+      "rarity": 0.588,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3298,
+        "luxury": 0.7809,
+        "novelty": 0.715,
+        "historical_value": 0.9403,
+        "technology_level": 0.2123,
+        "natural_significance": 0.2183,
+        "fantasy_level": 0.3573,
+        "space_affinity": 0.087,
+        "power": 0.7305
+      }
+    },
+    {
+      "name": "Celestial Cultural Treasure",
+      "description": "This historical cultural treasure combines cultural character with historic value and rare appeal.",
+      "category": {
+        "parent": "Art & Culture",
+        "name": "Cultural Treasure",
+        "slug": "cultural-treasure"
+      },
+      "tags": [
+        "cultural",
+        "historic",
+        "rare",
+        "valuable"
+      ],
+      "price": "22010000000000",
+      "rarity": 0.6912,
+      "reality_type": "historical",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.1597,
+        "luxury": 0.937,
+        "novelty": 0.7703,
+        "historical_value": 1.0,
+        "technology_level": 0.1783,
+        "natural_significance": 0.283,
+        "fantasy_level": 0.279,
+        "space_affinity": 0.0456,
+        "power": 0.7599
+      }
+    },
+    {
+      "name": "Northern Lights",
+      "description": "This real natural phenomenon combines natural character with powerful value and beautiful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Natural Phenomenon",
+        "slug": "natural-phenomenon"
+      },
+      "tags": [
+        "natural",
+        "powerful",
+        "beautiful",
+        "dangerous",
+        "rare"
+      ],
+      "price": "3319000000000000000",
+      "rarity": 0.8125,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8953,
+        "luxury": 0.6666,
+        "novelty": 0.9254,
+        "historical_value": 0.3283,
+        "technology_level": 0.1584,
+        "natural_significance": 0.9661,
+        "fantasy_level": 0.3824,
+        "space_affinity": 0.1248,
+        "power": 0.7897
+      }
+    },
+    {
+      "name": "A Solar Eclipse",
+      "description": "A Solar Eclipse is a real natural phenomenon selected for its natural, powerful, and beautiful qualities.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Natural Phenomenon",
+        "slug": "natural-phenomenon"
+      },
+      "tags": [
+        "natural",
+        "powerful",
+        "beautiful",
+        "dangerous",
+        "mysterious",
+        "destructive"
+      ],
+      "price": "2485000000000000000",
+      "rarity": 0.8867,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9196,
+        "luxury": 0.6597,
+        "novelty": 0.9571,
+        "historical_value": 0.3051,
+        "technology_level": 0.0711,
+        "natural_significance": 0.9634,
+        "fantasy_level": 0.3595,
+        "space_affinity": 0.0182,
+        "power": 0.9007
+      }
+    },
+    {
+      "name": "A Perfect Storm",
+      "description": "A Perfect Storm is a speculative natural phenomenon selected for its natural, powerful, and beautiful qualities.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Natural Phenomenon",
+        "slug": "natural-phenomenon"
+      },
+      "tags": [
+        "natural",
+        "powerful",
+        "beautiful",
+        "dangerous",
+        "destructive",
+        "exclusive"
+      ],
+      "price": "8701000000000000000",
+      "rarity": 0.7568,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9514,
+        "luxury": 0.5878,
+        "novelty": 0.8133,
+        "historical_value": 0.2287,
+        "technology_level": 0.1658,
+        "natural_significance": 1.0,
+        "fantasy_level": 0.3983,
+        "space_affinity": 0.1499,
+        "power": 0.8644
+      }
+    },
+    {
+      "name": "Crimson Natural Phenomenon",
+      "description": "Crimson Natural Phenomenon is a real natural phenomenon selected for its natural, powerful, and beautiful qualities.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Natural Phenomenon",
+        "slug": "natural-phenomenon"
+      },
+      "tags": [
+        "natural",
+        "powerful",
+        "beautiful",
+        "dangerous",
+        "destructive"
+      ],
+      "price": "326300000000000000",
+      "rarity": 0.7242,
+      "reality_type": "real",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8913,
+        "luxury": 0.5137,
+        "novelty": 0.9303,
+        "historical_value": 0.3542,
+        "technology_level": 0.0395,
+        "natural_significance": 0.9855,
+        "fantasy_level": 0.4357,
+        "space_affinity": 0.065,
+        "power": 0.88
+      }
+    },
+    {
+      "name": "Silent Natural Phenomenon",
+      "description": "This real natural phenomenon combines natural character with powerful value and beautiful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Natural Phenomenon",
+        "slug": "natural-phenomenon"
+      },
+      "tags": [
+        "natural",
+        "powerful",
+        "beautiful",
+        "dangerous",
+        "rare",
+        "mysterious"
+      ],
+      "price": "15080000000000000000",
+      "rarity": 0.8749,
+      "reality_type": "real",
+      "status": "sold_out",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8784,
+        "luxury": 0.6573,
+        "novelty": 0.9822,
+        "historical_value": 0.2624,
+        "technology_level": 0.0098,
+        "natural_significance": 0.9495,
+        "fantasy_level": 0.3186,
+        "space_affinity": 0.0889,
+        "power": 0.988
+      }
+    },
+    {
+      "name": "Luck",
+      "description": "A transferable measure of improbable good fortune with unpredictable side effects.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Concept",
+        "slug": "concept"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "valuable",
+        "rare",
+        "fantasy"
+      ],
+      "price": "399200000000000000000",
+      "rarity": 0.9772,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4158,
+        "luxury": 0.8483,
+        "novelty": 0.9568,
+        "historical_value": 0.7437,
+        "technology_level": 0.1843,
+        "natural_significance": 0.2479,
+        "fantasy_level": 0.8738,
+        "space_affinity": 0.0687,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Silence",
+      "description": "Silence is a abstract concept selected for its impossible, mysterious, and powerful qualities.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Concept",
+        "slug": "concept"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "valuable",
+        "rare"
+      ],
+      "price": "38950000000000000000",
+      "rarity": 0.8518,
+      "reality_type": "abstract",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3748,
+        "luxury": 0.7767,
+        "novelty": 0.861,
+        "historical_value": 0.7058,
+        "technology_level": 0.1434,
+        "natural_significance": 0.3504,
+        "fantasy_level": 0.7928,
+        "space_affinity": 0.1632,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Infinite Patience",
+      "description": "A singular concept known for being impossible, mysterious, and unusually powerful.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Concept",
+        "slug": "concept"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "valuable",
+        "legendary"
+      ],
+      "price": "342500000000000000000",
+      "rarity": 0.9191,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4812,
+        "luxury": 0.6901,
+        "novelty": 1.0,
+        "historical_value": 0.7522,
+        "technology_level": 0.1651,
+        "natural_significance": 0.2537,
+        "fantasy_level": 0.9277,
+        "space_affinity": 0.0,
+        "power": 0.9879
+      }
+    },
+    {
+      "name": "Crimson Abstract Concept",
+      "description": "This abstract concept combines impossible character with mysterious value and powerful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Concept",
+        "slug": "concept"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "valuable",
+        "fantasy"
+      ],
+      "price": "776300000000000000000",
+      "rarity": 0.9378,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.3146,
+        "luxury": 0.7326,
+        "novelty": 1.0,
+        "historical_value": 0.7796,
+        "technology_level": 0.1742,
+        "natural_significance": 0.3704,
+        "fantasy_level": 0.8774,
+        "space_affinity": 0.1745,
+        "power": 0.9855
+      }
+    },
+    {
+      "name": "Silent Abstract Concept",
+      "description": "This abstract concept combines impossible character with mysterious value and powerful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Concept",
+        "slug": "concept"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "valuable",
+        "rare",
+        "exclusive"
+      ],
+      "price": "44440000000000000000",
+      "rarity": 0.7959,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.4764,
+        "luxury": 0.7282,
+        "novelty": 1.0,
+        "historical_value": 0.703,
+        "technology_level": 0.0645,
+        "natural_significance": 0.3101,
+        "fantasy_level": 0.7781,
+        "space_affinity": 0.0586,
+        "power": 0.9942
+      }
+    },
+    {
+      "name": "One Extra Hour Per Day",
+      "description": "A private twenty-fifth hour added to every day, visible only to its owner.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Time & Reality",
+        "slug": "time-reality"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "exclusive",
+        "luxury"
+      ],
+      "price": "4081000000000000000000000",
+      "rarity": 0.987,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8032,
+        "luxury": 0.9391,
+        "novelty": 0.9263,
+        "historical_value": 0.652,
+        "technology_level": 0.6203,
+        "natural_significance": 0.1723,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.4697,
+        "power": 0.9438
+      }
+    },
+    {
+      "name": "A Second Timeline",
+      "description": "This speculative time & reality combines impossible character with mysterious value and powerful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Time & Reality",
+        "slug": "time-reality"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "exclusive"
+      ],
+      "price": "457200000000000000000000",
+      "rarity": 0.7692,
+      "reality_type": "speculative",
+      "status": "coming_soon",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.8938,
+        "luxury": 0.9644,
+        "novelty": 0.959,
+        "historical_value": 0.6482,
+        "technology_level": 0.7068,
+        "natural_significance": 0.1717,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.3328,
+        "power": 1.0
+      }
+    },
+    {
+      "name": "Yesterday",
+      "description": "This abstract time & reality combines impossible character with mysterious value and powerful appeal.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Time & Reality",
+        "slug": "time-reality"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "exclusive",
+        "valuable",
+        "rare"
+      ],
+      "price": "347900000000000000000000",
+      "rarity": 0.8262,
+      "reality_type": "abstract",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7461,
+        "luxury": 0.8624,
+        "novelty": 0.9638,
+        "historical_value": 0.6429,
+        "technology_level": 0.7161,
+        "natural_significance": 0.1546,
+        "fantasy_level": 0.8934,
+        "space_affinity": 0.4326,
+        "power": 0.9516
+      }
+    },
+    {
+      "name": "Crimson Reality Fragment",
+      "description": "Crimson Reality Fragment is a speculative time & reality selected for its impossible, mysterious, and powerful qualities.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Time & Reality",
+        "slug": "time-reality"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "exclusive",
+        "luxury",
+        "rare"
+      ],
+      "price": "8503000000000000000000000",
+      "rarity": 0.7644,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.9027,
+        "luxury": 0.938,
+        "novelty": 0.8998,
+        "historical_value": 0.6861,
+        "technology_level": 0.7373,
+        "natural_significance": 0.111,
+        "fantasy_level": 1.0,
+        "space_affinity": 0.4797,
+        "power": 0.9945
+      }
+    },
+    {
+      "name": "Silent Reality Fragment",
+      "description": "A singular time & reality known for being impossible, mysterious, and unusually powerful.",
+      "category": {
+        "parent": "Abstract & Phenomena",
+        "name": "Time & Reality",
+        "slug": "time-reality"
+      },
+      "tags": [
+        "impossible",
+        "mysterious",
+        "powerful",
+        "exclusive",
+        "valuable",
+        "dangerous"
+      ],
+      "price": "5338000000000000000000000",
+      "rarity": 0.97,
+      "reality_type": "speculative",
+      "status": "available",
+      "catalog_version": "synthetic_product_v1",
+      "generation_seed": 42,
+      "attributes": {
+        "danger": 0.7949,
+        "luxury": 0.8552,
+        "novelty": 0.9408,
+        "historical_value": 0.6093,
+        "technology_level": 0.7292,
+        "natural_significance": 0.1336,
+        "fantasy_level": 0.9905,
+        "space_affinity": 0.3201,
+        "power": 1.0
+      }
+    }
+  ]
+}
