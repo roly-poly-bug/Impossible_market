@@ -1,4 +1,6 @@
-# Synthetic Product Generator v1
+# Synthetic Data Generators
+
+## Synthetic Product Generator v1
 
 The v1 generator creates a reproducible 200-product Impossible Market catalog
 with structured ground truth. It uses only local Python code and never calls an
@@ -177,3 +179,88 @@ positive exact price, non-empty descriptions, and catalog version.
 
 The CLI reports parent-category, reality-type and status distributions; minimum,
 median and maximum prices; and all nine attribute means.
+
+## Synthetic User Generator v1
+
+The user generator creates 1,000 reproducible simulator profiles by default.
+It uses ten overlapping archetypes rather than nine independent uniform draws:
+
+```text
+archetype prototype
+      + optional 20–40% secondary-archetype mixture
+      + Gaussian individual noise
+      v
+nine normalized user preferences
+```
+
+The archetypes are Curious Generalist, Eclectic Browser, Space Enthusiast,
+History Collector, Tech Futurist, Nature Explorer, Fantasy Lover, Power Seeker,
+Luxury Collector, and Thrill Seeker. Curious Generalist has 15% weight,
+Eclectic Browser 13%, and the other types 8–10%. Approximately 30% of generated
+users receive a secondary archetype, so labels remain meaningful without making
+ten perfectly separable clusters.
+
+The fixed preference-to-product mapping is:
+
+```text
+danger_preference      -> danger
+luxury_preference      -> luxury
+novelty_preference     -> novelty
+historical_preference  -> historical_value
+technology_preference  -> technology_level
+nature_preference      -> natural_significance
+fantasy_preference     -> fantasy_level
+space_preference       -> space_affinity
+power_preference       -> power
+```
+
+Each profile also stores continuous `budget_log10`, `price_sensitivity`,
+`popularity_preference`, `exploration_tendency`, `impulsiveness`, and
+`activity_level`. Budget and activity tiers are readable derived labels; future
+simulation should use the continuous values. Price sensitivity is generated
+independently from budget, allowing cautious wealthy users and impulsive users
+with lower budgets. Synthetic `created_at` values start from a fixed UTC epoch
+and advance by user index so exported records remain byte-reproducible.
+
+Generate and summarize without touching SQLite:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42
+```
+
+Export deterministic offline snapshots:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42 \
+  --export-csv data/synthetic_user_v1_seed42.csv \
+  --export-json data/synthetic_user_v1_seed42.json
+```
+
+Write explicitly to SQLite:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42 --write-db
+```
+
+Re-running the same version/count/seed updates the same identities without
+duplicates. A different population requires `--replace-existing`. Replacement
+is refused if an affected user already has a Session or Event row.
+
+`User` remains the stable database identity. `SyntheticUserProfile` is a
+one-to-one table with nine fixed preference columns, behavioral fields, and
+version/seed provenance. The preferences are hidden world state used by a future
+simulator; a recommendation model must not automatically receive them.
+
+Regenerate the population audit with:
+
+```bash
+python -m synthetic_data.user_quality \
+  --count 1000 \
+  --seed 42 \
+  --output docs/synthetic_user_v1_quality.md
+```
+
+The audit checks descriptive statistics, archetype means, correlations,
+nearest-prototype separability, budget coverage of the frozen product catalog,
+and representative preference/product alignment. It does not create Sessions,
+Events, observed datasets, or recommendation output.

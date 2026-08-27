@@ -44,6 +44,20 @@ class RealityType(str, enum.Enum):
     SPECULATIVE = "speculative"
 
 
+class BudgetTier(str, enum.Enum):
+    LOW = "low"
+    MEDIUM = "medium"
+    HIGH = "high"
+    ULTRA_HIGH = "ultra_high"
+    ABSURD = "absurd"
+
+
+class ActivityTier(str, enum.Enum):
+    CASUAL = "casual"
+    REGULAR = "regular"
+    HEAVY = "heavy"
+
+
 product_tags = Table(
     "product_tags",
     Base.metadata,
@@ -61,6 +75,98 @@ class User(Base):
 
     sessions: Mapped[list["Session"]] = relationship(back_populates="user")
     events: Mapped[list["Event"]] = relationship(back_populates="user")
+    synthetic_profile: Mapped["SyntheticUserProfile | None"] = relationship(
+        back_populates="user",
+        cascade="all, delete-orphan",
+        single_parent=True,
+        uselist=False,
+    )
+
+
+class SyntheticUserProfile(Base):
+    __tablename__ = "synthetic_user_profiles"
+    __table_args__ = (
+        CheckConstraint(
+            "secondary_archetype_weight BETWEEN 0 AND 0.5",
+            name="ck_user_secondary_archetype_weight",
+        ),
+        CheckConstraint("danger_preference BETWEEN 0 AND 1", name="ck_user_pref_danger"),
+        CheckConstraint("luxury_preference BETWEEN 0 AND 1", name="ck_user_pref_luxury"),
+        CheckConstraint("novelty_preference BETWEEN 0 AND 1", name="ck_user_pref_novelty"),
+        CheckConstraint("historical_preference BETWEEN 0 AND 1", name="ck_user_pref_history"),
+        CheckConstraint("technology_preference BETWEEN 0 AND 1", name="ck_user_pref_technology"),
+        CheckConstraint("nature_preference BETWEEN 0 AND 1", name="ck_user_pref_nature"),
+        CheckConstraint("fantasy_preference BETWEEN 0 AND 1", name="ck_user_pref_fantasy"),
+        CheckConstraint("space_preference BETWEEN 0 AND 1", name="ck_user_pref_space"),
+        CheckConstraint("power_preference BETWEEN 0 AND 1", name="ck_user_pref_power"),
+        CheckConstraint("budget_log10 BETWEEN 5 AND 30", name="ck_user_budget_log10"),
+        CheckConstraint("price_sensitivity BETWEEN 0 AND 1", name="ck_user_price_sensitivity"),
+        CheckConstraint("popularity_preference BETWEEN 0 AND 1", name="ck_user_popularity_preference"),
+        CheckConstraint("exploration_tendency BETWEEN 0 AND 1", name="ck_user_exploration"),
+        CheckConstraint("impulsiveness BETWEEN 0 AND 1", name="ck_user_impulsiveness"),
+        CheckConstraint("activity_level BETWEEN 0 AND 1", name="ck_user_activity_level"),
+    )
+
+    user_id: Mapped[int] = mapped_column(
+        ForeignKey("users.id", ondelete="CASCADE"),
+        primary_key=True,
+    )
+    archetype: Mapped[str] = mapped_column(String(64), index=True)
+    secondary_archetype: Mapped[str | None] = mapped_column(String(64), nullable=True)
+    secondary_archetype_weight: Mapped[float] = mapped_column(Float, default=0.0)
+    danger_preference: Mapped[float] = mapped_column(Float)
+    luxury_preference: Mapped[float] = mapped_column(Float)
+    novelty_preference: Mapped[float] = mapped_column(Float)
+    historical_preference: Mapped[float] = mapped_column(Float)
+    technology_preference: Mapped[float] = mapped_column(Float)
+    nature_preference: Mapped[float] = mapped_column(Float)
+    fantasy_preference: Mapped[float] = mapped_column(Float)
+    space_preference: Mapped[float] = mapped_column(Float)
+    power_preference: Mapped[float] = mapped_column(Float)
+    budget_log10: Mapped[float] = mapped_column(Float)
+    budget_tier: Mapped[BudgetTier] = mapped_column(
+        Enum(
+            BudgetTier,
+            values_callable=lambda tiers: [tier.value for tier in tiers],
+            native_enum=False,
+            create_constraint=True,
+            length=32,
+        )
+    )
+    price_sensitivity: Mapped[float] = mapped_column(Float)
+    popularity_preference: Mapped[float] = mapped_column(Float)
+    exploration_tendency: Mapped[float] = mapped_column(Float)
+    impulsiveness: Mapped[float] = mapped_column(Float)
+    activity_level: Mapped[float] = mapped_column(Float)
+    activity_tier: Mapped[ActivityTier] = mapped_column(
+        Enum(
+            ActivityTier,
+            values_callable=lambda tiers: [tier.value for tier in tiers],
+            native_enum=False,
+            create_constraint=True,
+            length=32,
+        )
+    )
+    catalog_version: Mapped[str] = mapped_column(String(64), index=True)
+    user_generation_version: Mapped[str] = mapped_column(String(64), index=True)
+    generation_seed: Mapped[int] = mapped_column(index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+
+    user: Mapped[User] = relationship(back_populates="synthetic_profile")
+
+    @property
+    def preference_values(self) -> dict[str, float]:
+        return {
+            "danger_preference": self.danger_preference,
+            "luxury_preference": self.luxury_preference,
+            "novelty_preference": self.novelty_preference,
+            "historical_preference": self.historical_preference,
+            "technology_preference": self.technology_preference,
+            "nature_preference": self.nature_preference,
+            "fantasy_preference": self.fantasy_preference,
+            "space_preference": self.space_preference,
+            "power_preference": self.power_preference,
+        }
 
 
 class Category(Base):
