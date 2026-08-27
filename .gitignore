@@ -37,3 +37,4 @@ ml/models/*
 # Reproducible but large interaction snapshots (regenerate from the CLI)
 data/synthetic_session_v1_seed*.csv
 data/synthetic_event_v1_seed*.csv
+data/synthetic_engagement_v1_seed*.csv

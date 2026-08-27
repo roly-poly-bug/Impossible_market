@@ -173,6 +173,20 @@ and seed is idempotent; replacing another interaction population requires
 artifacts and are Git-ignored. See the
 [Session/Event quality report](docs/synthetic_session_event_v1_quality.md).
 
+Generate Favorite, Add-to-Cart, and Purchase events from that frozen View stream:
+
+```bash
+python -m synthetic_data.generate_engagement_events \
+  --seed 42 \
+  --export-csv data/synthetic_engagement_v1_seed42.csv \
+  --quality-report docs/synthetic_engagement_v1_quality.md
+```
+
+Add `--write-db` only after the frozen Product/User/Session/Event world has been
+written. The same engagement version and seed is idempotent; replacement needs
+`--replace-existing`. The engagement CSV is reproducible and Git-ignored. See
+the [Engagement quality report](docs/synthetic_engagement_v1_quality.md).
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -251,10 +265,12 @@ ProductAttribute  --> hidden simulator ground truth
                   --> synthetic user behavior generation
 ```
 
-The interaction generator is a synthetic-world mechanism, not a recommendation
-model. Exposure deliberately mixes preference, popularity, exploration, and
-random products. Therefore `not viewed` does not mean `disliked`, and no label
-exists for a product that was never exposed.
+The interaction and engagement generators are synthetic-world mechanisms, not
+recommendation models. Exposure deliberately mixes preference, popularity,
+exploration, and random products. Therefore `not viewed` does not mean
+`disliked`, and no label exists for a product that was never exposed. Likewise,
+View, Favorite, Cart, and Purchase represent different intent levels rather
+than interchangeable positive labels.
 
 ### Synthetic User Ground Truth
 
@@ -296,11 +312,12 @@ python -m pytest
 - Reproducible user CSV/JSON snapshot and population quality audit
 - Deterministic `synthetic_session_event_v1` generator for a 30-day browsing window
 - Reproducible Session/Event CSV export, validation, idempotent DB writer, and quality audit
+- Deterministic `synthetic_engagement_v1` Favorite/Cart/Purchase generator and funnel audit
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
-- No favorite/cart/purchase generation, recommendation model, or inference implementation yet
+- No Order/payment flow, recommendation model, or inference implementation yet
 
 ## Planned ML Features
 
