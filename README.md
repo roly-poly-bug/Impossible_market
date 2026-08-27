@@ -17,6 +17,9 @@ machine-learning inference connect to a web application.
 
 ```text
 React catalog  --HTTP/JSON-->  FastAPI product API  -->  SQLite
+                                      ^                  ^
+                                      |                  |
+                           synthetic generators --------+
                                       |
                                       +--> future ML inference layer
 ```
@@ -152,6 +155,24 @@ activity levels. A different existing v1 population requires
 Session or Event rows. See the
 [Synthetic User quality report](docs/synthetic_user_v1_quality.md).
 
+Generate the frozen 30-day Session / Impression / View population and export
+offline CSV files without changing SQLite:
+
+```bash
+python -m synthetic_data.generate_sessions_events \
+  --seed 42 \
+  --start-date 2026-01-01 \
+  --end-date 2026-01-30 \
+  --export-sessions-csv data/synthetic_session_v1_seed42.csv \
+  --export-events-csv data/synthetic_event_v1_seed42.csv
+```
+
+Add `--write-db` to persist the validated records. Repeating the same version
+and seed is idempotent; replacing another interaction population requires
+`--replace-existing`. The larger Session/Event snapshots are reproducible build
+artifacts and are Git-ignored. See the
+[Session/Event quality report](docs/synthetic_session_event_v1_quality.md).
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -230,8 +251,10 @@ ProductAttribute  --> hidden simulator ground truth
                   --> synthetic user behavior generation
 ```
 
-No recommendation model, generated behavior, or ML pipeline is implemented at
-this stage.
+The interaction generator is a synthetic-world mechanism, not a recommendation
+model. Exposure deliberately mixes preference, popularity, exploration, and
+random products. Therefore `not viewed` does not mean `disliked`, and no label
+exists for a product that was never exposed.
 
 ### Synthetic User Ground Truth
 
@@ -271,11 +294,13 @@ python -m pytest
 - Reproducible CSV/JSON v1 reference snapshot and catalog quality audit
 - Deterministic `synthetic_user_v1` generator for 1,000 overlapping archetype profiles
 - Reproducible user CSV/JSON snapshot and population quality audit
+- Deterministic `synthetic_session_event_v1` generator for a 30-day browsing window
+- Reproducible Session/Event CSV export, validation, idempotent DB writer, and quality audit
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
-- No Session/Event generation, recommendation model, or inference implementation yet
+- No favorite/cart/purchase generation, recommendation model, or inference implementation yet
 
 ## Planned ML Features
 

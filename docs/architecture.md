@@ -143,4 +143,45 @@ Generation, validation, export, analysis, and SQLAlchemy persistence are
 separate modules. The same user version, count, and seed produces identical
 records and byte-identical snapshots. Replacement of a different v1 population
 is explicit and is refused once any affected User has a Session or Event row.
-This milestone does not generate either of those downstream records.
+The next section documents the now-implemented first layer of those downstream
+records; the profile remains hidden ground truth rather than a model input.
+
+## Synthetic Session / Impression / View Generator v1
+
+```text
+Frozen Product v1 + Frozen User v1
+                  |
+                  v
+         Session generation
+                  |
+                  v
+ preference / popular / exploration / random exposure mix
+                  |
+                  v
+          Impression events
+                  |
+                  v
+ noisy preference + price + popularity + exploration utility
+                  |
+                  v
+              View events
+                  |
+                  v
+        validation and quality audit
+```
+
+Generation, validation, summary, CSV export, and SQLAlchemy persistence are
+separate modules. Sessions and Events carry stable IDs plus
+`generation_version` and `generation_seed`; database writes are explicit and
+idempotent for one frozen population. An additive startup compatibility step
+adds the new nullable interaction columns to an older local SQLite database.
+
+Exposure is an observed opportunity, not the user's true preference. A product
+that was not viewed may have been ignored under noise, price friction, or its
+position in a mixed exposure set. A product that was not exposed has no feedback
+label at all. Future recommendation experiments must preserve this distinction
+to avoid treating missing exposure as negative preference.
+
+The v1 generator emits only `impression` and `view`. It does not implement a
+ranking/recommendation model, recommendation API, or favorite/cart/purchase
+funnel.

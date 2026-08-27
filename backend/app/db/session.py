@@ -68,6 +68,53 @@ def _upgrade_additive_product_columns() -> None:
             )
 
 
+def _upgrade_additive_interaction_columns() -> None:
+    """Add pre-Alembic Session/Event provenance columns to local databases."""
+    inspector = inspect(engine)
+    table_names = set(inspector.get_table_names())
+    statements = []
+    if "sessions" in table_names:
+        session_columns = {column["name"] for column in inspector.get_columns("sessions")}
+        for name, sql_type in (
+            ("ended_at", "DATETIME"),
+            ("entry_type", "VARCHAR(32)"),
+            ("generation_version", "VARCHAR(64)"),
+            ("generation_seed", "INTEGER"),
+        ):
+            if name not in session_columns:
+                statements.append(f"ALTER TABLE sessions ADD COLUMN {name} {sql_type}")
+    if "events" in table_names:
+        event_columns = {column["name"] for column in inspector.get_columns("events")}
+        for name, sql_type in (
+            ("event_key", "VARCHAR(64)"),
+            ("exposure_source", "VARCHAR(32)"),
+            ("generation_version", "VARCHAR(64)"),
+            ("generation_seed", "INTEGER"),
+        ):
+            if name not in event_columns:
+                statements.append(f"ALTER TABLE events ADD COLUMN {name} {sql_type}")
+
+    if statements:
+        with engine.begin() as connection:
+            for statement in statements:
+                connection.exec_driver_sql(statement)
+    if "sessions" in table_names or "events" in table_names:
+        with engine.begin() as connection:
+            if "sessions" in table_names:
+                connection.exec_driver_sql(
+                    "CREATE INDEX IF NOT EXISTS ix_sessions_generation_version "
+                    "ON sessions (generation_version)"
+                )
+            if "events" in table_names:
+                connection.exec_driver_sql(
+                    "CREATE UNIQUE INDEX IF NOT EXISTS ix_events_event_key ON events (event_key)"
+                )
+                connection.exec_driver_sql(
+                    "CREATE INDEX IF NOT EXISTS ix_events_generation_version "
+                    "ON events (generation_version)"
+                )
+
+
 def backup_legacy_database() -> Path | None:
     """Move a pre-metadata development DB aside so it remains recoverable."""
     if not _has_legacy_product_schema():
@@ -99,6 +146,7 @@ def init_database() -> None:
         )
 
     _upgrade_additive_product_columns()
+    _upgrade_additive_interaction_columns()
 
     # Importing models registers their tables on Base.metadata.
     from backend.app.db import models  # noqa: F401

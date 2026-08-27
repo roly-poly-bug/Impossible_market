@@ -264,3 +264,51 @@ The audit checks descriptive statistics, archetype means, correlations,
 nearest-prototype separability, budget coverage of the frozen product catalog,
 and representative preference/product alignment. It does not create Sessions,
 Events, observed datasets, or recommendation output.
+
+## Synthetic Session / Impression / View Generator v1
+
+The interaction generator combines the frozen 200-product and 1,000-user worlds
+over `2026-01-01` through `2026-01-30` UTC. Activity level controls a noisy,
+overlapping Poisson session count. Sessions contain 5–30 unique product
+Impressions and probabilistic Views with strictly increasing timestamps.
+
+Exposure slots use a deterministic 50% preference, 20% popular, 20%
+exploration, and 10% random allocation (integer rounding varies an individual
+session by at most a slot). Preference match uses centered user preferences and
+catalog-standardized product attributes rather than compressed raw cosine.
+Initial popularity is an internal deterministic prior derived from rarity,
+luxury, novelty, and a product-name hash. A weak continuity term makes products
+near the last viewed item's category/attributes slightly easier to expose.
+
+View probability is a noisy logistic utility combining preference match,
+popularity, novelty, exploration, and soft log-price friction. Price above the
+user budget never forces probability to zero. This is a simulator rule, not a
+production recommender.
+
+Generate and export without changing SQLite:
+
+```bash
+python -m synthetic_data.generate_sessions_events \
+  --seed 42 \
+  --start-date 2026-01-01 \
+  --end-date 2026-01-30 \
+  --export-sessions-csv data/synthetic_session_v1_seed42.csv \
+  --export-events-csv data/synthetic_event_v1_seed42.csv
+```
+
+Persist only after validation with `--write-db`. Re-running the same frozen
+population is idempotent. `--replace-existing` replaces only compatible
+`synthetic_session_event_v1` Impression/View rows and refuses to erase unrelated
+or later-funnel events.
+
+The CSV snapshots are deterministic but comparatively large, so they are
+Git-ignored and regenerated from the command above. The quality audit is tracked
+at `docs/synthetic_session_event_v1_quality.md` and can be regenerated with:
+
+```bash
+python -m synthetic_data.interaction_quality
+```
+
+Exposure is not preference. `not viewed` is not equivalent to `disliked`, and
+`not exposed` means no behavioral label was observed. Favorite, add-to-cart,
+purchase, and every recommendation model remain outside v1.
