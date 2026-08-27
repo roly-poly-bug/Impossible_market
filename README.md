@@ -51,7 +51,7 @@ Impossible_market/
 |   |-- training/
 |   |-- evaluation/
 |   `-- inference/
-|-- synthetic_data/    # Future synthetic-data generators
+|-- synthetic_data/    # Reproducible structured catalog generation
 |-- tests/             # Backend API tests
 |-- docs/              # Architecture and development notes
 |-- AGENTS.md
@@ -101,9 +101,28 @@ python -m backend.app.db.seed_products
 
 The command can be run repeatedly: existing products are detected by their
 unique names and are not duplicated. Because this project does not use Alembic
-yet, delete a local development DB created with an older schema and run the seed
-again when the model changes. The DB file contains disposable local data and is
-ignored by Git.
+yet, the command detects the earlier product schema, preserves that DB as a
+timestamped backup, and rebuilds the development catalog when needed. Database
+files and backups are ignored by Git.
+
+Generate and validate the 200-product synthetic catalog without changing the DB:
+
+```bash
+python -m synthetic_data.generate_products --count 200 --seed 42
+```
+
+Write the validated catalog explicitly:
+
+```bash
+python -m synthetic_data.generate_products --count 200 --seed 42 --write-db
+```
+
+The seven familiar development products are deterministic members of the 200
+products and are updated in place. Re-running the same seed is idempotent. If a
+different seed or product set already exists, the command refuses to change it
+unless `--replace-existing` is explicitly supplied. That option replaces only
+products marked `synthetic_product_v1`; it does not reset the whole database.
+See `synthetic_data/README.md` for the generation contract and distributions.
 
 ### Frontend
 
@@ -121,9 +140,10 @@ loads that product from the detail endpoint.
 
 ## Product Database and API
 
-The `products` table contains `id`, `name`, `description`, `category`, `price`,
-`rarity`, `image_url`, and `created_at`. Product names are unique, and rarity is
-constrained to the range `0` through `1`.
+The `products` table contains the product identity and commercial fields:
+`id`, `name`, `description`, `category_id`, `price`, `rarity`, `image_url`,
+`status`, `reality_type`, generator provenance, `created_at`, and `updated_at`.
+Product names are unique, and rarity is constrained to the range `0` through `1`.
 
 SQLite cannot store arbitrary-precision decimal values natively, so prices are
 stored as exact base-10 text while SQLAlchemy exposes them as Python `Decimal`
@@ -133,9 +153,44 @@ for extremely expensive artifacts.
 
 Available endpoints:
 
-- `GET /api/products` — list products in insertion order
-- `GET /api/products/{product_id}` — retrieve one product, or return `404`
+- `GET /api/products` — lightweight list; category remains a display string
+- `GET /api/products/{product_id}` — detail with category, tags, and attributes, or `404`
 - `GET /api/health` — backend availability check
+
+### Product Metadata
+
+The metadata tables have deliberately different responsibilities:
+
+- `Category` gives each product one stable classification and supports a
+  nullable parent category for future hierarchies.
+- `Tag` supplies flexible, human-readable labels through the `product_tags`
+  many-to-many table. Tags are appropriate for display and filtering.
+- `ProductAttribute` stores named, normalized numeric values from `0` to `1`.
+  These flexible feature axes do not become fixed columns on `Product`.
+- `Product` stays focused on the item itself and points to its category.
+
+The seven-item seed creates categories, tags, associations, and product
+attributes idempotently. If it encounters the earlier string-category schema,
+the seed command moves the existing local DB to a timestamped
+`*.pre-metadata-*.db` backup before rebuilding and restoring the seven seeded
+products. Run the same seed command after updating this branch:
+
+```bash
+python -m backend.app.db.seed_products
+```
+
+Product attributes may later serve two distinct experiment roles:
+
+```text
+Product metadata  --> Content-based recommendation inputs
+Event logs        --> Collaborative-filtering inputs (metadata may be unused)
+
+ProductAttribute  --> hidden simulator ground truth
+                  --> synthetic user behavior generation
+```
+
+No recommendation model, generated behavior, or ML pipeline is implemented at
+this stage.
 
 ## Environment Variables
 
@@ -161,8 +216,11 @@ python -m pytest
 - Minimal React landing page
 - FastAPI `GET /api/health` endpoint
 - SQLite-backed product catalog and idempotent seven-product seed
+- Hierarchical categories, many-to-many tags, and normalized product attributes
+- Deterministic `synthetic_product_v1` generator for 200 structured products
 - FastAPI product list and detail endpoints
-- React product cards, detail pages, and loading/error/empty states
+- React product cards, progressive catalog display, metadata-aware detail pages,
+  and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
 - No generated dataset, recommendation model, or inference implementation yet
 
