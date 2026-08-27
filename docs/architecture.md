@@ -185,3 +185,37 @@ to avoid treating missing exposure as negative preference.
 The v1 generator emits only `impression` and `view`. It does not implement a
 ranking/recommendation model, recommendation API, or favorite/cart/purchase
 funnel.
+
+## Synthetic Engagement Generator v1
+
+```text
+Frozen Impression / View
+           |
+           v
+user-item repeated-interest state
+           |
+           +-- Favorite utility: preference / novelty / rarity / luxury
+           +-- Cart utility: preference / price / impulsiveness / Favorite
+           `-- Purchase utility: stronger price / state / impulsiveness
+           |
+           v
+same-session or later-session engagement Events
+```
+
+The engagement layer is separate from View generation and carries its own
+`synthetic_engagement_v1` provenance. It appends Favorite, Add-to-Cart, and
+Purchase rows to the existing generic Event table. No new domain table is
+needed. Stable Event IDs make same-population writes idempotent, and an explicit
+replacement affects only engagement-version rows.
+
+Each deep Event points to an existing user, product, and Session and is derived
+from an earlier View of that user-item pair. Favorite/Cart/Purchase are each
+limited to one occurrence per user-item. Cart and Purchase require an available
+product, while Favorite does not. Later-Session placement provides simple state
+continuity without introducing an application-level state machine.
+
+View, Favorite, Cart, and Purchase are different observed intent levels. None is
+identical to true preference: exposure bias, product status, price, budget,
+impulsiveness, repeated interest, prior state, and noise affect what is logged.
+Recommendation event weights, datasets, models, Orders, and payment processing
+remain downstream concerns.

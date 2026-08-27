@@ -311,4 +311,44 @@ python -m synthetic_data.interaction_quality
 
 Exposure is not preference. `not viewed` is not equivalent to `disliked`, and
 `not exposed` means no behavioral label was observed. Favorite, add-to-cart,
-purchase, and every recommendation model remain outside v1.
+and purchase remain outside the interaction generator and are added by the
+separate engagement layer below; every recommendation model remains out of scope.
+
+## Synthetic Engagement Generator v1
+
+`synthetic_engagement_v1` consumes the frozen `synthetic_session_event_v1`
+View stream without changing its Product, User, Session, Exposure, or View
+coefficients. It maintains a small in-memory user-item state containing repeated
+View count and planned Favorite/Cart/Purchase state.
+
+Favorite emphasizes preference, novelty, rarity, luxury, repeated interest, and
+noise, with almost no price friction. Cart adds moderate price friction,
+impulsiveness, and a Favorite bonus. Purchase uses stronger price friction plus
+impulsiveness and prior Favorite/Cart bonuses. Cart and Purchase require an
+`available` product, but Favorite is permitted for every status. Every deep
+engagement Event requires an earlier View; each user-item can produce each deep
+event type at most once.
+
+Actions may be placed in the source View Session or in a later Session up to
+seven days away. Favorite and Cart increase later conversion probability but
+are not mandatory gates, so direct Cart and Purchase paths remain possible.
+Purchase above budget remains possible under noise and impulsiveness. No Order,
+quantity, payment, or recommendation weighting is created.
+
+```bash
+python -m synthetic_data.generate_engagement_events \
+  --seed 42 \
+  --export-csv data/synthetic_engagement_v1_seed42.csv \
+  --quality-report docs/synthetic_engagement_v1_quality.md
+```
+
+Use `--write-db` to insert only after the upstream frozen world exists in
+SQLite. A same-version rerun updates matching stable Event IDs without
+duplicates. Replacing another engagement population requires
+`--replace-existing` and never deletes Impression/View rows.
+
+The separate engagement-only CSV keeps the frozen exposure snapshot immutable
+and makes later dataset joins explicit through user, product, Session, and
+source-View IDs. It is Git-ignored because it is a reproducible generated
+artifact. `View ≠ Favorite ≠ Cart ≠ Purchase`, and `Observed Event ≠ True
+Preference` remain core modeling assumptions.
