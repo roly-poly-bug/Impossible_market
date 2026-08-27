@@ -20,7 +20,9 @@ SQLite upsert
 
 Generation and database persistence are separate. `product_generator.py`
 returns structured Python records; `database.py` owns SQLAlchemy mapping;
-`generate_products.py` is the CLI.
+`export.py` owns deterministic offline serialization; `generate_products.py`
+is the CLI. `catalog_quality.py` computes audit statistics without implementing
+a recommendation model.
 
 ## Catalog Contract
 
@@ -128,6 +130,34 @@ python -m synthetic_data.generate_products --count 200 --seed 42 --write-db
 The same generator version, count, and seed produces equal records. The DB
 stores both `catalog_version` and `generation_seed`. Re-running the same catalog
 updates matching unique names without duplicates.
+
+Export a pandas-friendly flat CSV and structured JSON snapshot without changing
+SQLite:
+
+```bash
+python -m synthetic_data.generate_products --count 200 --seed 42 \
+  --export-csv data/synthetic_product_v1_seed42.csv \
+  --export-json data/synthetic_product_v1_seed42.json
+```
+
+CSV tags use `|` as a delimiter; the fixed tag vocabulary contains no pipe
+characters. Prices are serialized as exact base-10 strings in both formats so
+large values do not lose precision. JSON has top-level version, seed, count,
+and attribute-name metadata plus nested category, tags, and attributes.
+
+The checked-in seed-42 snapshots are deliberately small, reproducible reference
+data for offline experiments. Regenerate the quality report with:
+
+```bash
+python -m synthetic_data.catalog_quality \
+  --count 200 \
+  --seed 42 \
+  --output docs/synthetic_product_v1_quality.md
+```
+
+The report records descriptive statistics, category means, Pearson
+correlations, rarity/price/tag distributions, and representative cosine-neighbor
+checks. It only audits the feature space; it is not a recommender.
 
 When another seed or product set is already marked `synthetic_product_v1`, the
 writer stops. Replacement requires explicit authorization:

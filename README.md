@@ -111,6 +111,20 @@ Generate and validate the 200-product synthetic catalog without changing the DB:
 python -m synthetic_data.generate_products --count 200 --seed 42
 ```
 
+Export the same validated catalog for offline analysis without touching SQLite:
+
+```bash
+python -m synthetic_data.generate_products --count 200 --seed 42 \
+  --export-csv data/synthetic_product_v1_seed42.csv \
+  --export-json data/synthetic_product_v1_seed42.json
+```
+
+The small seed-42 CSV and JSON snapshots are tracked as the reproducible v1
+reference catalog. CSV stores one product per row, exact prices as base-10 text,
+and pipe-delimited tags. JSON preserves nested category, tag, attribute, and
+catalog metadata. See [the catalog quality report](docs/synthetic_product_v1_quality.md)
+for distributions, correlations, category structure, and feature-space sanity checks.
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -218,11 +232,12 @@ python -m pytest
 - SQLite-backed product catalog and idempotent seven-product seed
 - Hierarchical categories, many-to-many tags, and normalized product attributes
 - Deterministic `synthetic_product_v1` generator for 200 structured products
+- Reproducible CSV/JSON v1 reference snapshot and catalog quality audit
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
-- No generated dataset, recommendation model, or inference implementation yet
+- No synthetic User/Event dataset, recommendation model, or inference implementation yet
 
 ## Planned ML Features
 
