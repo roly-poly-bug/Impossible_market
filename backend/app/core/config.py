@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_url: str = "sqlite:///./impossible_market.db"
+    database_url: str = "sqlite:///./backend/data/impossible_market.db"
     cors_origins: str = "http://localhost:5173"
 
     model_config = SettingsConfigDict(
