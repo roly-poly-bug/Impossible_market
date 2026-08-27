@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 
 const apiBaseUrl = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+const catalogPageSize = 24;
 
 function formatPrice(price) {
   const [integerPart, decimalPart = ""] = String(price).split(".");
@@ -13,6 +14,19 @@ function formatPrice(price) {
 function formatRarity(rarity) {
   return `${(rarity * 100).toLocaleString("en", { maximumFractionDigits: 1 })}% rarity`;
 }
+
+function formatStatus(status) {
+  return status.replaceAll("_", " ").replace(/^./, (letter) => letter.toUpperCase());
+}
+
+const publicAttributeLabels = {
+  danger: "Danger",
+  luxury: "Luxury",
+  novelty: "Novelty",
+  historical_value: "Historical value",
+  technology_level: "Technology level",
+  natural_significance: "Natural significance",
+};
 
 function useApi(path) {
   const [result, setResult] = useState({ state: "loading", data: null, message: "" });
@@ -80,6 +94,7 @@ function ProductCard({ product }) {
 
 function CatalogPage() {
   const products = useApi("/api/products");
+  const [visibleCount, setVisibleCount] = useState(catalogPageSize);
 
   return (
     <>
@@ -95,9 +110,21 @@ function CatalogPage() {
         <Message>The catalog is empty. Run the product seed command to stock the shelves.</Message>
       )}
       {products.state === "success" && products.data.length > 0 && (
-        <section className="product-grid" aria-label="Product catalog">
-          {products.data.map((product) => <ProductCard key={product.id} product={product} />)}
-        </section>
+        <>
+          <section className="product-grid" aria-label="Product catalog">
+            {products.data
+              .slice(0, visibleCount)
+              .map((product) => <ProductCard key={product.id} product={product} />)}
+          </section>
+          <div className="catalog-progress">
+            <span>Showing {Math.min(visibleCount, products.data.length)} of {products.data.length}</span>
+            {visibleCount < products.data.length && (
+              <button type="button" onClick={() => setVisibleCount((count) => count + catalogPageSize)}>
+                Show more artifacts
+              </button>
+            )}
+          </div>
+        </>
       )}
     </>
   );
@@ -123,13 +150,42 @@ function ProductDetailPage({ productId }) {
         <img className="product-detail__image" src={product.data.image_url} alt={product.data.name} />
       )}
       <div className="product-detail__meta">
-        <span>{product.data.category}</span>
+        <span>{product.data.category.name}</span>
         <span>{formatRarity(product.data.rarity)}</span>
       </div>
       <h1>{product.data.name}</h1>
       <p className="product-detail__description">{product.data.description}</p>
       <p className="product-detail__price">{formatPrice(product.data.price)}</p>
-      <p className="availability">One known example · Acquisition unavailable</p>
+      <p className={`availability availability--${product.data.status}`}>
+        Status · {formatStatus(product.data.status)}
+      </p>
+      <p className="reality-type">Reality · {formatStatus(product.data.reality_type)}</p>
+
+      <section className="metadata-section" aria-labelledby="tags-heading">
+        <h2 id="tags-heading">Known qualities</h2>
+        <div className="tag-list">
+          {product.data.tags.map((tag) => <span className="tag" key={tag.id}>{tag.name}</span>)}
+        </div>
+      </section>
+
+      <section className="metadata-section" aria-labelledby="attributes-heading">
+        <h2 id="attributes-heading">Artifact profile</h2>
+        <div className="attribute-list">
+          {Object.entries(product.data.attributes)
+            .filter(([name]) => publicAttributeLabels[name])
+            .map(([name, value]) => (
+              <div className="attribute" key={name}>
+                <div className="attribute__label">
+                  <span>{publicAttributeLabels[name]}</span>
+                  <span>{Math.round(value * 100)}%</span>
+                </div>
+                <div className="attribute__track" aria-label={`${publicAttributeLabels[name]} ${Math.round(value * 100)}%`}>
+                  <span style={{ width: `${value * 100}%` }} />
+                </div>
+              </div>
+            ))}
+        </div>
+      </section>
     </article>
   );
 }
