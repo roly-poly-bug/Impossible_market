@@ -1,15 +1,21 @@
 # Python
 __pycache__/
 *.pyc
+.pytest_cache/
+.coverage
+htmlcov/
 .venv/
 venv/
 
 # Node
 node_modules/
+dist/
 
 # Environment variables
 .env
 .env.*
+!.env.example
+!**/.env.example
 
 # IDE
 .vscode/
@@ -19,6 +25,11 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Data / models
-data/
-models/
+# Generated database and ML artifacts
+*.db
+*.sqlite
+*.sqlite3
+ml/data/*
+!ml/data/.gitkeep
+ml/models/*
+!ml/models/.gitkeep
