@@ -12,6 +12,21 @@ The initial domain model reserves four core entities:
 - `Session`: a browsing period, optionally linked to a user.
 - `Event`: an impression, view, favorite, add-to-cart, or purchase interaction.
 
+Synthetic simulation metadata extends `User` without turning identity rows into
+wide experiment records:
+
+```text
+User 1 ----- 0..1 SyntheticUserProfile
+                       |
+                       +-- fixed nine-column preference vector
+                       +-- budget and behavioral tendencies
+                       `-- generator provenance
+```
+
+The fixed columns make a `(1000, 9)` user matrix straightforward to load. This
+is intentionally different from flexible `ProductAttribute` rows: the v1 user
+preference vocabulary is fixed and benefits from direct typed columns.
+
 ## Product Metadata Model
 
 ```text
@@ -92,3 +107,40 @@ requires an explicit flag and affects only that catalog version.
 These attributes are structured simulator ground truth, not an implemented ML
 feature pipeline. Future synthetic users may react to them; future collaborative
 models may observe only the resulting events.
+
+## Synthetic User Generator v1
+
+```text
+ProductAttribute ground truth
+            |
+            v
+Archetype prototype + optional secondary prototype + individual noise
+            |
+            v
+SyntheticUserProfile hidden ground truth
+            |
+            +-- budget_log10 / budget tier
+            +-- price sensitivity / popularity preference
+            +-- exploration / impulsiveness
+            `-- activity level / activity tier
+            |
+            v
+      future Session / Event simulator
+            |
+            v
+       observed interactions
+            |
+            v
+ future recommendation experiment
+```
+
+`SyntheticUserProfile` is simulator-only information. A future collaborative
+filtering model may train on observed Event rows without receiving these true
+preferences. This preserves the boundary between hidden data-generating causes
+and features available to a learned model.
+
+Generation, validation, export, analysis, and SQLAlchemy persistence are
+separate modules. The same user version, count, and seed produces identical
+records and byte-identical snapshots. Replacement of a different v1 population
+is explicit and is refused once any affected User has a Session or Event row.
+This milestone does not generate either of those downstream records.

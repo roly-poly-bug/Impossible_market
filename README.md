@@ -125,6 +125,33 @@ and pipe-delimited tags. JSON preserves nested category, tag, attribute, and
 catalog metadata. See [the catalog quality report](docs/synthetic_product_v1_quality.md)
 for distributions, correlations, category structure, and feature-space sanity checks.
 
+Generate the deterministic 1,000-user hidden-ground-truth population:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42
+```
+
+Export it for offline simulation work without changing SQLite:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42 \
+  --export-csv data/synthetic_user_v1_seed42.csv \
+  --export-json data/synthetic_user_v1_seed42.json
+```
+
+Write the validated users and profiles explicitly:
+
+```bash
+python -m synthetic_data.generate_users --count 1000 --seed 42 --write-db
+```
+
+The user generator creates overlapping archetype-based preference vectors,
+log-scale budgets, price/popularity/exploration/impulsiveness tendencies, and
+activity levels. A different existing v1 population requires
+`--replace-existing`; replacement is refused if affected users already have
+Session or Event rows. See the
+[Synthetic User quality report](docs/synthetic_user_v1_quality.md).
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -206,6 +233,15 @@ ProductAttribute  --> hidden simulator ground truth
 No recommendation model, generated behavior, or ML pipeline is implemented at
 this stage.
 
+### Synthetic User Ground Truth
+
+`User` stores a stable identity. Its optional one-to-one
+`SyntheticUserProfile` stores the fixed nine preference columns, budget and
+behavior tendencies, activity, and generator provenance. These preferences are
+hidden simulator ground truth. They may generate future behavior but are not
+automatically exposed to a collaborative-filtering model trained on observed
+Event rows.
+
 ## Environment Variables
 
 The checked-in `.env.example` files document all current options. Real `.env`
@@ -233,11 +269,13 @@ python -m pytest
 - Hierarchical categories, many-to-many tags, and normalized product attributes
 - Deterministic `synthetic_product_v1` generator for 200 structured products
 - Reproducible CSV/JSON v1 reference snapshot and catalog quality audit
+- Deterministic `synthetic_user_v1` generator for 1,000 overlapping archetype profiles
+- Reproducible user CSV/JSON snapshot and population quality audit
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
-- No synthetic User/Event dataset, recommendation model, or inference implementation yet
+- No Session/Event generation, recommendation model, or inference implementation yet
 
 ## Planned ML Features
 
