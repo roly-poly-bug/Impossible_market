@@ -1,0 +1,1 @@
+"""Impossible Market test suite."""
