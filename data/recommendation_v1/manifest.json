@@ -1,0 +1,146 @@
+{
+  "artifacts": {
+    "candidate_sets.json": {
+      "bytes": 18737,
+      "sha256": "68d32cbe0ba1a97d137e863702a28ad3353a4aa99dc82ca02e7505beb184367c"
+    },
+    "impressed_candidates_test.json": {
+      "bytes": 504513,
+      "sha256": "d087895e8a8cf33bc91fe8f82d2a2fe56abc6086dfb8c501270c827b7c47d8c6"
+    },
+    "impressed_candidates_train.json": {
+      "bytes": 1558922,
+      "sha256": "c1d81b1166459b22f77cca9f80c9342cde3376515fc15c451430eef2cb9cba04"
+    },
+    "impressed_candidates_validation.json": {
+      "bytes": 495405,
+      "sha256": "c7b6a03086a0f12581514f6cf8dee9dd635c2c81bb9bb75fac37fbbcd8c58b70"
+    },
+    "master_interactions.csv": {
+      "bytes": 22631775,
+      "data_rows": 200000,
+      "sha256": "2b53fe60bb8eb10d84df0a83c4036015c858f46b0841dca4e7c2870fe7aa0a95"
+    },
+    "test_relevance_favoriteplus.json": {
+      "bytes": 78371,
+      "sha256": "70a84a30c373b8c4c9ec27f3c26569dfa4c9e876c9007becf5db9082baea3833"
+    },
+    "test_relevance_purchase.json": {
+      "bytes": 47754,
+      "sha256": "5fd7fda18a47b839f2ee3f5ab161edb9d6286bad90b44131bf9e3634d0f0a388"
+    },
+    "test_relevance_viewplus.json": {
+      "bytes": 196944,
+      "sha256": "b541a79f50a408645d523d8b1f6c678e4f0cf04304acb68091f258e98fb81b47"
+    },
+    "train_favoriteplus.csv": {
+      "bytes": 19060086,
+      "data_rows": 200000,
+      "sha256": "300af4428ffe0fed8a3be7017bc7d1f2c7b4be0c9046cf4377df41473e5cf9fa"
+    },
+    "train_purchase.csv": {
+      "bytes": 18308281,
+      "data_rows": 200000,
+      "sha256": "d1ff54f1f37c7b998c38930ec307236fb8bd1b582e043ef3f048125ad4211f5f"
+    },
+    "train_seen_items_favoriteplus.json": {
+      "bytes": 159854,
+      "sha256": "185ed09498bf82754dacaea9cc5c8af925f38d5dc7bcdd0fa81956e90978066c"
+    },
+    "train_seen_items_purchase.json": {
+      "bytes": 61794,
+      "sha256": "8d9bd91dedd0107d59e59845ead7c3801c8306ca8fe6a21c1b04c964a827095f"
+    },
+    "train_seen_items_viewplus.json": {
+      "bytes": 595958,
+      "sha256": "c748fb026c4a2d934a5b1e7c156c0d39670e136bc1292b54d20e37c3fd1e9b32"
+    },
+    "train_viewplus.csv": {
+      "bytes": 18560669,
+      "data_rows": 200000,
+      "sha256": "cac8b7a09f04e928c9169ccb49fa37009579a36d72e34a19050a15c8622ee76b"
+    },
+    "validation_relevance_favoriteplus.json": {
+      "bytes": 73598,
+      "sha256": "0c1c95ca7232da41e204020b29817217478d77c2ea4cf8ee87e42f5f23c0caad"
+    },
+    "validation_relevance_purchase.json": {
+      "bytes": 44743,
+      "sha256": "8b482290c9ccfa5b9eac13ab2dc44c8098755a40a47d190fa2acd33312732d7a"
+    },
+    "validation_relevance_viewplus.json": {
+      "bytes": 195550,
+      "sha256": "b3ff49d58e77ce5a2d24ab08045627622d8b8f17b88c1d1ac783c1679c230718"
+    }
+  },
+  "candidate_policies": {
+    "favoriteplus": {
+      "excluded_statuses": [],
+      "item_count": 200,
+      "policy": "all_catalog_products"
+    },
+    "purchase": {
+      "excluded_statuses": [
+        "coming_soon",
+        "sold_out",
+        "unavailable"
+      ],
+      "item_count": 170,
+      "policy": "available_products_only"
+    },
+    "viewplus": {
+      "excluded_statuses": [],
+      "item_count": 200,
+      "policy": "all_catalog_products"
+    }
+  },
+  "dataset_version": "recommendation_dataset_v1",
+  "default_seen_policy": "Exclude same-task train-positive items; raw seen lists allow experiments to override this.",
+  "event_weights": null,
+  "sampled_negative_policy": "Not implemented; sampled negative would not be a true negative.",
+  "seed": 42,
+  "source_snapshots": {
+    "engagement": {
+      "path": "data/synthetic_engagement_v1_seed42.csv",
+      "sha256": "10c8b6d57f8f74a7b0523c6c5eea18288c58c276e1b8c2bbad7e60a301a4b973"
+    },
+    "products": {
+      "path": "data/synthetic_product_v1_seed42.csv",
+      "sha256": "8637041636166d99b81caf563b875cd2dabda05ccf176b32bd0786e23e7fe1cb"
+    },
+    "session_events": {
+      "path": "data/synthetic_event_v1_seed42.csv",
+      "sha256": "4c6652005233a3608cd2d1eb8fa4f21d45686fd17cfc407a0067ee8d85f85160"
+    },
+    "users": {
+      "path": "data/synthetic_user_v1_seed42.csv",
+      "sha256": "64e385371a59c799bebe47418be600226a8ad01dc376e43a3f9f071f901b3520"
+    }
+  },
+  "source_versions": {
+    "engagement": "synthetic_engagement_v1",
+    "products": "synthetic_product_v1",
+    "session_events": "synthetic_session_event_v1",
+    "users": "synthetic_user_v1"
+  },
+  "splits": {
+    "test": {
+      "end_exclusive": "2026-01-31T00:00:00Z",
+      "start_inclusive": "2026-01-26T00:00:00Z"
+    },
+    "train": {
+      "end_exclusive": "2026-01-21T00:00:00Z",
+      "start_inclusive": "2026-01-01T00:00:00Z"
+    },
+    "validation": {
+      "end_exclusive": "2026-01-26T00:00:00Z",
+      "start_inclusive": "2026-01-21T00:00:00Z"
+    }
+  },
+  "tasks": {
+    "favoriteplus": "Favorite, Cart, or Purchase is positive; View-only is observed non-conversion.",
+    "purchase": "Purchase is positive; viewed without Purchase is observed non-conversion.",
+    "viewplus": "View events are positive; impressed without View is observed non-conversion."
+  },
+  "true_negative_policy": "No true-negative label is created. Unknown remains unknown."
+}
