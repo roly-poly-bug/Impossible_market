@@ -187,6 +187,22 @@ written. The same engagement version and seed is idempotent; replacement needs
 `--replace-existing`. The engagement CSV is reproducible and Git-ignored. See
 the [Engagement quality report](docs/synthetic_engagement_v1_quality.md).
 
+Build the observed-fact Recommendation Dataset v1 from all four frozen
+snapshots:
+
+```bash
+python -m ml.data.build_recommendation_dataset \
+  --dataset-version recommendation_dataset_v1 \
+  --output-dir data/recommendation_v1
+```
+
+This produces a 200,000-row full user-item fact table, three Train task tables,
+Validation/Test relevance sets, task-specific Train seen items, and impressed
+candidate sets. Large generated files are ignored; the manifest and quality
+report remain trackable. See the
+[Recommendation Dataset v1 design](docs/recommendation_dataset_v1.md) and
+[generated quality audit](docs/recommendation_dataset_v1_quality.md).
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -313,6 +329,8 @@ python -m pytest
 - Deterministic `synthetic_session_event_v1` generator for a 30-day browsing window
 - Reproducible Session/Event CSV export, validation, idempotent DB writer, and quality audit
 - Deterministic `synthetic_engagement_v1` Favorite/Cart/Purchase generator and funnel audit
+- Deterministic `recommendation_dataset_v1` builder with UTC temporal splits,
+  observed-fact three-state task tables, relevance/candidate sets, and ranking metrics
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states

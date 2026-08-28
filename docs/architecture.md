@@ -77,6 +77,45 @@ that does not imply every trained model is allowed to observe those attributes.
 No embedding, similarity calculation, training data, model, or inference API is
 part of the current metadata layer.
 
+## Recommendation Dataset v1 Boundary
+
+The Recommendation Dataset Builder lives under `ml/data/` because it transforms
+frozen observations into reusable experiment inputs; it does not belong to the
+synthetic world's data-generating mechanism or to the web API.
+
+```text
+Frozen Product/User snapshots + frozen Event snapshots
+                         |
+                         v
+              observed-fact aggregation
+                         |
+          +--------------+---------------+
+          v              v               v
+        View+        Favorite+       Purchase-only
+          |              |               |
+          +------ half-open UTC splits --+
+                         |
+                         v
+          Train tables + relevance/candidate sets
+```
+
+The interaction matrix records Events, counts, and timestamps. It never imports
+synthetic user preference vectors, hidden product attributes, preference-match
+ground truth, archetype prototypes, or future events. It assigns no fixed
+strength weight and creates no true-negative label.
+
+Each task derives one of `positive`, `observed_non_conversion`, or `unknown`.
+Implicit Feedback has no reliable true negative: non-conversion is merely an
+observed prerequisite without a conversion, while Unknown means that even the
+prerequisite was not observed. A later sampled negative would not be a true
+negative. Sampling remains owned by each future experiment.
+
+Train is `[2026-01-01T00:00:00Z, 2026-01-21T00:00:00Z)`, Validation is
+`[2026-01-21T00:00:00Z, 2026-01-26T00:00:00Z)`, and Test is
+`[2026-01-26T00:00:00Z, 2026-01-31T00:00:00Z)`. Aggregation occurs independently
+inside each interval, so a future conversion cannot change an earlier state.
+See `docs/recommendation_dataset_v1.md` for the complete contract.
+
 ## Synthetic Product Generator v1
 
 The generator remains outside both the web application and `ml/`:

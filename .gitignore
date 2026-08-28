@@ -29,8 +29,7 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
-ml/data/*
-!ml/data/.gitkeep
+ml/data/__pycache__/
 ml/models/*
 !ml/models/.gitkeep
 
@@ -38,3 +37,7 @@ ml/models/*
 data/synthetic_session_v1_seed*.csv
 data/synthetic_event_v1_seed*.csv
 data/synthetic_engagement_v1_seed*.csv
+
+# Reproducible recommendation dataset artifacts; keep the small manifest tracked.
+data/recommendation_v1/*
+!data/recommendation_v1/manifest.json
