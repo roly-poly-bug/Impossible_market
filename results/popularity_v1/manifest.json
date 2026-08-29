@@ -1,0 +1,54 @@
+{
+  "artifacts": {
+    "analysis.json": {
+      "bytes": 2589,
+      "sha256": "777705ebfa8ab326beb1784ca0b65acb52b48e822e9f41dc72edadf58f3b70e0"
+    },
+    "config.json": {
+      "bytes": 1658,
+      "sha256": "8eff3163d1e525fed609c36364419aaa617deed09b5bba7c5a1ce241ba1789b3"
+    },
+    "interaction_representation_stats.csv": {
+      "bytes": 722,
+      "data_rows": 6,
+      "sha256": "16344c535f107d68c5c6fc511cacea8ad58b43ba86b12b687444142fe982b2e5"
+    },
+    "metrics.csv": {
+      "bytes": 16220,
+      "data_rows": 126,
+      "sha256": "659a497f2f25eb9d37140e7647fb035021587fc012bfe9c6eca6b0ee558b85e2"
+    },
+    "purchase_cross_signal_metrics.csv": {
+      "bytes": 5443,
+      "data_rows": 42,
+      "sha256": "9c3f4380a077a7d2624316228744843d221ae770d9bb8ee4d1e859fa72a411b9"
+    },
+    "signal_richness.csv": {
+      "bytes": 574,
+      "data_rows": 5,
+      "sha256": "5d6b7858ce45532c009f66265bf8052452f5d7d1a8f485daacf1d6c8a772226a"
+    },
+    "validation_test_stability.csv": {
+      "bytes": 3352,
+      "data_rows": 21,
+      "sha256": "d2b8c49337f41b90dac8a7fd257b7de9055af1475b694191c88f732bf0024962"
+    }
+  },
+  "dataset_manifest": {
+    "path": "data/recommendation_v1/manifest.json",
+    "sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f"
+  },
+  "dataset_version": "recommendation_dataset_v1",
+  "deterministic_tie_break": "score_desc_product_id_asc",
+  "exclude_seen": true,
+  "experiment_version": "popularity_baseline_v1",
+  "score_source_split": "train_only",
+  "weighted_config": {
+    "cart_weight": 5.0,
+    "favorite_weight": 3.0,
+    "formula": "1*sum_user(log1p(view_count_ui)) + 3*favorite_pairs + 5*cart_pairs + 8*purchase_pairs",
+    "purchase_weight": 8.0,
+    "view_transform": "log1p",
+    "view_weight": 1.0
+  }
+}

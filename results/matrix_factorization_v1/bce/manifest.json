@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "../checkpoints/bce_best.pt": {
+      "bytes": 78893,
+      "sha256": "adc78eb7d34017425e561e113d1a97d264aca57b16ef7fdb9ac646aa114d68f1"
+    },
+    "config.json": {
+      "bytes": 1018,
+      "sha256": "591fcc701ca0e5815641dba42054e5c202d1a431bc81ce327548503156f89eb0"
+    },
+    "diagnostics.json": {
+      "bytes": 996,
+      "sha256": "7799f05cfdb811e34faeaa812baa68e737c3d9d5fed659a370950bca778837fe"
+    },
+    "metrics.csv": {
+      "bytes": 2029,
+      "data_rows": 18,
+      "sha256": "1518601e1f2b0acdffb766c248c67de56259c8c3ab0c85e47dd7b09f0a28a1e9"
+    },
+    "training_history.csv": {
+      "bytes": 1262,
+      "data_rows": 11,
+      "sha256": "26eda1af86bde0683a34f12d45c6e577e33fec9c175363d4f3771635b9099a14"
+    }
+  },
+  "best_epoch": 6,
+  "best_validation_purchase_ndcg_at_10": 0.0692279135889659,
+  "experiment_version": "matrix_factorization_v1",
+  "model_type": "bce"
+}

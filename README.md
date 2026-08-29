@@ -203,6 +203,36 @@ report remain trackable. See the
 [Recommendation Dataset v1 design](docs/recommendation_dataset_v1.md) and
 [generated quality audit](docs/recommendation_dataset_v1_quality.md).
 
+Run the first non-personalized Train-only control experiment:
+
+```bash
+python -m ml.experiments.run_popularity_baselines \
+  --dataset-dir data/recommendation_v1 \
+  --output-dir results/popularity_v1
+```
+
+Popularity Baseline v1 compares raw, unique-User, log-transformed, Favorite+,
+Cart, Purchase, and configurable weighted signals using identical candidates,
+seen exclusion, relevance sets, and Top-K metrics. It also audits six possible
+future user-item matrix representations without training Matrix Factorization.
+See the [Popularity Baseline v1 quality report](docs/popularity_baseline_v1_quality.md).
+
+Install the separate ML runtime dependencies and run the fixed Matrix
+Factorization v1 experiment:
+
+```bash
+python -m pip install -r ml/requirements.txt
+python -m ml.experiments.run_matrix_factorization_v1 \
+  --dataset-dir data/recommendation_v1 \
+  --popularity-dir results/popularity_v1 \
+  --output-dir results/matrix_factorization_v1
+```
+
+The experiment trains bias-free BCE and BPR Matrix Factorization from Binary
+View+ positives and four seeded Random Unknown samples per positive. Validation
+Purchase NDCG@10 selects checkpoints; Test is evaluated once afterward. See the
+[Matrix Factorization v1 quality report](docs/matrix_factorization_v1_quality.md).
+
 Write the validated catalog explicitly:
 
 ```bash
@@ -331,6 +361,10 @@ python -m pytest
 - Deterministic `synthetic_engagement_v1` Favorite/Cart/Purchase generator and funnel audit
 - Deterministic `recommendation_dataset_v1` builder with UTC temporal splits,
   observed-fact three-state task tables, relevance/candidate sets, and ranking metrics
+- Train-only `popularity_baseline_v1` with cross-signal evaluation and interaction
+  representation statistics; no personalized model yet
+- Fixed-config PyTorch BCE/BPR `matrix_factorization_v1` with validation-only
+  early stopping, full-ranking evaluation, and personalization diagnostics
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states

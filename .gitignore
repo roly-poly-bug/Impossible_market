@@ -32,6 +32,7 @@ Thumbs.db
 ml/data/__pycache__/
 ml/models/*
 !ml/models/.gitkeep
+!ml/models/*.py
 
 # Reproducible but large interaction snapshots (regenerate from the CLI)
 data/synthetic_session_v1_seed*.csv
@@ -41,3 +42,9 @@ data/synthetic_engagement_v1_seed*.csv
 # Reproducible recommendation dataset artifacts; keep the small manifest tracked.
 data/recommendation_v1/*
 !data/recommendation_v1/manifest.json
+
+# Optional large per-user ranking exports are reproducible experiment artifacts.
+results/popularity_v1/rankings/
+
+# Reproducible MF checkpoints can be regenerated from tracked configs/results.
+results/matrix_factorization_v1/checkpoints/

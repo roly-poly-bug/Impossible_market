@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "../checkpoints/bpr_best.pt": {
+      "bytes": 78893,
+      "sha256": "04452dc331fe00bd9fd60e761da094dd44fe113ba19ce824687f42018df9be68"
+    },
+    "config.json": {
+      "bytes": 1042,
+      "sha256": "5eda8db829efa80d1ca018bd81e0e151d904b3e11e552d34e1fe9acbe68e0768"
+    },
+    "diagnostics.json": {
+      "bytes": 974,
+      "sha256": "19e270cf5be6a912384a243c452f5d4cdd6715b7afca0cc9e1a65dbadd743da7"
+    },
+    "metrics.csv": {
+      "bytes": 2030,
+      "data_rows": 18,
+      "sha256": "9a81715ee1d6a9feeac2ffb091388f26d5d7c1c9429cbe440d59706688a8a8eb"
+    },
+    "training_history.csv": {
+      "bytes": 2804,
+      "data_rows": 26,
+      "sha256": "0c0e1823bcad4a6bbfe6489275c1518e540d7df8d4236cdb029060f16cc2be6a"
+    }
+  },
+  "best_epoch": 21,
+  "best_validation_purchase_ndcg_at_10": 0.08895668686062923,
+  "experiment_version": "matrix_factorization_v1",
+  "model_type": "bpr"
+}

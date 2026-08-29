@@ -116,6 +116,61 @@ Train is `[2026-01-01T00:00:00Z, 2026-01-21T00:00:00Z)`, Validation is
 inside each interval, so a future conversion cannot change an earlier state.
 See `docs/recommendation_dataset_v1.md` for the complete contract.
 
+## Popularity Baseline v1 Boundary
+
+```text
+Recommendation Dataset v1 Train facts
+                 |
+                 v
+      item-level signal aggregation
+                 |
+     deterministic global rankings
+                 |
+ task candidates + task-specific seen exclusion
+                 |
+                 v
+      Validation / Test relevance evaluation
+```
+
+`ml/baselines/` owns score construction and deterministic ranking,
+`ml/evaluation/` owns model-independent metrics, `ml/representations/` owns
+candidate user-item value transforms, and `ml/experiments/` orchestrates inputs,
+exports, and reports. Popularity never loads hidden simulator ground truth and
+does not personalize: all Users start from the same global item order.
+
+The weighted baseline applies configurable `1/3/5/8` weights to log View,
+Favorite, Cart, and Purchase only as a v1 comparison point. These weights are
+not written back to Recommendation Dataset v1 and are not optimized. A zero
+matrix value means no observed signal under that representation, not dislike or
+a true negative.
+
+## Matrix Factorization v1 Boundary
+
+```text
+Train Binary View+ + seeded Random Unknown
+                   |
+             shared samples
+              /          \
+       BCE objective    BPR objective
+              \          /
+        Validation Purchase NDCG@10
+                   |
+             best checkpoints
+                   |
+       one final full-ranking Test pass
+```
+
+The PyTorch model is intentionally a bias-free dot product between 16-dimensional
+User and Item embeddings. BCE and BPR share positives, Unknown pools, sampled
+items, optimizer, learning rate, regularization, batch size, candidates, seen
+policy, and metrics. Only their objectives differ.
+
+Unknown sampling reads the View+ `unknown` state only. Impression-without-View
+Observed Non-conversion is not sampled in v1. Neither target zero nor a BPR
+comparison denotes true dislike. Users with no Train View+ positive use a
+Train-only Cart-popularity fallback because their learned User embedding has no
+positive training evidence.
+
 ## Synthetic Product Generator v1
 
 The generator remains outside both the web application and `ml/`:

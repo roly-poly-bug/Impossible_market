@@ -9,6 +9,9 @@ learned feature, or inference implementation.
 - `models/`: future model definitions
 - `training/`: future training entry points and experiment configuration
 - `evaluation/`: model-independent Top-K metric helpers
+- `baselines/`: deterministic non-personalized controls
+- `representations/`: observed user-item signal transforms for future experiments
+- `experiments/`: reproducible offline experiment entry points and reports
 - `inference/`: future model loading and backend adapters
 
 Build the deterministic v1 snapshot from the repository root:
@@ -32,3 +35,32 @@ future experiment would not be a true negative.
 No event weights are fixed in v1. This keeps View+, Favorite+, Purchase-only,
 and future weighted-implicit experiments comparable without rewriting the raw
 facts. Model selection and implementation remain a later collaborative phase.
+
+Run Popularity Baseline v1 after building the Recommendation Dataset:
+
+```bash
+python -m ml.experiments.run_popularity_baselines \
+  --dataset-dir data/recommendation_v1 \
+  --output-dir results/popularity_v1
+```
+
+This experiment is deliberately global rather than personalized. Scores use
+Train interactions only, then every eligible User starts with the same ranking
+before task-specific candidate and seen policies are applied. The configurable
+weighted v1 coefficients are an experimental hypothesis, not an optimized
+label. Use `--include-seen` only with a separate output directory when comparing
+the optional non-exclusion policy.
+
+Matrix Factorization v1 is the first deliberately limited personalized model:
+
+```bash
+python -m pip install -r ml/requirements.txt
+python -m ml.experiments.run_matrix_factorization_v1
+```
+
+Both BCE and BPR use the same Train Binary View+ positives and the same four
+seeded Random Unknown samples per positive. Observed Non-conversion is excluded.
+For BCE, target zero means sampled training non-positive, not true dislike; for
+BPR, the learned ordering is positive above sampled Unknown, not a true-negative
+claim. Validation Purchase NDCG@10 alone controls early stopping. Test never
+selects a checkpoint or parameter.
