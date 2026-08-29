@@ -1,0 +1,27 @@
+{
+  "cold_item_count": 0,
+  "cold_user_count": 29,
+  "comparison": {
+    "bytes": 929,
+    "data_rows": 9,
+    "sha256": "ea0e1b1d0d0891019cddd530fb8e160e0a3c36bc99e070d6e6c831bae064b111"
+  },
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "dataset_version": "recommendation_dataset_v1",
+  "experiment_version": "matrix_factorization_v1",
+  "model_manifests": {
+    "bce": {
+      "bytes": 943,
+      "sha256": "ff8e747c27b8906bb28240d036be65630a598c7e305f637751e44964b164795c"
+    },
+    "bpr": {
+      "bytes": 945,
+      "sha256": "219c9c8886160e055022a07cd1305ac7a8d04db7fc50d6851f7adb29e8751df7"
+    }
+  },
+  "popularity_manifest_sha256": "4db25d8877a4db4c8357e63e56ac402611ca7fa1cacd04f7510c0b6a0cae35e1",
+  "positive_pair_count": 18591,
+  "sampled_unknown_policy": "4 distinct per positive from View+ Unknown only; not true negatives",
+  "sampled_unknown_triple_count": 74364,
+  "seed": 42
+}

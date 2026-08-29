@@ -1,0 +1,84 @@
+{
+  "heavy_user": {
+    "activity_deciles": [
+      {
+        "mean_log_view_strength": 32.339865121129016,
+        "mean_raw_view_strength": 49.23,
+        "observed_activity_decile": 1,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 22.53366426522121,
+        "mean_raw_view_strength": 33.59,
+        "observed_activity_decile": 2,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 18.307122002582165,
+        "mean_raw_view_strength": 27.09,
+        "observed_activity_decile": 3,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 15.645030298230626,
+        "mean_raw_view_strength": 23.07,
+        "observed_activity_decile": 4,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 13.284525372589556,
+        "mean_raw_view_strength": 19.51,
+        "observed_activity_decile": 5,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 10.956843305274742,
+        "mean_raw_view_strength": 16.0,
+        "observed_activity_decile": 6,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 8.74896626969064,
+        "mean_raw_view_strength": 12.73,
+        "observed_activity_decile": 7,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 6.585033725653264,
+        "mean_raw_view_strength": 9.55,
+        "observed_activity_decile": 8,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 4.212635867436513,
+        "mean_raw_view_strength": 6.09,
+        "observed_activity_decile": 9,
+        "user_count": 100
+      },
+      {
+        "mean_log_view_strength": 1.4140202483422883,
+        "mean_raw_view_strength": 2.04,
+        "observed_activity_decile": 10,
+        "user_count": 100
+      }
+    ],
+    "activity_tier_note": "Deciles use observed Train view strength only; hidden synthetic activity tier is not loaded.",
+    "max_log_strength": 47.7229234563582,
+    "max_raw_strength": 76.0,
+    "top_1_percent_log_share": 0.03327080412253854,
+    "top_1_percent_raw_share": 0.03494218200100553,
+    "top_1_percent_user_count": 10,
+    "user_count": 1000
+  },
+  "signal_overlap": {
+    "favoriteplus_outside_view": 0,
+    "favoriteplus_pairs": 3944,
+    "max_cart_count_per_pair": 1,
+    "max_favorite_count_per_pair": 1,
+    "max_purchase_count_per_pair": 1,
+    "purchase_outside_favoriteplus": 0,
+    "purchase_outside_view": 0,
+    "purchase_pairs": 731,
+    "view_pairs": 18591
+  }
+}

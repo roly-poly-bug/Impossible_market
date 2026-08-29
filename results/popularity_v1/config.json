@@ -1,0 +1,42 @@
+{
+  "candidate_policy_source": "recommendation_dataset_v1/candidate_sets.json",
+  "cold_item_policy": "retain candidates with score 0 and order them by product_id",
+  "dataset_version": "recommendation_dataset_v1",
+  "exclude_seen": true,
+  "experiment_version": "popularity_baseline_v1",
+  "favoriteplus_definition": "one point per unique Train user-item pair with favorite, cart, or purchase",
+  "ground_truth_policy": "hidden user preferences, product attributes, archetypes, preference_match, and future events are not loaded",
+  "k_values": [
+    5,
+    10,
+    20
+  ],
+  "personalization": false,
+  "popularity_signals": [
+    "total_view_count",
+    "unique_view_users",
+    "log_view_strength",
+    "favoriteplus_unique_pairs",
+    "cart_count",
+    "purchase_count",
+    "weighted_popularity_v1"
+  ],
+  "ranking_scope": "same global ranking before task-specific seen exclusion",
+  "score_source_split": "train_only",
+  "seen_policy_source": "task-specific recommendation_dataset_v1 Train positive items",
+  "task_matched_signals": {
+    "favoriteplus": "favoriteplus_unique_pairs",
+    "purchase": "purchase_count",
+    "viewplus": "total_view_count"
+  },
+  "tie_break": "score descending, product_id ascending",
+  "weighted_implicit_v1": {
+    "cart_weight": 5.0,
+    "favorite_weight": 3.0,
+    "formula": "1*sum_user(log1p(view_count_ui)) + 3*favorite_pairs + 5*cart_pairs + 8*purchase_pairs",
+    "purchase_weight": 8.0,
+    "view_transform": "log1p",
+    "view_weight": 1.0
+  },
+  "zero_representation_policy": "0 means no observed positive signal for this representation; it is not a true negative"
+}
