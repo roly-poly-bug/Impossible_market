@@ -1,0 +1,25 @@
+{
+  "artifacts": {
+    "config.json": {
+      "bytes": 731,
+      "sha256": "7c3489477fc1ed734c6cd1e417a8894e62e46aaf5bb80dc8e4ca9ce154d0c1f3"
+    },
+    "diagnostics.json": {
+      "bytes": 1490,
+      "sha256": "434b9bcb80a0bbc8967e648188abf03d0f1876a8cd2c4a88824b43329969f4a3"
+    },
+    "metrics.csv": {
+      "bytes": 2099,
+      "data_rows": 18,
+      "sha256": "bbe79525ce690b1c24495e5691446d5614063952f9860a900f906c5399aa6955"
+    },
+    "training_history.csv": {
+      "bytes": 3135,
+      "data_rows": 29,
+      "sha256": "f0f8b761b40b3e0597bbcbe7310c7d42bbc29cfc393ef04563b597a97e68c013"
+    }
+  },
+  "best_epoch": 24,
+  "best_validation_purchase_ndcg_at_10": 0.09795717649218597,
+  "model": "no_bias"
+}

@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "../checkpoints/weighted_best.pt": {
+      "bytes": 78933,
+      "sha256": "d1d275a7b2911388b2b9a537344bb29422dd9bba95654193f99d1cf912982cfe"
+    },
+    "config.json": {
+      "bytes": 1122,
+      "sha256": "6f53bb5ebaac6e6237bc96a566b130c3f4bc54d5dc10c0631546f787c5f51668"
+    },
+    "diagnostics.json": {
+      "bytes": 993,
+      "sha256": "c7aaa8af9abf7e55b55380ea6ffd5c3cefc24d94dee4cf560ea841bc3a12d5ff"
+    },
+    "metrics.csv": {
+      "bytes": 2123,
+      "data_rows": 18,
+      "sha256": "e6df5746604c918ed8d6ad6eb3ff61917e1f01d2a0b9802588fe03d5ca5502f2"
+    },
+    "training_history.csv": {
+      "bytes": 1364,
+      "data_rows": 12,
+      "sha256": "11da4db87017379f2b241753e13dfa71fa7cd5046da64302d9e6f5eba55b7344"
+    }
+  },
+  "best_epoch": 7,
+  "best_validation_purchase_ndcg_at_10": 0.0805593441804089,
+  "confidence_stats": {
+    "count": 18591,
+    "max": 3.9236688666748694,
+    "mean": 1.8113338731783608,
+    "median": 1.5265890341390445,
+    "min": 1.5265890341390445,
+    "normalized": false,
+    "p25": 1.5265890341390445,
+    "p75": 1.7412763113750152,
+    "representation": "weighted",
+    "std": 0.5608071503566939
+  },
+  "coverage": {
+    "cold_item_count": 0,
+    "cold_user_count": 29,
+    "density": 0.092955,
+    "positive_pair_count": 18591,
+    "representation": "weighted",
+    "training_item_count": 200,
+    "training_user_count": 971
+  },
+  "experiment_version": "mf_signal_representation_v1",
+  "representation": "weighted",
+  "source": "new fixed-config training"
+}

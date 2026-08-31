@@ -1,0 +1,35 @@
+{
+  "all_values_finite": true,
+  "average_cart_popularity_top10_overlap": 0.5165094339622641,
+  "average_pairwise_top10_overlap": 0.2826254135741751,
+  "item_embedding_norm": {
+    "max": 0.6261484622955322,
+    "mean": 0.40093473240733146,
+    "median": 0.39847153425216675,
+    "min": 0.23138447105884552,
+    "std": 0.06941506150096485
+  },
+  "purchase_evaluation_users": 212,
+  "recommended_item_cart_score": {
+    "max": 28.0,
+    "mean": 12.000943396226415,
+    "median": 14.0,
+    "min": 0.0,
+    "std": 6.780173583838742
+  },
+  "score_distribution": {
+    "max": 0.19632957875728607,
+    "mean": -0.00020979747210006408,
+    "median": -8.957827594713308e-05,
+    "min": -0.17992402613162994,
+    "std": 0.03481783125297067
+  },
+  "unique_purchase_top10_lists": 110,
+  "user_embedding_norm": {
+    "max": 0.5893563628196716,
+    "mean": 0.3328511573672295,
+    "median": 0.32843920588493347,
+    "min": 0.1077275425195694,
+    "std": 0.08122789203960808
+  }
+}

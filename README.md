@@ -365,11 +365,34 @@ python -m pytest
   representation statistics; no personalized model yet
 - Fixed-config PyTorch BCE/BPR `matrix_factorization_v1` with validation-only
   early stopping, full-ranking evaluation, and personalization diagnostics
+- Fixed-config BCE MF signal comparison across Binary View, Log View confidence,
+  Favorite+, Weighted Implicit, and Purchase-only representations
 - FastAPI product list and detail endpoints
 - React product cards, progressive catalog display, metadata-aware detail pages,
   and loading/error/empty states
 - Initial SQLAlchemy domain models for users, products, sessions, and events
 - No Order/payment flow, recommendation model, or inference implementation yet
+
+Run the signal-representation comparison with:
+
+```bash
+python -m ml.experiments.run_mf_signal_representation_v1
+```
+
+It writes `results/mf_signal_representation_v1/`; interpretation is documented
+in `docs/mf_signal_representation_v1_quality.md`.
+
+Run the fixed Weighted BCE MF negative-sampling comparison with:
+
+```bash
+python -m ml.experiments.run_mf_negative_sampling_v1
+```
+
+It compares frozen Random Unknown with Exposed Non-conversion and fixed 50/50
+Mixed sampling. Results are written to `results/mf_negative_sampling_v1/`.
+
+Run the fixed Weighted/Exposed MF Bias comparison with `python -m
+ml.experiments.run_mf_bias_v1`. Results are written to `results/mf_bias_v1/`.
 
 ## Planned ML Features
 

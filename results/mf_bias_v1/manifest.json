@@ -1,0 +1,56 @@
+{
+  "artifacts": {
+    "bias_diagnostics.csv": {
+      "bytes": 401,
+      "data_rows": 3,
+      "sha256": "50129f5a3b3b92e41ebf8ef410d3d879d02a28032cbecfc21306b3daa7851756"
+    },
+    "comparison.csv": {
+      "bytes": 1233,
+      "data_rows": 12,
+      "sha256": "d623cc442ad46d9007c51791592b22f948b7e6b06198e3c168d909d1c1bb60eb"
+    },
+    "personalization.csv": {
+      "bytes": 350,
+      "data_rows": 3,
+      "sha256": "3ba505592c52e396f9cb49966fc5a24c2ba3138e87f0dfeab555a69825dd1374"
+    }
+  },
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "experiment_version": "mf_bias_v1",
+  "fixed_mf_config": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "global_bias": false,
+  "model_manifests": {
+    "item_bias": {
+      "bytes": 899,
+      "sha256": "985e05c6b84be05edea5fafed21c7afdcc12e3eff9e6a7af74db97fc4d08cfaf"
+    },
+    "no_bias": {
+      "bytes": 740,
+      "sha256": "eb5c62395a7cc0d62a68be0eefa690c11e2b3e18ad11c4e1bfd34f22f0393063"
+    },
+    "user_item_bias": {
+      "bytes": 909,
+      "sha256": "b8b802c6f6d398542f4fe3e00062be39e9760760175a658c4b2dd83f31ffbb7a"
+    }
+  },
+  "models": [
+    "no_bias",
+    "item_bias",
+    "user_item_bias"
+  ],
+  "negative_results_manifest_sha256": "7d6f62b2a508a8e3aed09f3ec04d5a336c5b617fe25e6e291e911eba97abd7ff",
+  "shared_sample_count": 74364,
+  "test_policy": "frozen no-bias reused; two bias models tested once; no tuning"
+}

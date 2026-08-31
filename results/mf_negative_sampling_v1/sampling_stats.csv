@@ -1,0 +1,4 @@
+strategy,total_sampled_pairs,unique_sampled_user_item_pairs,random_unknown_count,exposed_non_conversion_count,exposed_share,backfill_count,backfill_rate,training_user_count,users_with_enough_exposed_pool,users_requiring_backfill,sampled_item_unique_count,items_never_sampled,sampled_item_gini,top10_sampled_share
+random_unknown,74364,51320,74364,0,0.0,0,0.0,971,971,0,200,0,0.06416680114033672,0.05996180947770426
+exposed_non_conversion,74364,28820,32,74332,0.9995696842558227,32,0.00043031574417729007,971,967,4,200,0,0.08622492066053467,0.0688101769673498
+mixed,74364,52050,37182,37182,0.5,0,0.0,971,971,0,200,0,0.03795788284653865,0.058267441235006184
