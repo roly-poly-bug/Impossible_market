@@ -416,6 +416,17 @@ Existing Weighted, Exposed-sampling, Item-Bias setup fixed. Results are written
 to `results/mf_latent_dim_v1/`; interpretation is in
 `docs/mf_latent_dim_v1_quality.md`.
 
+Run the fixed MF objective comparison with:
+
+```bash
+python -m ml.experiments.run_mf_objective_v2
+```
+
+It compares the frozen best dim-8 Item-Bias MF under pointwise BCE and
+confidence-weighted BPR while sharing all Train comparisons. Results are in
+`results/mf_objective_v2/`; the decision is documented in
+`docs/mf_objective_v2_quality.md`.
+
 ## Planned ML Features
 
 Potential future learning milestones include collaborative filtering, matrix

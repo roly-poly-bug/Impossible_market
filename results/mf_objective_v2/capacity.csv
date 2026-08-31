@@ -1,0 +1,3 @@
+objective,total_trainable_parameters,user_embedding_parameters,item_embedding_parameters,item_bias_parameters,training_runtime_seconds,epoch_runtime_seconds,best_checkpoint_bytes
+bce,9800,8000,1600,200,,,41587
+bpr,9800,8000,1600,200,31.922935399983544,2.6602446166652953,41898

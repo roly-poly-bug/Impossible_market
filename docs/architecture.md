@@ -356,3 +356,25 @@ embedding width changes across 8, 16, 32, and 64. All dimensions share the
 same pre-generated training contrasts. The simulator's hidden nine-dimensional
 preferences and attributes are outside the model boundary and do not influence
 the capacity choices.
+
+## MF Objective v2 Boundary
+
+```text
+Frozen Existing Weighted positives + shared Exposed/Unknown comparisons
+                              |
+                    +---------+---------+
+                    |                   |
+             pointwise BCE     confidence-weighted BPR
+                    |                   |
+                    +---------+---------+
+                              |
+                 Validation Purchase NDCG@10
+                              |
+                 one batched final Test pass
+```
+
+Both objectives use the same dimension-8 User/Item embeddings and Item Bias.
+BPR compares the complete biased scores, so both positive and comparison item
+biases participate. Candidate construction, seen exclusion, and Train-only Cart
+fallback remain in the shared evaluator. Observed non-conversion remains a
+contrast under exposure, not a true-negative or dislike label.

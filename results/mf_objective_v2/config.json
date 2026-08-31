@@ -1,0 +1,28 @@
+{
+  "bpr_weighting": "positive confidence",
+  "comparison_ratio": 4,
+  "confidence": "1+log1p(strength)",
+  "experiment_version": "mf_objective_v2",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 8,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "model": "MF latent_dim=8 with Item Bias",
+  "objectives": [
+    "BCE",
+    "confidence-weighted BPR"
+  ],
+  "representation": "Existing Weighted v1: log1p(view)+3*favorite+5*cart+8*purchase",
+  "sampling": "shared Train-only Exposed Non-conversion with Random Unknown backfill",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "synthetic_hidden_dimension_used": false,
+  "test_policy": "single batched final Test evaluation; no post-Test tuning"
+}

@@ -103,3 +103,10 @@ MF Latent Dimension v1 changes only capacity across 8, 16, 32, and 64 hidden
 coordinates. It shares the same positive pairs and sampled contrasts, reuses
 the frozen dimension-16 checkpoint, and selects every new checkpoint only with
 Validation Purchase NDCG@10. Run `python -m ml.experiments.run_mf_latent_dim_v1`.
+
+MF Objective v2 freezes Existing Weighted confidence, the four-per-positive
+Exposed/Unknown comparison triples, Item Bias, latent dimension 8, optimizer,
+candidates, and seen exclusion. It compares the reused pointwise BCE checkpoint
+with confidence-weighted pairwise BPR. An exposed non-conversion is only a
+training contrast, never dislike or a true negative. Run
+`python -m ml.experiments.run_mf_objective_v2`.
