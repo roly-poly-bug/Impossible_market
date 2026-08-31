@@ -91,3 +91,15 @@ a contrast label and is not interpreted as true dislike.
 MF Bias v1 freezes Weighted/Exposed training and compares No Bias, Item Bias,
 and User+Item Bias. Global bias is omitted because it cannot alter Top-K order.
 Run `python -m ml.experiments.run_mf_bias_v1`.
+
+MF Cart Signal v1 keeps the selected Item-Bias architecture and Exposed
+sampling fixed while comparing Existing Weighted, Cart+, Favorite+Cart+, and
+Cart-centered Weighted positive definitions. Exposed non-conversion remains a
+Train-only contrast, not a true negative. Run
+`python -m ml.experiments.run_mf_cart_signal_v1`; interpretation is recorded in
+`docs/mf_cart_signal_v1_quality.md`.
+
+MF Latent Dimension v1 changes only capacity across 8, 16, 32, and 64 hidden
+coordinates. It shares the same positive pairs and sampled contrasts, reuses
+the frozen dimension-16 checkpoint, and selects every new checkpoint only with
+Validation Purchase NDCG@10. Run `python -m ml.experiments.run_mf_latent_dim_v1`.

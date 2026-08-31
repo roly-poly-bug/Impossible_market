@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "../checkpoints/dim8_best.pt": {
+      "bytes": 41587,
+      "sha256": "241309a47aab99549abb6f4ca547aa85938959d8dac6e73fc62d3bbced113191"
+    },
+    "config.json": {
+      "bytes": 733,
+      "sha256": "f459143758cb65d7a4b89a57280423a49e0da89cc770cb5f23646293c46d706e"
+    },
+    "diagnostics.json": {
+      "bytes": 2230,
+      "sha256": "a7d37172ed0975223a643c1a362b28f80002ada1c6f9358e172e9e39ad4dac19"
+    },
+    "metrics.csv": {
+      "bytes": 2033,
+      "data_rows": 18,
+      "sha256": "f67bc4d126afc18e814ea47155e9b48367501ceeb105264be641d9b382d9667f"
+    },
+    "training_history.csv": {
+      "bytes": 2969,
+      "data_rows": 28,
+      "sha256": "fc8c42d6d72fecfdd4c18b2b8a8328a74fc7c11906f805274141303281162a99"
+    }
+  },
+  "best_epoch": 23,
+  "best_validation_purchase_ndcg_at_10": 0.09985483717897095,
+  "latent_dim": 8
+}

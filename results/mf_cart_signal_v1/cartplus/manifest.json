@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "../checkpoints/cartplus_best.pt": {
+      "bytes": 80023,
+      "sha256": "b14a153a58b5ff28338083d10eec57173bd7ed388b025b9fd6cd40b68c010071"
+    },
+    "config.json": {
+      "bytes": 725,
+      "sha256": "4008a424081ab08bf52792fd2fa36ead1b5014ccbc17794dd797ca1f9665d8c6"
+    },
+    "diagnostics.json": {
+      "bytes": 3144,
+      "sha256": "699e2f16cb0fb6e4d725d140fb23aebb65a2d82fb8b89eb623b66363ba1b9789"
+    },
+    "metrics.csv": {
+      "bytes": 2099,
+      "data_rows": 18,
+      "sha256": "9ee0fa2026507aadd06a0922d5a6b1f8b249873f31124b041e883f86d6622327"
+    },
+    "training_history.csv": {
+      "bytes": 1883,
+      "data_rows": 17,
+      "sha256": "1c61a5cbcd1c2b4065605b07b1f4939e85190b96d5260049ddc09ea1b41cf851"
+    }
+  },
+  "best_epoch": 12,
+  "best_validation_purchase_ndcg_at_10": 0.05942982832610411,
+  "signal": "cartplus"
+}

@@ -1,0 +1,5 @@
+signal,positive_pair_count,positive_user_count,positive_item_count,density,train_positive_zero_user_count,test_purchase_eligible_users,test_eligible_with_train_positive,test_eligible_without_train_positive,test_fallback_rate
+existing_weighted,18591,971,200,0.092955,29,212,205,7,0.0330188679245283
+cartplus,1572,674,170,0.00786,326,212,162,50,0.2358490566037736
+favorite_cartplus,3944,873,200,0.01972,127,212,192,20,0.09433962264150944
+cart_centered_weighted,18591,971,200,0.092955,29,212,205,7,0.0330188679245283

@@ -1,0 +1,92 @@
+{
+  "artifacts": {
+    "bias_diagnostics.csv": {
+      "bytes": 805,
+      "data_rows": 4,
+      "sha256": "bc672bcf6d394ba6602e8fe204705f1c6111807c66ffc625c3ad3604dcf43762"
+    },
+    "capacity.csv": {
+      "bytes": 411,
+      "data_rows": 4,
+      "sha256": "933ac69a3d5649dbbe3dd905ca5ce64b66d32811df1e6a36fbc4d176587b90b4"
+    },
+    "comparison.csv": {
+      "bytes": 1482,
+      "data_rows": 15,
+      "sha256": "8d8b7900545038e722ff7d91c6145687ba058db449552ab57e8dc9baaae46831"
+    },
+    "embedding_diagnostics.csv": {
+      "bytes": 1552,
+      "data_rows": 4,
+      "sha256": "953ca18d21b1ea164cf6de38d81d334007c18e0bf5e1b0bb002829931fcc2986"
+    },
+    "history_group_metrics.csv": {
+      "bytes": 1532,
+      "data_rows": 12,
+      "sha256": "a9939362869396c41221189309b757b08b9e457c13576dfb8715c1894f0c674d"
+    },
+    "item_popularity_metrics.csv": {
+      "bytes": 1439,
+      "data_rows": 12,
+      "sha256": "76efca194d66210bf08e9a1b277658dd9e65dff083905147b1772d1964518a4f"
+    },
+    "personalization.csv": {
+      "bytes": 394,
+      "data_rows": 4,
+      "sha256": "079c689a06067d7b77ac4b79cc76d7ddff3bd70b8c93e97ec6c9de0791f99bd3"
+    },
+    "score_decomposition.csv": {
+      "bytes": 330,
+      "data_rows": 4,
+      "sha256": "f9ac6b534e2ba590daddfae537b4a87e34732a26311d4b33e509c4c2119ca2fd"
+    }
+  },
+  "bias_results_manifest_sha256": "4f77a0d76ca6d6fbbe28e73d234555b6e01a49e98ba2961bbbe89425de6352d7",
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "dimensions": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "experiment_version": "mf_latent_dim_v1",
+  "fixed_config_except_latent_dim": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "model_manifests": {
+    "dim16": {
+      "bytes": 947,
+      "sha256": "d69ab3683e343b5cf6c4e162a75576d446d2d400b8a5de60bfee3f277f82a0a5"
+    },
+    "dim32": {
+      "bytes": 893,
+      "sha256": "27c01814c5b53dda2e743bf69c5267c470a06b53652c6fe29b6b8fd4a8314950"
+    },
+    "dim64": {
+      "bytes": 893,
+      "sha256": "5a5467c87fd241fdd70c2b0e04d91ebc369003f15e5c2b08371e1ad752066171"
+    },
+    "dim8": {
+      "bytes": 890,
+      "sha256": "0f791f17d983ef69a65269597e93805a36fd8ef5f3982923eb2bfac46f95b62f"
+    }
+  },
+  "newly_trained_dimensions": [
+    8,
+    32,
+    64
+  ],
+  "reused_dimension": 16,
+  "shared_positive_pair_count": 18591,
+  "shared_sample_count": 74364,
+  "synthetic_hidden_dimension_used": false,
+  "test_policy": "four fixed dimensions in one batched final Test evaluation; no post-Test tuning"
+}

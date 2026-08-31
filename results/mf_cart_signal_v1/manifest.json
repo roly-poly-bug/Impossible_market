@@ -1,0 +1,82 @@
+{
+  "artifacts": {
+    "bias_diagnostics.csv": {
+      "bytes": 872,
+      "data_rows": 4,
+      "sha256": "fa47d80b173bbb90ba68c986a90320f2c53fd5556badfe61e26225ad87b39e85"
+    },
+    "comparison.csv": {
+      "bytes": 1603,
+      "data_rows": 15,
+      "sha256": "9c810e453ff235d4aa8d96f0a25fcdfaaf9809c6b9a42a8d240bbadffcb46e06"
+    },
+    "coverage.csv": {
+      "bytes": 514,
+      "data_rows": 4,
+      "sha256": "945892dd22cbb37a94332c823d0d348fd2a49c2f51089dd35eebb9b79073a59d"
+    },
+    "fallback_diagnostics.csv": {
+      "bytes": 1359,
+      "data_rows": 12,
+      "sha256": "4b2725e2fd4f9a40fd512a5161aafdd9040ea8ce0da0d1364a7a393f5b97d0fa"
+    },
+    "personalization.csv": {
+      "bytes": 447,
+      "data_rows": 4,
+      "sha256": "5394e04aed2411bb6a925e7d053df4ebe4f77c05a7ec00f330b1dc764c7918e4"
+    },
+    "signal_alignment.csv": {
+      "bytes": 466,
+      "data_rows": 4,
+      "sha256": "8b96581ed1bc86d3478ace69a95b959a4749151c791dcfb26415b0436a1f2de1"
+    }
+  },
+  "bias_results_manifest_sha256": "4f77a0d76ca6d6fbbe28e73d234555b6e01a49e98ba2961bbbe89425de6352d7",
+  "cart_centered_weights": {
+    "cart": 6,
+    "favorite": 2,
+    "log1p_view": 0.5,
+    "purchase": 10
+  },
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "experiment_version": "mf_cart_signal_v1",
+  "fixed_mf_config": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "model_manifests": {
+    "cart_centered_weighted": {
+      "bytes": 924,
+      "sha256": "44f75a206dc2fb513a2208019293e64a92a2f6f09d6597083f55ba807045bb95"
+    },
+    "cartplus": {
+      "bytes": 897,
+      "sha256": "f1a485991c8fa2233c0641c8e19fc81550e05a46117ed0baee73db521bc29eb7"
+    },
+    "existing_weighted": {
+      "bytes": 748,
+      "sha256": "27a6fbcdaafbec2e08901a66b453e6bd9e6db8da38da7aaf37ee3f150e8cf4c5"
+    },
+    "favorite_cartplus": {
+      "bytes": 914,
+      "sha256": "934cd30345ca66a1c92fdf5acbc5be1f20735ceb38dc12e0fac767823fdd097b"
+    }
+  },
+  "sampling": "Exposed Non-conversion with Random Unknown backfill, ratio 4, Train only",
+  "signals": [
+    "existing_weighted",
+    "cartplus",
+    "favorite_cartplus",
+    "cart_centered_weighted"
+  ],
+  "test_policy": "frozen control checkpoint plus three new models in one batched Test evaluation; no post-Test tuning; one identical operational retry followed a post-evaluation export failure before metrics were inspected",
+  "true_negative_claim": false
+}

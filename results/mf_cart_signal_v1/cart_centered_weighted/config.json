@@ -1,0 +1,21 @@
+{
+  "confidence_formula": "1 + log1p(0.5log1p(view_count) + 2F + 6C + 10P)",
+  "experiment_version": "mf_cart_signal_v1",
+  "fixed_mf_config": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "model": "BCE MF with item bias",
+  "sampling": "Train-only Exposed Non-conversion with Random Unknown backfill; non-conversion is not a true negative",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "signal": "cart_centered_weighted",
+  "test_policy": "single batched Test evaluation including frozen control checkpoint; no tuning"
+}

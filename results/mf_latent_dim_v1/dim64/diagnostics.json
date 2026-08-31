@@ -1,0 +1,77 @@
+{
+  "all_values_finite": true,
+  "average_cart_popularity_top10_overlap": 0.31933962264150945,
+  "average_pairwise_top10_overlap": 0.21113744075829385,
+  "bias_analysis": {
+    "item_bias": {
+      "max": -0.16639575362205505,
+      "mean": -0.5487892739474773,
+      "median": -0.5533022284507751,
+      "min": -0.9759609699249268,
+      "std": 0.162803536865986
+    },
+    "item_bias_correlations": {
+      "cart": {
+        "pearson": 0.5786992097980304,
+        "spearman": 0.509624214298431
+      },
+      "purchase": {
+        "pearson": 0.5694568728740759,
+        "spearman": 0.4961750876899331
+      },
+      "view": {
+        "pearson": 0.940623275287704,
+        "spearman": 0.9401645749211807
+      }
+    },
+    "score_decomposition": {
+      "item_bias_component": {
+        "max": -0.16639575362205505,
+        "mean": -0.5460088836796143,
+        "median": -0.5507023334503174,
+        "min": -0.9759609699249268,
+        "std": 0.1639831175042194
+      },
+      "item_bias_to_personal_variance_ratio": 0.16734413170676238,
+      "item_bias_variance": 0.026890462826402627,
+      "personal_component": {
+        "max": 2.576354503631592,
+        "mean": -0.1549016818530627,
+        "median": -0.1464545726776123,
+        "min": -2.4633281230926514,
+        "std": 0.4008610824343666
+      },
+      "personal_variance": 0.16068960741045205
+    }
+  },
+  "item_embedding_norm": {
+    "max": 3.0440714359283447,
+    "mean": 2.2588016963005066,
+    "median": 2.2111172676086426,
+    "min": 1.7005265951156616,
+    "std": 0.2713716566546494
+  },
+  "purchase_evaluation_users": 212,
+  "recommended_item_cart_score": {
+    "max": 28.0,
+    "mean": 12.18066037735849,
+    "median": 12.0,
+    "min": 1.0,
+    "std": 5.246913157000914
+  },
+  "score_distribution": {
+    "max": 2.271308422088623,
+    "mean": -0.7031761018860713,
+    "median": -0.7172827422618866,
+    "min": -3.0541136264801025,
+    "std": 0.4642420285072564
+  },
+  "unique_purchase_top10_lists": 206,
+  "user_embedding_norm": {
+    "max": 2.247060775756836,
+    "mean": 0.9778758968561888,
+    "median": 0.9814095199108124,
+    "min": 0.0,
+    "std": 0.3831143187180037
+  }
+}

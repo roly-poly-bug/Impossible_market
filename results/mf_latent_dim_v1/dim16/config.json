@@ -1,0 +1,23 @@
+{
+  "experiment_version": "mf_latent_dim_v1",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "latent_dim": 16,
+  "model": "BCE MF with Item Bias",
+  "only_changed_parameter": "latent_dim",
+  "representation": "Existing Weighted v1",
+  "sampling": "shared Train-only Exposed Non-conversion with Random Unknown backfill",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "synthetic_hidden_dimension_used": false,
+  "test_policy": "single batched final Test; no tuning"
+}
