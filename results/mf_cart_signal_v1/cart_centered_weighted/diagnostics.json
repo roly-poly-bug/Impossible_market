@@ -1,0 +1,106 @@
+{
+  "all_values_finite": true,
+  "average_cart_popularity_top10_overlap": 0.5665094339622642,
+  "average_pairwise_top10_overlap": 0.7723821872485022,
+  "bias_analysis": {
+    "item_bias": {
+      "max": -0.04967963695526123,
+      "mean": -0.3409153014048934,
+      "median": -0.3645262271165848,
+      "min": -0.4846076965332031,
+      "std": 0.09198867855595397
+    },
+    "item_bias_correlations": {
+      "cart": {
+        "pearson": 0.6859152381520951,
+        "spearman": 0.5738703529284371
+      },
+      "purchase": {
+        "pearson": 0.6735380209164575,
+        "spearman": 0.5586248684777202
+      },
+      "view": {
+        "pearson": 0.9588166777501759,
+        "spearman": 0.942322651617276
+      }
+    },
+    "score_decomposition": {
+      "item_bias_component": {
+        "max": -0.04967963695526123,
+        "mean": -0.33687680385568564,
+        "median": -0.3627404570579529,
+        "min": -0.4846076965332031,
+        "std": 0.09448991779938476
+      },
+      "item_bias_to_personal_variance_ratio": 4.503851110821442,
+      "item_bias_variance": 0.008928344565734488,
+      "personal_component": {
+        "max": 0.18965816497802734,
+        "mean": -0.048599595640941934,
+        "median": -0.041602157056331635,
+        "min": -0.36993733048439026,
+        "std": 0.044523926652463304
+      },
+      "personal_variance": 0.0019823800445539323
+    }
+  },
+  "fallback_groups": [
+    {
+      "eligible_share": 1.0,
+      "group": "all",
+      "hit_rate_at_10": 0.17452830188679244,
+      "ndcg_at_10": 0.06409978952073762,
+      "precision_at_10": 0.018867924528301886,
+      "recall_at_10": 0.12177672955974843,
+      "user_count": 212
+    },
+    {
+      "eligible_share": 0.9669811320754716,
+      "group": "learned",
+      "hit_rate_at_10": 0.18048780487804877,
+      "ndcg_at_10": 0.06628856282144574,
+      "precision_at_10": 0.01951219512195122,
+      "recall_at_10": 0.1259349593495935,
+      "user_count": 205
+    },
+    {
+      "eligible_share": 0.0330188679245283,
+      "group": "fallback",
+      "hit_rate_at_10": 0.0,
+      "ndcg_at_10": 0.0,
+      "precision_at_10": 0.0,
+      "recall_at_10": 0.0,
+      "user_count": 7
+    }
+  ],
+  "item_embedding_norm": {
+    "max": 0.7597069144248962,
+    "mean": 0.507021743953228,
+    "median": 0.5044371783733368,
+    "min": 0.2759931981563568,
+    "std": 0.09516999947142338
+  },
+  "purchase_evaluation_users": 212,
+  "recommended_item_cart_score": {
+    "max": 28.0,
+    "mean": 15.644339622641509,
+    "median": 15.0,
+    "min": 11.0,
+    "std": 4.639953240425566
+  },
+  "score_distribution": {
+    "max": 0.05176481604576111,
+    "mean": -0.3904376457005367,
+    "median": -0.4118778258562088,
+    "min": -0.8095017671585083,
+    "std": 0.11793462787272323
+  },
+  "unique_purchase_top10_lists": 206,
+  "user_embedding_norm": {
+    "max": 0.640630304813385,
+    "mean": 0.2516733983023853,
+    "median": 0.25214242935180664,
+    "min": 3.5668874520666805e-09,
+    "std": 0.10856771391561529
+  }
+}

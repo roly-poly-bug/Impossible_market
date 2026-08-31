@@ -1,0 +1,30 @@
+{
+  "artifacts": {
+    "config.json": {
+      "bytes": 735,
+      "sha256": "dbf2b7d439f776e4093f1c39f5d1da39a4263a1d3068d786388f8ac972d4a44d"
+    },
+    "diagnostics.json": {
+      "bytes": 2260,
+      "sha256": "992a3f6e3be146033a93f5e1f011d5f855fdbfa91361c279b30bb584f52a9fe2"
+    },
+    "metrics.csv": {
+      "bytes": 2060,
+      "data_rows": 18,
+      "sha256": "de24199af8941c3115cef1829abe66f2c6ddd1957e3487f17437b61ad415c891"
+    },
+    "source_checkpoint": {
+      "bytes": 80032,
+      "path": "results/mf_bias_v1/checkpoints/item_bias_best.pt",
+      "sha256": "f2f4c60710dda95ad6311b42487cd87299d2fe773361d94a37e920cabfefa89c"
+    },
+    "training_history.csv": {
+      "bytes": 1583,
+      "data_rows": 14,
+      "sha256": "508c37e93dcb6917046a94f785b1bb28c303cca2670c0e330cf38ac9fc0e835f"
+    }
+  },
+  "best_epoch": 9,
+  "best_validation_purchase_ndcg_at_10": 0.10293446203104387,
+  "latent_dim": 16
+}

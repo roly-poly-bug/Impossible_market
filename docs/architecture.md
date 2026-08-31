@@ -337,3 +337,22 @@ checkpoints, and a guarded final evaluator performs their only Test pass.
 frozen dot-product architecture. Weighted positives and pre-generated Exposed
 samples are shared. Train counts are loaded only after training for correlation
 diagnostics; they are never model features or checkpoint-selection inputs.
+
+## MF Cart Signal v1 Boundary
+
+The selected BCE MF architecture, Item Bias, Exposed Non-conversion sampling,
+optimizer, capacity, candidate policy, and seen exclusion are fixed. Only the
+Train positive pool and positive confidence change between Existing Weighted,
+Cart+, Favorite+Cart+, and Cart-centered Weighted. For a narrow intent task,
+an observed View without that intent may be sampled as a non-conversion, but it
+is never interpreted as dislike or a true negative. Cold training Users retain
+the same Train Cart-popularity fallback.
+
+## MF Latent Dimension v1 Boundary
+
+Existing Weighted confidence, Exposed/Unknown samples, BCE, Item Bias,
+optimizer, candidates, and seen exclusion are fixed. Only the User/Item
+embedding width changes across 8, 16, 32, and 64. All dimensions share the
+same pre-generated training contrasts. The simulator's hidden nine-dimensional
+preferences and attributes are outside the model boundary and do not influence
+the capacity choices.

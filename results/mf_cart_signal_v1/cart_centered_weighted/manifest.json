@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "../checkpoints/cart_centered_weighted_best.pt": {
+      "bytes": 80213,
+      "sha256": "10c8b1468315f39c03fceba010625e4b0e2bb95c4e70473fff51e843fcf75927"
+    },
+    "config.json": {
+      "bytes": 768,
+      "sha256": "efb66332e5966b4eb89b37f5bef3e44c2ec488d99d449961dcd429173f402fc3"
+    },
+    "diagnostics.json": {
+      "bytes": 3082,
+      "sha256": "83a72d47799d5d24cd06e7c6a22a92b3dc1bcb7752ee4a73565aed66e8a53294"
+    },
+    "metrics.csv": {
+      "bytes": 2362,
+      "data_rows": 18,
+      "sha256": "746ab3c9969c7198ece75a589c87f9bd2b2df8d3e415c1bf66f4aea7a0c728d4"
+    },
+    "training_history.csv": {
+      "bytes": 1356,
+      "data_rows": 12,
+      "sha256": "a84cd265c216b3e25cc1c35bcbca860ec92aab5f5747abdb9d066b1a40a3311e"
+    }
+  },
+  "best_epoch": 7,
+  "best_validation_purchase_ndcg_at_10": 0.07426508371017204,
+  "signal": "cart_centered_weighted"
+}

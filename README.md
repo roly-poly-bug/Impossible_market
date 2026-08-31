@@ -394,6 +394,28 @@ Mixed sampling. Results are written to `results/mf_negative_sampling_v1/`.
 Run the fixed Weighted/Exposed MF Bias comparison with `python -m
 ml.experiments.run_mf_bias_v1`. Results are written to `results/mf_bias_v1/`.
 
+Run the fixed Item-Bias MF positive-signal comparison with:
+
+```bash
+python -m ml.experiments.run_mf_cart_signal_v1
+```
+
+It compares Existing Weighted, Cart+, Favorite+Cart+, and one pre-fixed
+Cart-centered Weighted signal while holding architecture and sampling fixed.
+Results are written to `results/mf_cart_signal_v1/`; interpretation is in
+`docs/mf_cart_signal_v1_quality.md`.
+
+Run the fixed MF capacity comparison with:
+
+```bash
+python -m ml.experiments.run_mf_latent_dim_v1
+```
+
+It compares latent dimensions 8, 16, 32, and 64 while keeping the selected
+Existing Weighted, Exposed-sampling, Item-Bias setup fixed. Results are written
+to `results/mf_latent_dim_v1/`; interpretation is in
+`docs/mf_latent_dim_v1_quality.md`.
+
 ## Planned ML Features
 
 Potential future learning milestones include collaborative filtering, matrix

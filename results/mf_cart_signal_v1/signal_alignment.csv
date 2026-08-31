@@ -1,0 +1,5 @@
+signal,test_purchase_eligible_users,users_with_train_positive,users_without_train_positive,users_with_exact_item_continuity,exact_item_continuity_user_rate,mean_exact_item_overlap_count
+existing_weighted,212,205,7,54,0.25471698113207547,0.29245283018867924
+cartplus,212,162,50,13,0.06132075471698113,0.0660377358490566
+favorite_cartplus,212,192,20,25,0.1179245283018868,0.14150943396226415
+cart_centered_weighted,212,205,7,54,0.25471698113207547,0.29245283018867924
