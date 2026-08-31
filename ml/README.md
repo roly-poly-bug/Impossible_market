@@ -64,3 +64,30 @@ For BCE, target zero means sampled training non-positive, not true dislike; for
 BPR, the learned ordering is positive above sampled Unknown, not a true-negative
 claim. Validation Purchase NDCG@10 alone controls early stopping. Test never
 selects a checkpoint or parameter.
+
+MF Signal Representation v1 keeps that BCE architecture and optimization fixed
+while comparing five Train signals:
+
+```bash
+python -m ml.experiments.run_mf_signal_representation_v1
+```
+
+Log View uses `1 + log1p(view_count)` positive confidence. Weighted uses the
+fixed 1/3/5/8 strength followed by `1 + log1p(weighted_strength)`. Targets stay
+binary, confidence is not mean-normalized, and every sampled Unknown remains a
+training non-positive rather than a true negative.
+
+MF Negative Sampling v1 freezes the Weighted BCE representation and compares
+Random Unknown, Exposed Non-conversion with Unknown backfill, and a fixed 2/2
+Mixed sampler:
+
+```bash
+python -m ml.experiments.run_mf_negative_sampling_v1
+```
+
+Observed Non-conversion means Train impression without View. It is used only as
+a contrast label and is not interpreted as true dislike.
+
+MF Bias v1 freezes Weighted/Exposed training and compares No Bias, Item Bias,
+and User+Item Bias. Global bias is omitted because it cannot alter Top-K order.
+Run `python -m ml.experiments.run_mf_bias_v1`.

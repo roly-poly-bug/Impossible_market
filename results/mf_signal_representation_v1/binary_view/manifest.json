@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "config.json": {
+      "bytes": 1098,
+      "sha256": "c002e2a23616c18f6fbd5338013d76b1a4447370ddf3edb3ad076bbff81cf4d9"
+    },
+    "diagnostics.json": {
+      "bytes": 1084,
+      "sha256": "ef580288d2dd5725ffff21ff7a58c6cd77476429be0d7d34d6e9eb1c36f1db17"
+    },
+    "metrics.csv": {
+      "bytes": 2177,
+      "data_rows": 18,
+      "sha256": "be129fa52758edcbcf1f8266c939003b44101866e0c06f9885be137401e8f19d"
+    },
+    "training_history.csv": {
+      "bytes": 1284,
+      "data_rows": 11,
+      "sha256": "c3dc9e5c840cacfb7a17e7bf0b71f1b3caf26e9019384e4720e347157d7c4a3a"
+    }
+  },
+  "best_epoch": 6,
+  "best_validation_purchase_ndcg_at_10": 0.0692279135889659,
+  "confidence_stats": {
+    "count": 18591,
+    "max": 1.0,
+    "mean": 1.0,
+    "median": 1.0,
+    "min": 1.0,
+    "normalized": false,
+    "p25": 1.0,
+    "p75": 1.0,
+    "representation": "binary_view",
+    "std": 0.0
+  },
+  "coverage": {
+    "cold_item_count": 0,
+    "cold_user_count": 29,
+    "density": 0.092955,
+    "positive_pair_count": 18591,
+    "representation": "binary_view",
+    "training_item_count": 200,
+    "training_user_count": 971
+  },
+  "experiment_version": "mf_signal_representation_v1",
+  "representation": "binary_view",
+  "source": "frozen matrix_factorization_v1"
+}

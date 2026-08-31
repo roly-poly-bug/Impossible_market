@@ -1,0 +1,70 @@
+{
+  "artifacts": {
+    "comparison.csv": {
+      "bytes": 1836,
+      "data_rows": 18,
+      "sha256": "024555ae6d1a51b09d8c79c61c785acc811ef39d56da49208c7b81afdc1b8aff"
+    },
+    "confidence_stats.csv": {
+      "bytes": 529,
+      "data_rows": 5,
+      "sha256": "b9ceb4bf2a470952d111060c8deeedc5a04fbb0e4ba3bf1c440cd0e481d9a690"
+    },
+    "coverage.csv": {
+      "bytes": 311,
+      "data_rows": 5,
+      "sha256": "6809fb6d85d90b27337a9a2947b0bf3625a86fcf2e22b747790be31e8335461c"
+    },
+    "purchase_only_cold_start.json": {
+      "bytes": 670,
+      "sha256": "4fd3f986a140e7d0c8bd45d416bde1abfbad585108e2d5c03a604f651b5555f8"
+    }
+  },
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "dataset_version": "recommendation_dataset_v1",
+  "experiment_version": "mf_signal_representation_v1",
+  "fixed_mf_config": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "mf_v1_manifest_sha256": "48336dfc47ecd6b9b74b24c663175be6302aef5701d8f109450d377f808edb29",
+  "popularity_manifest_sha256": "4db25d8877a4db4c8357e63e56ac402611ca7fa1cacd04f7510c0b6a0cae35e1",
+  "representation_manifests": {
+    "binary_view": {
+      "bytes": 1335,
+      "sha256": "84d415fe911da458aa6e4037bb027d1510125562965a5c4bf7784bd80e739441"
+    },
+    "favoriteplus": {
+      "bytes": 1493,
+      "sha256": "a0aa0019db87cc69d9784d17d66489c896bbdb20a0b4863307ea85357d269da1"
+    },
+    "log_view": {
+      "bytes": 1584,
+      "sha256": "d8240ddf0d70404d8890be609b1211b9b43b704ee372f7b6ce8444ac5e3a530a"
+    },
+    "purchase_only": {
+      "bytes": 1496,
+      "sha256": "e0637ed6c9a76e0d0e8e598e731147ec230ad38de00a7cabd6153890e7b3181e"
+    },
+    "weighted": {
+      "bytes": 1582,
+      "sha256": "e97f0ad9d335d17f0c0abbbf21d8e33fdaa99367b4927cbf774f9ff3e7394a3c"
+    }
+  },
+  "representations": [
+    "binary_view",
+    "log_view",
+    "favoriteplus",
+    "weighted",
+    "purchase_only"
+  ],
+  "test_policy": "frozen binary control reused; four new best checkpoints each tested once; no post-Test tuning"
+}

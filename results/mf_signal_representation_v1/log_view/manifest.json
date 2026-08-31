@@ -1,0 +1,52 @@
+{
+  "artifacts": {
+    "../checkpoints/log_view_best.pt": {
+      "bytes": 78933,
+      "sha256": "58d0d2f5ff233250c954f379e5ee1ea0d345249242e702ecc6ed5beb16301914"
+    },
+    "config.json": {
+      "bytes": 1121,
+      "sha256": "679c2fe428ee61b55d0492c2a5c2e7306335f68ce87998ff6600723722eeaae9"
+    },
+    "diagnostics.json": {
+      "bytes": 984,
+      "sha256": "4ac71a3393b95eed527ef4421f5d3eadc2faf7a63ffaf2f4e961e90fb7f055cc"
+    },
+    "metrics.csv": {
+      "bytes": 2124,
+      "data_rows": 18,
+      "sha256": "e66736d824805f12f8ab911f7d38525b36aa16665869243c315994c49a4fa2b9"
+    },
+    "training_history.csv": {
+      "bytes": 1360,
+      "data_rows": 12,
+      "sha256": "b63065a6f962b28547c0ca20e5f055ec24fdde10945836183b0b935717f13ae7"
+    }
+  },
+  "best_epoch": 7,
+  "best_validation_purchase_ndcg_at_10": 0.07245358956530192,
+  "confidence_stats": {
+    "count": 18591,
+    "max": 2.6094379124341005,
+    "mean": 1.7209279031582492,
+    "median": 1.6931471805599454,
+    "min": 1.6931471805599454,
+    "normalized": false,
+    "p25": 1.6931471805599454,
+    "p75": 1.6931471805599454,
+    "representation": "log_view",
+    "std": 0.10681139425240284
+  },
+  "coverage": {
+    "cold_item_count": 0,
+    "cold_user_count": 29,
+    "density": 0.092955,
+    "positive_pair_count": 18591,
+    "representation": "log_view",
+    "training_item_count": 200,
+    "training_user_count": 971
+  },
+  "experiment_version": "mf_signal_representation_v1",
+  "representation": "log_view",
+  "source": "new fixed-config training"
+}

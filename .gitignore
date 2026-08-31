@@ -48,3 +48,6 @@ results/popularity_v1/rankings/
 
 # Reproducible MF checkpoints can be regenerated from tracked configs/results.
 results/matrix_factorization_v1/checkpoints/
+results/mf_signal_representation_v1/checkpoints/
+results/mf_negative_sampling_v1/checkpoints/
+results/mf_bias_v1/checkpoints/

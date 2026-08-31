@@ -1,0 +1,6 @@
+representation,positive_pair_count,training_user_count,training_item_count,cold_user_count,cold_item_count,density
+binary_view,18591,971,200,29,0,0.092955
+log_view,18591,971,200,29,0,0.092955
+favoriteplus,3944,873,200,127,0,0.01972
+weighted,18591,971,200,29,0,0.092955
+purchase_only,731,431,162,569,38,0.003655

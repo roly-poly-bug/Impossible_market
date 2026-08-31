@@ -1,0 +1,4 @@
+strategy,unique_purchase_top10_lists,purchase_evaluation_users,average_pairwise_top10_overlap,average_cart_popularity_top10_overlap,recommended_item_cart_score_mean,recommended_item_cart_score_median
+random_unknown,206,212,0.5329070911204506,0.3745283018867925,13.414622641509434,13.0
+exposed_non_conversion,206,212,0.264048108736475,0.3415094339622642,12.591037735849056,13.0
+mixed,206,212,0.7154430832513637,0.45047169811320753,14.595283018867924,14.0

@@ -313,3 +313,27 @@ identical to true preference: exposure bias, product status, price, budget,
 impulsiveness, repeated interest, prior state, and noise affect what is logged.
 Recommendation event weights, datasets, models, Orders, and payment processing
 remain downstream concerns.
+
+## MF Signal Representation v1 Boundary
+
+`ml/representations/mf_signal.py` owns representation-specific positive,
+confidence, and Unknown-pool semantics. `ml/training/mf_signal_trainer.py`
+applies per-example confidence to unreduced BCE while retaining the frozen
+bias-free MF architecture. The experiment selects every new checkpoint with
+Validation Purchase NDCG@10, reuses the frozen Binary View Test result, and
+performs one guarded final Test pass for the four new representations.
+
+## MF Negative Sampling v1 Boundary
+
+`ml/training/mf_negative_sampling.py` owns Random Unknown, User-specific
+Observed Non-conversion, deterministic Unknown backfill, and fixed 2/2 Mixed
+sampling. Weighted positive pairs and confidence remain unchanged. The frozen
+Random control is reused, Validation Purchase NDCG@10 selects the two new
+checkpoints, and a guarded final evaluator performs their only Test pass.
+
+## MF Bias v1 Boundary
+
+`ml/models/mf_bias.py` adds zero-initialized Item and optional User Bias to the
+frozen dot-product architecture. Weighted positives and pre-generated Exposed
+samples are shared. Train counts are loaded only after training for correlation
+diagnostics; they are never model features or checkpoint-selection inputs.

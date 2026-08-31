@@ -1,0 +1,26 @@
+{
+  "architecture": "bias-free Weighted BCE MF dot product",
+  "candidate_policy": "Recommendation Dataset v1 task-specific full ranking",
+  "exclude_seen": true,
+  "experiment_version": "mf_negative_sampling_v1",
+  "exposed_policy": "impression observed and no View; training contrast label, not true dislike",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "mixed_ratio": "2 exposed + 2 unknown; exposed shortage backfilled by unknown",
+  "positive_confidence": "1 + log1p(log1p(view_count) + 3*favorite + 5*cart + 8*purchase)",
+  "positive_definition": "Train View+",
+  "sample_ratio": 4,
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "strategy": "random_unknown",
+  "test_policy": "one final Test after checkpoint selection; random control reused"
+}

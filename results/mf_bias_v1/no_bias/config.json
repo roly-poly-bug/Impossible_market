@@ -1,0 +1,23 @@
+{
+  "bias_initialization": "zero",
+  "bias_regularization": "same Adam weight_decay as embeddings",
+  "experiment_version": "mf_bias_v1",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "global_bias": false,
+  "model": "no_bias",
+  "positive_confidence": "Weighted Implicit v1 unchanged",
+  "sampling": "Exposed Non-conversion with Unknown backfill; shared samples",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "test_policy": "one final Test; no-bias reused"
+}

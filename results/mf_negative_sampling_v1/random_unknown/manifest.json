@@ -1,0 +1,44 @@
+{
+  "artifacts": {
+    "config.json": {
+      "bytes": 1026,
+      "sha256": "31a3ac860a4986e4e9f0dc08b2cce43fd5629093c724ca6fb6b2841d04d6407b"
+    },
+    "diagnostics.json": {
+      "bytes": 1077,
+      "sha256": "7e01b5b55c3f515c9656ec4e6a4ad1079b8e1e333b143ffd525a72d6a5f2a139"
+    },
+    "metrics.csv": {
+      "bytes": 2225,
+      "data_rows": 18,
+      "sha256": "9cb4a07f67e4f25d43c118ffc564a9876c01ee8021291ef7e2a673d364e11722"
+    },
+    "training_history.csv": {
+      "bytes": 1388,
+      "data_rows": 12,
+      "sha256": "79b94acb5a2af106b0f04ea14d09ebb2f6f168cf587b4137019682e7ef90ee57"
+    }
+  },
+  "best_epoch": 7,
+  "best_validation_purchase_ndcg_at_10": 0.0805593441804089,
+  "experiment_version": "mf_negative_sampling_v1",
+  "sampling_stats": {
+    "backfill_count": 0,
+    "backfill_rate": 0.0,
+    "exposed_non_conversion_count": 0,
+    "exposed_share": 0.0,
+    "items_never_sampled": 0,
+    "random_unknown_count": 74364,
+    "sampled_item_gini": 0.06416680114033672,
+    "sampled_item_unique_count": 200,
+    "strategy": "random_unknown",
+    "top10_sampled_share": 0.05996180947770426,
+    "total_sampled_pairs": 74364,
+    "training_user_count": 971,
+    "unique_sampled_user_item_pairs": 51320,
+    "users_requiring_backfill": 0,
+    "users_with_enough_exposed_pool": 971
+  },
+  "source": "frozen Weighted Random Unknown control",
+  "strategy": "random_unknown"
+}

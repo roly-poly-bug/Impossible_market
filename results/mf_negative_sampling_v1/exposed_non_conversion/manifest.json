@@ -1,0 +1,48 @@
+{
+  "artifacts": {
+    "../checkpoints/exposed_non_conversion_best.pt": {
+      "bytes": 79109,
+      "sha256": "3961efc28bf02a5d612987d3dc74cd42c6ff51a281e8af5f430eec1f07e89af0"
+    },
+    "config.json": {
+      "bytes": 1034,
+      "sha256": "01e1244595d523fc2fd3b50cfd62e74b36b43190d6def994e8842e77e5acbe6f"
+    },
+    "diagnostics.json": {
+      "bytes": 1420,
+      "sha256": "e81417d90036b86a07ad5580c467a7adea77acc09965edae90bc1861a4d94004"
+    },
+    "metrics.csv": {
+      "bytes": 2372,
+      "data_rows": 18,
+      "sha256": "fd7a068fcfe19d3a6d05321784e7b22799db6704882e669616a8d55a28b652ca"
+    },
+    "training_history.csv": {
+      "bytes": 3077,
+      "data_rows": 29,
+      "sha256": "f3d547aa12f300c259a9d0a4e6ffb9642404a60fe70fbb1dad1ea313bf66dd04"
+    }
+  },
+  "best_epoch": 24,
+  "best_validation_purchase_ndcg_at_10": 0.09795717649218597,
+  "experiment_version": "mf_negative_sampling_v1",
+  "sampling_stats": {
+    "backfill_count": 32,
+    "backfill_rate": 0.00043031574417729007,
+    "exposed_non_conversion_count": 74332,
+    "exposed_share": 0.9995696842558227,
+    "items_never_sampled": 0,
+    "random_unknown_count": 32,
+    "sampled_item_gini": 0.08622492066053467,
+    "sampled_item_unique_count": 200,
+    "strategy": "exposed_non_conversion",
+    "top10_sampled_share": 0.0688101769673498,
+    "total_sampled_pairs": 74364,
+    "training_user_count": 971,
+    "unique_sampled_user_item_pairs": 28820,
+    "users_requiring_backfill": 4,
+    "users_with_enough_exposed_pool": 967
+  },
+  "source": "new fixed-config training",
+  "strategy": "exposed_non_conversion"
+}

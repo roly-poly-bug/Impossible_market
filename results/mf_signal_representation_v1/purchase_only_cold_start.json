@@ -1,0 +1,21 @@
+{
+  "fallback_policy": "Train-only Cart popularity",
+  "fallback_usage_count": 103,
+  "fallback_users": {
+    "hit_rate_at_10": 0.1941747572815534,
+    "ndcg_at_10": 0.07127654647813733,
+    "precision_at_10": 0.019417475728155338,
+    "recall_at_10": 0.12944983818770228,
+    "user_count": 103
+  },
+  "learned_users": {
+    "hit_rate_at_10": 0.1651376146788991,
+    "ndcg_at_10": 0.05007610622287429,
+    "precision_at_10": 0.01743119266055046,
+    "recall_at_10": 0.10688073394495413,
+    "user_count": 109
+  },
+  "test_eligible_purchase_user_count": 212,
+  "test_eligible_with_zero_train_positive": 103,
+  "train_positive_zero_user_count": 569
+}

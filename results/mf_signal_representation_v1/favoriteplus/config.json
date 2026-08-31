@@ -1,0 +1,28 @@
+{
+  "architecture": "bias-free BCE user/item embedding dot product",
+  "candidate_policy": "recommendation_dataset_v1 task-specific full candidate set",
+  "cold_user_policy": "Train-only Cart popularity fallback",
+  "confidence_formula": "1",
+  "confidence_normalization": "none",
+  "dataset_version": "recommendation_dataset_v1",
+  "exclude_seen": true,
+  "experiment_version": "mf_signal_representation_v1",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 16,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "positive_task": "favoriteplus",
+  "representation": "favoriteplus",
+  "sampled_unknown_policy": "representation-specific Unknown; excludes Observed Non-conversion",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "test_policy": "one final evaluation after checkpoint selection; binary control reused",
+  "training_label_zero_meaning": "sampled unknown; not true dislike"
+}

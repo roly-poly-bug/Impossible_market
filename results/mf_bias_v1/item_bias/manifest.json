@@ -1,0 +1,29 @@
+{
+  "artifacts": {
+    "../checkpoints/item_bias_best.pt": {
+      "bytes": 80032,
+      "sha256": "f2f4c60710dda95ad6311b42487cd87299d2fe773361d94a37e920cabfefa89c"
+    },
+    "config.json": {
+      "bytes": 733,
+      "sha256": "516e0cdaf49d18558c2a8d23b730b33fc76fa4324a9cb2d76f18b6490925b157"
+    },
+    "diagnostics.json": {
+      "bytes": 2260,
+      "sha256": "992a3f6e3be146033a93f5e1f011d5f855fdbfa91361c279b30bb584f52a9fe2"
+    },
+    "metrics.csv": {
+      "bytes": 2132,
+      "data_rows": 18,
+      "sha256": "107d7ff39fe498288b3a7208490fc7c896c2617066d0ee7bbba77f8b55deaa79"
+    },
+    "training_history.csv": {
+      "bytes": 1555,
+      "data_rows": 14,
+      "sha256": "f82719643b7c8d48fc32fc76f64976f905185c0570928a626727061bc9d93e81"
+    }
+  },
+  "best_epoch": 9,
+  "best_validation_purchase_ndcg_at_10": 0.10293446203104387,
+  "model": "item_bias"
+}
