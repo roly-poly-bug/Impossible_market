@@ -1,0 +1,120 @@
+{
+  "artifacts": {
+    "bce/diagnostics.json": {
+      "bytes": 2230,
+      "sha256": "a7d37172ed0975223a643c1a362b28f80002ada1c6f9358e172e9e39ad4dac19"
+    },
+    "bce/metrics.csv": {
+      "bytes": 2015,
+      "data_rows": 18,
+      "sha256": "6dae960a0af786938b17efaa4d7a4a4846ca0de35b969959c3031994edaaef78"
+    },
+    "bce/training_history.csv": {
+      "bytes": 3025,
+      "data_rows": 28,
+      "sha256": "a0bd422a7b9eb55dec505d898319375997d5e354eccb31222281341973f9e4f7"
+    },
+    "bias_diagnostics.csv": {
+      "bytes": 457,
+      "data_rows": 2,
+      "sha256": "4fe45e7493ad62261f3521483647dea2cc3f9b74b7718eec23fd0cc30807dd9d"
+    },
+    "bpr/diagnostics.json": {
+      "bytes": 2275,
+      "sha256": "75ad8b55f74167faae4f457fb1a9debf18eed89265d9c2b99df7e82bb59857e5"
+    },
+    "bpr/metrics.csv": {
+      "bytes": 2019,
+      "data_rows": 18,
+      "sha256": "8cb7397f3289ccf5652f9b6f57d496ab109093c1b8db21066e1841cd38ec2c6f"
+    },
+    "bpr/training_history.csv": {
+      "bytes": 1349,
+      "data_rows": 12,
+      "sha256": "26b40f5111a40dc25c99e33b63d2406051827dea6baedab2bcff027b772db7e2"
+    },
+    "capacity.csv": {
+      "bytes": 277,
+      "data_rows": 2,
+      "sha256": "8dd02fc942a2cd16e5f5828c812dc8483ac0a89afb7441d1f29b264e4ad38d7e"
+    },
+    "comparison.csv": {
+      "bytes": 912,
+      "data_rows": 9,
+      "sha256": "6b2e4a3ab7ea28c519413fa9722d250bf844547aa6d7f71ddcb102bae7a24945"
+    },
+    "config.json": {
+      "bytes": 916,
+      "sha256": "3f445aba7b126c39e84c1e2d2d0485a2ee47d16b3f70c2e924659e4b7e4d1851"
+    },
+    "embedding_diagnostics.csv": {
+      "bytes": 796,
+      "data_rows": 2,
+      "sha256": "b6a190e094528249332742a6a68b37ece070a627d7351eba7188bbd0968b97b5"
+    },
+    "history_group_metrics.csv": {
+      "bytes": 868,
+      "data_rows": 6,
+      "sha256": "33033eb521ccc7305dc1df48f2311909e3b01ff776a7c73ea7da406fa7aa7573"
+    },
+    "item_popularity_metrics.csv": {
+      "bytes": 715,
+      "data_rows": 6,
+      "sha256": "1967838e23eb8a36ae272d9522daf52303ed4261ede0c77a6e7588ae1d057142"
+    },
+    "margin_diagnostics.csv": {
+      "bytes": 308,
+      "data_rows": 2,
+      "sha256": "7c508dcb514875bc5738b6e107db80ccd4d7def58443c1f1f02cb138ffbb1e94"
+    },
+    "personalization.csv": {
+      "bytes": 270,
+      "data_rows": 2,
+      "sha256": "d3094f25ff216a96b3e236a0fde20609334bb08137c6d7580be2c754fe1ebbf8"
+    },
+    "score_decomposition.csv": {
+      "bytes": 208,
+      "data_rows": 2,
+      "sha256": "b335df3be703ae999c894162fb14d7b6e539e8d1c82f37de57834d47ac4cf6db"
+    }
+  },
+  "bce_source_checkpoint": {
+    "bytes": 41587,
+    "path": "results/mf_latent_dim_v1/checkpoints/dim8_best.pt",
+    "sha256": "241309a47aab99549abb6f4ca547aa85938959d8dac6e73fc62d3bbced113191"
+  },
+  "bpr_checkpoint": {
+    "bytes": 41898,
+    "sha256": "2ab7544664f17ca7162037b0bbe47ccf112719ea2ba0428df462f279a8ede4d2"
+  },
+  "bpr_weighting": "positive confidence",
+  "comparison_ratio": 4,
+  "confidence": "1+log1p(strength)",
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "experiment_version": "mf_objective_v2",
+  "fixed_parameters": {
+    "batch_size": 1024,
+    "deterministic_algorithms": true,
+    "latent_dim": 8,
+    "learning_rate": 0.001,
+    "max_epochs": 100,
+    "negative_ratio": 4,
+    "patience": 5,
+    "seed": 42,
+    "torch_num_threads": 1,
+    "weight_decay": 0.0001
+  },
+  "latent_results_manifest_sha256": "c7a12ce02f2f51a9a88e68dc4098063c0b9328580d1c4482493017882c2f2959",
+  "model": "MF latent_dim=8 with Item Bias",
+  "objectives": [
+    "BCE",
+    "confidence-weighted BPR"
+  ],
+  "representation": "Existing Weighted v1: log1p(view)+3*favorite+5*cart+8*purchase",
+  "sampling": "shared Train-only Exposed Non-conversion with Random Unknown backfill",
+  "selection_metric": "validation_purchase_ndcg_at_10",
+  "shared_comparison_triple_count": 74364,
+  "shared_positive_pair_count": 18591,
+  "synthetic_hidden_dimension_used": false,
+  "test_policy": "single batched final Test evaluation; no post-Test tuning"
+}

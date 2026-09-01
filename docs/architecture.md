@@ -356,3 +356,46 @@ embedding width changes across 8, 16, 32, and 64. All dimensions share the
 same pre-generated training contrasts. The simulator's hidden nine-dimensional
 preferences and attributes are outside the model boundary and do not influence
 the capacity choices.
+
+## MF Objective v2 Boundary
+
+```text
+Frozen Existing Weighted positives + shared Exposed/Unknown comparisons
+                              |
+                    +---------+---------+
+                    |                   |
+             pointwise BCE     confidence-weighted BPR
+                    |                   |
+                    +---------+---------+
+                              |
+                 Validation Purchase NDCG@10
+                              |
+                 one batched final Test pass
+```
+
+Both objectives use the same dimension-8 User/Item embeddings and Item Bias.
+BPR compares the complete biased scores, so both positive and comparison item
+biases participate. Candidate construction, seen exclusion, and Train-only Cart
+fallback remain in the shared evaluator. Observed non-conversion remains a
+contrast under exposure, not a true-negative or dislike label.
+
+## MF Cart Hybrid v1 Boundary
+
+```text
+Frozen best MF checkpoint       Train-only Cart counts
+            |                            |
+     per-user candidate z-score    candidate z-score
+            |                            |
+            +--------- alpha mix --------+
+                         |
+              Validation Purchase NDCG@10
+                         |
+                 selected alpha only
+                         |
+                  one final Test pass
+```
+
+This is post-hoc deterministic score fusion, not training or Learning-to-Rank.
+The hybrid uses the existing task candidates, seen exclusion, Product-ID tie
+break, and Train-only Cart fallback. Validation/Test interactions never enter
+the Cart score or alpha-selection features.
