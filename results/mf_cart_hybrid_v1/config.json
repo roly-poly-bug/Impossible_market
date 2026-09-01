@@ -1,0 +1,24 @@
+{
+  "additional_peak_memory_bytes": 653268,
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "best_alpha": 1.0,
+  "cart_score": "Train-only add_to_cart count",
+  "evaluation_runtime_seconds": 2.317226800019853,
+  "exclude_seen": true,
+  "experiment_version": "mf_cart_hybrid_v1",
+  "fallback": "unchanged Train-only Cart Popularity for users without Train positives",
+  "item_bias_cart_pearson": 0.615676639776976,
+  "item_bias_cart_spearman": 0.526881762587348,
+  "mf_checkpoint": "results/mf_latent_dim_v1/checkpoints/dim8_best.pt",
+  "mf_score": "user_embedding dot item_embedding + item_bias",
+  "model_training": false,
+  "normalization": "per-user candidate MF z-score plus task-candidate Cart z-score; population std; zero std -> zeros",
+  "selection": "Validation Purchase NDCG@10; tie: Recall@10, then higher alpha",
+  "test_policy": "best Validation alpha only, one final Test evaluation; no post-Test tuning"
+}

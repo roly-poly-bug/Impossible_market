@@ -110,3 +110,9 @@ candidates, and seen exclusion. It compares the reused pointwise BCE checkpoint
 with confidence-weighted pairwise BPR. An exposed non-conversion is only a
 training contrast, never dislike or a true negative. Run
 `python -m ml.experiments.run_mf_objective_v2`.
+
+MF Cart Hybrid v1 performs no model training. It combines the frozen best BCE
+MF score with Train-only Cart count after fixed z-score normalization and uses
+Validation Purchase NDCG@10 to select from five pre-declared alpha values. The
+candidate, seen-exclusion, deterministic tie, and Cart fallback policies remain
+unchanged. Run `python -m ml.experiments.run_mf_cart_hybrid_v1`.

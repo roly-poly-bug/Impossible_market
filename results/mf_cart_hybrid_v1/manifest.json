@@ -1,0 +1,73 @@
+{
+  "additional_peak_memory_bytes": 653268,
+  "alphas": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "artifacts": {
+    "best_hybrid_metrics.csv": {
+      "bytes": 1130,
+      "data_rows": 9,
+      "sha256": "e43c444d60bea67bf2bd0fbe32d15e5b814c800183c813c0b3e2ede306dd9359"
+    },
+    "comparison.csv": {
+      "bytes": 949,
+      "data_rows": 9,
+      "sha256": "89aa95cc5c6ca408d3be34a380e1ecd83eec07785612dbba0382fb0510cc8394"
+    },
+    "config.json": {
+      "bytes": 964,
+      "sha256": "02f8892555f5dc44c2f76900ee4eb14c4314fd53a0dcf361454a5e60534fe399"
+    },
+    "fallback_diagnostics.csv": {
+      "bytes": 380,
+      "data_rows": 3,
+      "sha256": "b7116bbb3512e40500979c0f519fbace3623f2ec68ff6bcb6088c9ce6736b2cf"
+    },
+    "history_group_metrics.csv": {
+      "bytes": 538,
+      "data_rows": 3,
+      "sha256": "231df121ca51e4627d22e831fd3b28182c8d35d60056a7f62c0f834b70b3335b"
+    },
+    "item_popularity_metrics.csv": {
+      "bytes": 496,
+      "data_rows": 3,
+      "sha256": "6994fac0be426936170a7cf98995c8ecfef0150516a65110fd80995e9ae2323b"
+    },
+    "personalization.csv": {
+      "bytes": 336,
+      "data_rows": 3,
+      "sha256": "51a75cd236378a8cf74c7508aead3969e8bc9e501bab08091d2d44b054ea50c4"
+    },
+    "score_contribution.csv": {
+      "bytes": 250,
+      "data_rows": 3,
+      "sha256": "0034f8ca72f766808fc2def7462a7a35f880499ae4ca8e15039f968fdd57ffac"
+    },
+    "validation_alpha_metrics.csv": {
+      "bytes": 660,
+      "data_rows": 5,
+      "sha256": "c671688cd9753ba98a4366292745f2c9b1eeb69859b3ae73d44ab5a00a126796"
+    }
+  },
+  "best_alpha": 1.0,
+  "cart_score": "Train-only add_to_cart count",
+  "dataset_manifest_sha256": "e4b02add34f0dca2510440e4319527c6d5aa55d71779e7a1cfb2eba4a123849f",
+  "evaluation_runtime_seconds": 2.317226800019853,
+  "exclude_seen": true,
+  "experiment_version": "mf_cart_hybrid_v1",
+  "fallback": "unchanged Train-only Cart Popularity for users without Train positives",
+  "item_bias_cart_pearson": 0.615676639776976,
+  "item_bias_cart_spearman": 0.526881762587348,
+  "mf_checkpoint": "results/mf_latent_dim_v1/checkpoints/dim8_best.pt",
+  "mf_checkpoint_sha256": "241309a47aab99549abb6f4ca547aa85938959d8dac6e73fc62d3bbced113191",
+  "mf_results_manifest_sha256": "c7a12ce02f2f51a9a88e68dc4098063c0b9328580d1c4482493017882c2f2959",
+  "mf_score": "user_embedding dot item_embedding + item_bias",
+  "model_training": false,
+  "normalization": "per-user candidate MF z-score plus task-candidate Cart z-score; population std; zero std -> zeros",
+  "selection": "Validation Purchase NDCG@10; tie: Recall@10, then higher alpha",
+  "test_policy": "best Validation alpha only, one final Test evaluation; no post-Test tuning"
+}

@@ -378,3 +378,24 @@ BPR compares the complete biased scores, so both positive and comparison item
 biases participate. Candidate construction, seen exclusion, and Train-only Cart
 fallback remain in the shared evaluator. Observed non-conversion remains a
 contrast under exposure, not a true-negative or dislike label.
+
+## MF Cart Hybrid v1 Boundary
+
+```text
+Frozen best MF checkpoint       Train-only Cart counts
+            |                            |
+     per-user candidate z-score    candidate z-score
+            |                            |
+            +--------- alpha mix --------+
+                         |
+              Validation Purchase NDCG@10
+                         |
+                 selected alpha only
+                         |
+                  one final Test pass
+```
+
+This is post-hoc deterministic score fusion, not training or Learning-to-Rank.
+The hybrid uses the existing task candidates, seen exclusion, Product-ID tie
+break, and Train-only Cart fallback. Validation/Test interactions never enter
+the Cart score or alpha-selection features.

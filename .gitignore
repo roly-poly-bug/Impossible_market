@@ -54,3 +54,4 @@ results/mf_bias_v1/checkpoints/
 results/mf_cart_signal_v1/checkpoints/
 results/mf_latent_dim_v1/checkpoints/
 results/mf_objective_v2/checkpoints/
+results/mf_cart_hybrid_v1/checkpoints/

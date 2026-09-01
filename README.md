@@ -427,6 +427,17 @@ confidence-weighted BPR while sharing all Train comparisons. Results are in
 `results/mf_objective_v2/`; the decision is documented in
 `docs/mf_objective_v2_quality.md`.
 
+Run the post-hoc MF and Train Cart Popularity fusion experiment with:
+
+```bash
+python -m ml.experiments.run_mf_cart_hybrid_v1
+```
+
+It keeps the best MF checkpoint frozen, z-scores both score sources, and selects
+one of five pre-fixed alpha values using Validation Purchase NDCG@10. Results
+are in `results/mf_cart_hybrid_v1/`; interpretation is in
+`docs/mf_cart_hybrid_v1_quality.md`.
+
 ## Planned ML Features
 
 Potential future learning milestones include collaborative filtering, matrix
